@@ -30,3 +30,26 @@
     outline-offset: 2px;
   }
 }
+
+/* Stamp "press" on appearance. Decorative only; off for reduced motion. */
+@keyframes stamp-press {
+  from {
+    scale: 1.12;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+.stamp {
+  animation: stamp-press 220ms ease-out both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .stamp {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
