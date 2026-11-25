@@ -39,19 +39,11 @@ export function About() {
             <li>Labels are based on published score ranges only. They are not a chance of admission.</li>
           </ul>
         </div>
-        <div>
-          <h3 className={`${monoLabel} text-ink`}>What we store</h3>
-          {SAVING_ENABLED ? (
-          <p className="mt-1">
-            When you check your scores, we save one anonymous record for group statistics: your scores, number of
-            attempts, grade, entry year, applicant type, country, application round and chosen schools, under a random
-            id kept in your browser. Checking again updates the same record. We never ask for or store your name, email
-            or IP address. Error reports hold only the school, the field, the correct value and the source link.
-          </p>
-          ) : (
-            <p className="mt-1">Nothing you enter is stored. Your report is worked out in your browser.</p>
-          )}
-        </div>
+        <p className="text-sm text-ink-muted">
+          {SAVING_ENABLED
+            ? 'We keep an anonymous count of checks (scores and chosen schools, no names or emails) to improve the tool.'
+            : 'Nothing you enter is stored. Your report is worked out in your browser.'}
+        </p>
         <Tutors />
         <div>
           <h3 className={`${monoLabel} text-ink`}>Links</h3>

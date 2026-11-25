@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { saveSubmission } from './backend';
+import { countCheck, saveSubmission } from './backend';
 import { SAVING_ENABLED } from './config/site';
 import { satDates, schoolById, schoolIds, schools } from './data/appData';
 import { buildReport, type Report as ReportData, type StudentInput } from './logic';
@@ -8,6 +8,7 @@ import { CandidateForm } from './ui/form/CandidateForm';
 import { monoLabel } from './ui/parts/styles';
 import { Report } from './ui/report/Report';
 import { ReportErrorDialog } from './ui/ReportErrorDialog';
+import { UsageLine } from './ui/UsageLine';
 import { todayLocal } from './ui/today';
 
 interface Result {
@@ -32,7 +33,10 @@ export default function App() {
     setResult({ input, report: buildReport(input, schools, satDates.dates, today) });
     requestAnimationFrame(() => scrollAndFocus('report-heading'));
     // One anonymous record per browser, in the background. Failures stay silent (PRD).
-    if (SAVING_ENABLED) saveSubmission(input).catch(() => {});
+    if (SAVING_ENABLED) {
+      saveSubmission(input).catch(() => {});
+      countCheck().catch(() => {});
+    }
   }
 
   return (
@@ -50,6 +54,7 @@ export default function App() {
           Enter your SAT scores and the schools you are applying to. You get a school-by-school answer to &ldquo;Should
           I retake?&rdquo; using each school&rsquo;s published score ranges, test policy and deadlines.
         </p>
+        <UsageLine />
       </header>
 
       <main className="mx-auto grid max-w-[1200px] gap-8 px-4 pb-10 lg:grid-cols-[minmax(0,26rem)_minmax(0,1fr)] lg:items-start">
@@ -59,7 +64,6 @@ export default function App() {
             knownIds={schoolIds}
             today={today}
             onSubmit={onSubmit}
-            notice={SAVING_ENABLED ? 'Your scores are saved anonymously for group statistics. No name or email.' : null}
           />
         </div>
         <div className="min-w-0 space-y-8">

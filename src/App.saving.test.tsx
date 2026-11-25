@@ -1,12 +1,15 @@
 // App behaviour with saving switched on. The backend is mocked: no network, no Firebase.
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { render, screen, within } from '@testing-library/react';
+import { act, render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 const backend = vi.hoisted(() => ({
   saveSubmission: vi.fn(() => Promise.resolve()),
   sendErrorReport: vi.fn(() => Promise.resolve()),
   countHelpClick: vi.fn(() => Promise.resolve()),
+  countCheck: vi.fn(() => Promise.resolve()),
+  cachedUsage: vi.fn((): { checks: number; students: number } | null => null),
+  readUsage: vi.fn(() => Promise.resolve<{ checks: number; students: number } | null>(null)),
 }));
 vi.mock('./backend', () => ({ ...backend, backendConfigured: true }));
 vi.mock('./config/site', async (importOriginal) => {
@@ -39,12 +42,15 @@ describe('App with saving on', () => {
     backend.saveSubmission.mockClear();
     backend.sendErrorReport.mockReset().mockResolvedValue(undefined);
     backend.countHelpClick.mockClear();
+    backend.countCheck.mockClear();
+    backend.cachedUsage.mockReset().mockReturnValue(null);
+    backend.readUsage.mockReset().mockResolvedValue(null);
   });
 
-  it('shows the anonymous-saving notice and "What we store"', () => {
+  it('mentions the anonymous count once, in About, not under the button', () => {
     render(<App />);
-    expect(screen.getByText(/saved anonymously for group statistics/)).toBeTruthy();
-    expect(screen.getByText('What we store')).toBeTruthy();
+    expect(screen.getByText(/We keep an anonymous count of checks/)).toBeTruthy();
+    expect(screen.queryByText(/saved anonymously/)).toBeNull();
   });
 
   it('saves once per valid submit, and not for an invalid one', async () => {
@@ -54,6 +60,7 @@ describe('App with saving on', () => {
     expect(backend.saveSubmission).not.toHaveBeenCalled();
     await fillAndSubmit(user);
     expect(backend.saveSubmission).toHaveBeenCalledTimes(1);
+    expect(backend.countCheck).toHaveBeenCalledTimes(1);
     expect(backend.saveSubmission).toHaveBeenCalledWith(
       expect.objectContaining({ latest: { total: 1450, rw: 700, math: 750 }, schoolIds: ['mit'] }),
     );
@@ -102,5 +109,33 @@ describe('App with saving on', () => {
     await open();
     d = await fill();
     expect((await d.findByRole('alert')).textContent).toMatch(/send right now/);
+  });
+
+  describe('usage counter in the header', () => {
+    it('shows the cached count right away when it is 100 or more', () => {
+      backend.cachedUsage.mockReturnValue({ checks: 2418, students: 1530 });
+      render(<App />);
+      expect(screen.getByText('2,418 score checks · 1,530 students')).toBeTruthy();
+      expect(backend.readUsage).not.toHaveBeenCalled();
+    });
+
+    it('stays hidden under 100 checks', () => {
+      backend.cachedUsage.mockReturnValue({ checks: 99, students: 70 });
+      render(<App />);
+      expect(screen.queryByText(/score checks/)).toBeNull();
+    });
+
+    it('reads the count after the page settles when nothing is cached', async () => {
+      vi.useFakeTimers();
+      backend.readUsage.mockResolvedValue({ checks: 150, students: 90 });
+      render(<App />);
+      expect(backend.readUsage).not.toHaveBeenCalled();
+      await act(async () => {
+        await vi.advanceTimersByTimeAsync(3000);
+      });
+      vi.useRealTimers();
+      expect(backend.readUsage).toHaveBeenCalledTimes(1);
+      expect(screen.getByText('150 score checks · 90 students')).toBeTruthy();
+    });
   });
 });

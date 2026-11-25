@@ -5,7 +5,7 @@ Live, editable version: https://claude.ai/artifact/NePJPecocK2FHHq2yiqUoc
 
 ## Overview
 
-A free, single-page web tool that tells a student, school by school, whether to retake the SAT, using official score data, their own deadlines and statistics from the Digital SAT Questions community (160k+ members).
+A free, single-page web tool that tells a student, school by school, whether to retake the SAT, using official score data, their own deadlines, from the Digital SAT Questions community (160k+ members).
 
 **Problem.** "Should I retake?" is one of the most-asked questions in the group. Existing answers are generic articles, chatbots that give unsourced and often outdated ranges, or tools that ask for contact details. No tool combines school data, section gaps, superscoring, test policy and deadlines in one personal report.
 
@@ -21,7 +21,6 @@ A free, single-page web tool that tells a student, school by school, whether to 
 | Metric | Target | How measured |
 | --- | --- | --- |
 | Completed checks | 5,000 | Firestore submission count |
-| Schools with group statistics live | 20 of ~60 | Schools with 30+ entries |
 | Get help clicks | 3% of checks | Analytics event |
 | Data errors reported | 0 unresolved after 7 days | Report-an-error log |
 
@@ -40,7 +39,7 @@ Version 1 is the retake tool only, with ~60 schools (US News 2027 top 50 nationa
 - Personal SAT-date timeline
 - Test policy for domestic and international applicants (including test-blind schools), by entry year
 - Score-sending rule (score choice vs all scores)
-- Anonymous submissions and group statistics
+- Anonymous submissions and a public usage counter ("N score checks · N students"). Per-school group statistics were dropped on 2026-11-25: self-reported scores can't be verified, so showing them would mislead.
 - Sources and data year on every number
 - Report-an-error link, Get help button and a "Support this tool" button linking to Patreon
 - About section
@@ -69,7 +68,7 @@ One page: form at the top (left column on desktop), report below it (right colum
    - Overall verdict
    - Superscore summary (if past attempts were entered)
    - Timeline of usable SAT dates
-   - One card per school: label, range chart, section gaps, test policy, superscore policy, score-sending rule, group statistic, source link
+   - One card per school: label, range chart, section gaps, test policy, superscore policy, score-sending rule, source link
 7. **Next steps:** Get help button, "Edit inputs", report-an-error link per school, Support (Patreon).
 8. **In the background:** one anonymous record is saved (see Data).
 
@@ -87,7 +86,7 @@ One page: form at the top (left column on desktop), report below it (right colum
 | FR-8 | Reach / target / safety | Label per school from the Retake logic thresholds |
 | FR-9 | Personal timeline | Lists upcoming official SAT dates (from `sat-dates.json`) that fall before each chosen school's deadline for the chosen round; dates are data, not hard-coded |
 | FR-10 | Test policy | Shows required / optional / test-blind for the student's applicant type and entry year, with source link and year; flags schools whose policy differs between domestic and international |
-| FR-11 | Group statistics | Per school: share of group users below / within / above its middle 50%; hidden until 30+ entries; labeled "Based on scores entered by our users, not admission results" |
+| FR-11 | Usage counter (replaces group statistics) | Header shows "N score checks · N students" from `counters/usage` once there are 100+ checks; each check adds 1, a browser's first check also adds 1 student. Per-school statistics dropped (unverifiable self-reported scores). |
 | FR-12 | Sources, Get help, Report error | Every data point shows source link and data year; Get help links to the group and tutor contact; Report error opens a short form (school, field, correct value, source link) |
 | FR-13 | Multi-year support | Student picks entry year (2027, 2028, 2029+). `testPolicy` is a list with `fromEntryYear`, so announced changes apply automatically (e.g. Princeton, Columbia, Notre Dame require tests from the 2027–28 cycle; Vanderbilt from fall 2029 entry). If College Board hasn't announced test dates for a year, show "Test dates not announced yet". Score ranges use the latest Common Data Set and say which class they describe |
 | FR-14 | About section | Creator (Bibek Subedi, moderator of the Digital SAT Questions group), why the tool exists, links (group, LinkedIn, GitHub, contact email shown as text), tutor team, Patreon button, how data is collected and checked, disclaimer: "Not affiliated with or endorsed by College Board or any university. SAT is a trademark of College Board." |
@@ -125,7 +124,7 @@ Each school gets a label from where the student's score sits in its percentiles;
 
 ## Data
 
-School data and SAT dates live as JSON files in the repo, reviewed like code; only anonymous submissions and the daily statistics summary live in Firestore.
+School data and SAT dates live as JSON files in the repo, reviewed like code; only anonymous submissions, error reports and two counters live in Firestore.
 
 **Sources, in order of preference**
 
@@ -186,7 +185,7 @@ Each `testPolicy` value is one of `required`, `optional`, `test-blind`, `require
 
 No names, emails, IP addresses or free-text fields.
 
-**Statistics summary** (Firestore document `stats/summary`, written once a day): per school, entry count and share of users below, within and above its middle 50%, plus total checks, checks by country, and domestic vs international split.
+**Usage counter** (Firestore document `counters/usage`): `checks`, `students`, `updatedAt`; shown in the header from 100 checks. (The planned daily `stats/summary` was dropped with M5.)
 
 ## Architecture
 
@@ -204,7 +203,6 @@ Student's browser --saves 1 anonymous record--> Firestore ; --reads summary--> F
 | Charts | Recharts or hand-drawn SVG |
 | Hosting | Cloudflare Pages, connected to the private GitHub repo |
 | Database | Firebase Firestore with App Check |
-| Scheduled job | GitHub Actions (daily statistics) |
 | Analytics | Cloudflare Web Analytics |
 | Tests | Vitest |
 | Support | Patreon link (payout to Nepal bank in NPR is supported) |
@@ -215,14 +213,14 @@ Student's browser --saves 1 anonymous record--> Firestore ; --reads summary--> F
 
 - Firestore rules: `submissions` allows create and update only on the document whose ID matches its `anonId`, every field validated (types, ranges, known school IDs, max 15 schools). No read, list or delete from the browser.
 - `errorReports` collection: create only, length limits on every field.
-- `stats/summary`: read only from the browser; written only by the GitHub Action using a service-account key in GitHub Secrets.
+- `counters/usage`: public read; +1 updates only. `counters/helpClicks`: private, +1 only.
 - Firebase App Check on to block scripted spam.
 - No secrets in the repo; `.env` in `.gitignore`.
 - Security Guidance plugin on during development; `/security-review` before every merge; full Claude Security scan before launch; Dependabot and `npm audit` on.
 
 **Privacy**
 
-- No personal data collected; a one-line notice near the submit button says scores are saved anonymously for group statistics.
+- No personal data collected; one line in the About section says an anonymous count of checks is kept.
 - No third-party trackers beyond Cloudflare Web Analytics.
 
 **Performance**
@@ -253,14 +251,14 @@ Student's browser --saves 1 anonymous record--> Firestore ; --reads summary--> F
 2. **M2 — Logic:** retake labels, superscore, timeline, verdict, per-year policy with passing unit tests.
 3. **M3 — Interface:** form, report, charts, About, chosen design; mobile + desktop; Lighthouse 90+.
 4. **M4 — Backend and launch:** Firebase rules, App Check, submissions, Cloudflare Pages deploy, security scan; announce in the group.
-5. **M5 — Group statistics:** GitHub Action live; statistics appear as schools pass 30 entries.
+5. ~~M5 — Group statistics~~ — dropped 2026-11-25 (replaced by the usage counter).
 
 **Risks**
 
 | Risk | Impact | Mitigation |
 | --- | --- | --- |
 | Wrong or outdated school data | Bad decisions; trust lost | Sources on every value, human check, report-error link, yearly update |
-| Spam or fake submissions | Misleading statistics | App Check, strict rules, validation, one record per browser |
+| Spam or fake submissions | Inflated usage counter | App Check, strict rules, validation, one record per browser |
 | Labels read as admission predictions | Misplaced confidence | Wording: "based on score ranges only, not a chance of admission" |
 | Firebase free limits exceeded | Saves fail at peaks | One summary read per visit; monitor; saves fail silently |
 | Test policies change | Wrong policy shown | Per-year policy, data year shown, error reports reviewed weekly |

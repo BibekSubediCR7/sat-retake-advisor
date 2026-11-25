@@ -185,12 +185,45 @@ describe('counters/helpClicks', () => {
   });
 });
 
-describe('stats and everything else', () => {
-  it('lets anyone read stats/summary but nobody write it', async () => {
+describe('counters/usage (public usage counter)', () => {
+  const ref = () => db().collection('counters').doc('usage');
+  const bump = (students: number) => ({ checks: inc(1), students: inc(students), updatedAt: now() });
+
+  it('starts at 1 check, with 0 or 1 student', async () => {
+    await assertSucceeds(ref().set(bump(1), { merge: true }));
+    await env.clearFirestore();
+    await assertSucceeds(ref().set(bump(0), { merge: true }));
+  });
+
+  it('adds 1 check each time, and 0 or 1 student', async () => {
+    await assertSucceeds(ref().set(bump(1), { merge: true }));
+    await assertSucceeds(ref().set(bump(0), { merge: true }));
+    await assertSucceeds(ref().set(bump(1), { merge: true }));
+  });
+
+  it('rejects jumps, decreases, resets, extra keys and client timestamps', async () => {
+    await seed('counters/usage', { checks: 50, students: 20, updatedAt: new Date() });
+    await assertFails(ref().set({ checks: inc(2), students: inc(0), updatedAt: now() }, { merge: true }));
+    await assertFails(ref().set({ checks: inc(1), students: inc(2), updatedAt: now() }, { merge: true }));
+    await assertFails(ref().set({ checks: inc(1), students: inc(-1), updatedAt: now() }, { merge: true }));
+    await assertFails(ref().set({ checks: 0, students: 0, updatedAt: now() }));
+    await assertFails(ref().set({ ...bump(0), note: 'x' }, { merge: true }));
+    await assertFails(ref().set({ checks: inc(1), students: inc(0), updatedAt: new Date() }, { merge: true }));
+    await assertFails(ref().delete());
+  });
+
+  it('is readable by anyone, but the counters collection cannot be listed', async () => {
+    await seed('counters/usage', { checks: 120, students: 80, updatedAt: new Date() });
+    await assertSucceeds(ref().get());
+    await assertFails(db().collection('counters').get());
+  });
+});
+
+describe('everything else', () => {
+  it('no longer exposes stats/summary (group statistics were dropped)', async () => {
     await seed('stats/summary', { totalChecks: 0 });
-    await assertSucceeds(db().doc('stats/summary').get());
+    await assertFails(db().doc('stats/summary').get());
     await assertFails(db().doc('stats/summary').set({ totalChecks: 99 }));
-    await assertFails(db().doc('stats/other').get());
   });
 
   it('denies unknown collections', async () => {
