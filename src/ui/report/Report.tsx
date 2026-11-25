@@ -1,5 +1,6 @@
 import { GraduationCap, HeartHandshake, PencilLine } from 'lucide-react';
-import { site } from '../../config/site';
+import { countHelpClick } from '../../backend';
+import { SAVING_ENABLED, site } from '../../config/site';
 import type { AppSchool, SatDatesFile } from '../../data/schema';
 import { LABEL_DISCLAIMER, type StudentInput, type Verdict as VerdictData } from '../../logic';
 import type { Report as ReportData } from '../../logic';
@@ -126,7 +127,13 @@ export function Report({ report, input, schools, satDates, onEdit, onReportError
       </Section>
 
       <div className="flex flex-col gap-3 sm:flex-row">
-        <ExternalLink href={site.tutorContactUrl ?? site.groupUrl} className={`${primaryButton} flex-1 bg-seal-red hover:bg-ink`}>
+        <ExternalLink
+          href={site.tutorContactUrl ?? site.groupUrl}
+          className={`${primaryButton} flex-1 bg-seal-red hover:bg-ink`}
+          onClick={() => {
+            if (SAVING_ENABLED) countHelpClick().catch(() => {});
+          }}
+        >
           <GraduationCap size={18} aria-hidden="true" /> Get help from our tutors
         </ExternalLink>
         <button type="button" onClick={onEdit} className={`${secondaryButton} flex-1`}>

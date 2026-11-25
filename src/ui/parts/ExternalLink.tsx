@@ -9,10 +9,12 @@ export function ExternalLink({
   href,
   children,
   className = textLink,
+  onClick,
 }: {
   href: string | null;
   children: ReactNode;
   className?: string;
+  onClick?: () => void;
 }) {
   if (!href) {
     return (
@@ -23,7 +25,7 @@ export function ExternalLink({
     );
   }
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+    <a href={href} target="_blank" rel="noopener noreferrer" className={className} onClick={onClick}>
       {children}
       <span className="sr-only"> (opens in a new tab)</span>
     </a>

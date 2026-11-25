@@ -1,0 +1,106 @@
+// App behaviour with saving switched on. The backend is mocked: no network, no Firebase.
+import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { render, screen, within } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+
+const backend = vi.hoisted(() => ({
+  saveSubmission: vi.fn(() => Promise.resolve()),
+  sendErrorReport: vi.fn(() => Promise.resolve()),
+  countHelpClick: vi.fn(() => Promise.resolve()),
+}));
+vi.mock('./backend', () => ({ ...backend, backendConfigured: true }));
+vi.mock('./config/site', async (importOriginal) => {
+  const orig = await importOriginal<typeof import('./config/site')>();
+  return { ...orig, SAVING_ENABLED: true, site: { ...orig.site, groupUrl: 'https://example.org/group' } };
+});
+
+import App from './App';
+
+type User = ReturnType<typeof userEvent.setup>;
+const form = () => within(document.querySelector<HTMLElement>('#candidate form')!);
+
+async function fillAndSubmit(user: User) {
+  const f = form();
+  await user.type(f.getByLabelText('Total'), '1450');
+  await user.type(f.getByLabelText('R&W'), '700');
+  await user.type(f.getAllByLabelText('Math')[0]!, '750');
+  await user.selectOptions(f.getByLabelText('Current grade'), '11');
+  await user.selectOptions(f.getByLabelText('Entry year'), '2028');
+  await user.selectOptions(f.getByLabelText('Applicant type'), 'international');
+  await user.selectOptions(f.getByLabelText('Country'), 'NP');
+  await user.selectOptions(f.getByLabelText('Application round'), 'RD');
+  await user.type(f.getByRole('combobox', { name: /Schools/ }), 'mit');
+  await user.keyboard('{Enter}');
+  await user.click(screen.getByRole('button', { name: 'Check my scores' }));
+}
+
+describe('App with saving on', () => {
+  beforeEach(() => {
+    backend.saveSubmission.mockClear();
+    backend.sendErrorReport.mockReset().mockResolvedValue(undefined);
+    backend.countHelpClick.mockClear();
+  });
+
+  it('shows the anonymous-saving notice and "What we store"', () => {
+    render(<App />);
+    expect(screen.getByText(/saved anonymously for group statistics/)).toBeTruthy();
+    expect(screen.getByText('What we store')).toBeTruthy();
+  });
+
+  it('saves once per valid submit, and not for an invalid one', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: 'Check my scores' }));
+    expect(backend.saveSubmission).not.toHaveBeenCalled();
+    await fillAndSubmit(user);
+    expect(backend.saveSubmission).toHaveBeenCalledTimes(1);
+    expect(backend.saveSubmission).toHaveBeenCalledWith(
+      expect.objectContaining({ latest: { total: 1450, rw: 700, math: 750 }, schoolIds: ['mit'] }),
+    );
+  });
+
+  it('still shows the report when saving fails', async () => {
+    backend.saveSubmission.mockRejectedValueOnce(new Error('offline'));
+    const user = userEvent.setup();
+    render(<App />);
+    await fillAndSubmit(user);
+    expect(document.getElementById('verdict-headline')?.textContent).toMatch(/Retake/);
+  });
+
+  it('counts a Get help click', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await fillAndSubmit(user);
+    await user.click(screen.getByRole('link', { name: /Get help from our tutors/ }));
+    expect(backend.countHelpClick).toHaveBeenCalledTimes(1);
+  });
+
+  it('sends an error report, and says so when it fails', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await fillAndSubmit(user);
+    const open = () => user.click(screen.getByRole('button', { name: /Report an error for Massachusetts/ }));
+    const fill = async () => {
+      const d = within(document.querySelector('dialog')!);
+      await user.selectOptions(d.getByLabelText('Which value is wrong?'), 'Admit rate');
+      await user.type(d.getByLabelText('Correct value'), '4.5%');
+      await user.type(d.getByLabelText('Official source link'), 'https://ir.mit.edu/cds');
+      await user.click(d.getByRole('button', { name: 'Send report' }));
+      return d;
+    };
+    await open();
+    let d = await fill();
+    expect(backend.sendErrorReport).toHaveBeenCalledWith('mit', {
+      field: 'Admit rate',
+      correctValue: '4.5%',
+      sourceUrl: 'https://ir.mit.edu/cds',
+    });
+    expect((await d.findByRole('status')).textContent).toMatch(/your report was sent/);
+    await user.click(d.getAllByRole('button', { name: 'Close' })[0]!);
+
+    backend.sendErrorReport.mockRejectedValueOnce(new Error('denied'));
+    await open();
+    d = await fill();
+    expect((await d.findByRole('alert')).textContent).toMatch(/send right now/);
+  });
+});

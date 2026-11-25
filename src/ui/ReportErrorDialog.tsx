@@ -1,16 +1,26 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { X } from 'lucide-react';
+import { sendErrorReport } from '../backend';
 import { SAVING_ENABLED } from '../config/site';
 import { ERROR_FIELDS, MAX_URL, MAX_VALUE, validateErrorReport, type ErrorReportDraft } from '../logic/errorReport';
 import { Field } from './parts/Field';
 import { fieldControl, monoLabel, primaryButton, secondaryButton } from './parts/styles';
 
-/** Report-an-error dialog. In Milestone 3 nothing is sent or stored. */
-export function ReportErrorDialog({ schoolName, onClose }: { schoolName: string | null; onClose: () => void }) {
+type SendState = 'idle' | 'sending' | 'sent' | 'failed' | 'not-saving';
+
+/** Report-an-error dialog (FR-12). Saves to Firestore when saving is configured. */
+export function ReportErrorDialog({
+  school,
+  onClose,
+}: {
+  school: { id: string; name: string } | null;
+  onClose: () => void;
+}) {
+  const schoolName = school?.name ?? null;
   const ref = useRef<HTMLDialogElement>(null);
   const [draft, setDraft] = useState<ErrorReportDraft>({ field: '', correctValue: '', sourceUrl: '' });
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [done, setDone] = useState(false);
+  const [state, setState] = useState<SendState>('idle');
 
   useEffect(() => {
     const d = ref.current;
@@ -18,7 +28,7 @@ export function ReportErrorDialog({ schoolName, onClose }: { schoolName: string 
     if (schoolName && !d.open) {
       setDraft({ field: '', correctValue: '', sourceUrl: '' });
       setErrors({});
-      setDone(false);
+      setState('idle');
       // showModal traps focus and restores it to the opener on close.
       if (typeof d.showModal === 'function') d.showModal();
       else d.setAttribute('open', '');
@@ -27,7 +37,7 @@ export function ReportErrorDialog({ schoolName, onClose }: { schoolName: string 
     }
   }, [schoolName]);
 
-  function submit(e: FormEvent) {
+  async function submit(e: FormEvent) {
     e.preventDefault();
     const found = validateErrorReport(draft);
     setErrors(found);
@@ -35,8 +45,17 @@ export function ReportErrorDialog({ schoolName, onClose }: { schoolName: string 
       requestAnimationFrame(() => ref.current?.querySelector<HTMLElement>('[aria-invalid="true"]')?.focus());
       return;
     }
-    // Saving arrives with Firestore in Milestone 4 (SAVING_ENABLED). Nothing is stored now.
-    setDone(true);
+    if (!SAVING_ENABLED || !school) {
+      setState('not-saving');
+      return;
+    }
+    setState('sending');
+    try {
+      await sendErrorReport(school.id, draft);
+      setState('sent');
+    } catch {
+      setState('failed');
+    }
   }
 
   return (
@@ -62,10 +81,10 @@ export function ReportErrorDialog({ schoolName, onClose }: { schoolName: string 
           <X size={20} aria-hidden="true" />
         </button>
       </div>
-      {done ? (
+      {state === 'sent' || state === 'not-saving' ? (
         <div className="space-y-4 px-5 py-5" role="status">
           <p className="text-base">
-            {SAVING_ENABLED ? 'Thank you — your report was sent.' : 'Error reports open soon — thank you.'}
+            {state === 'sent' ? 'Thank you — your report was sent.' : 'Error reports open soon — thank you.'}
           </p>
           <button type="button" className={secondaryButton} onClick={() => ref.current?.close()}>
             Close
@@ -121,8 +140,13 @@ export function ReportErrorDialog({ schoolName, onClose }: { schoolName: string 
             )}
           </Field>
           <p className="text-sm text-ink-muted">Please don&rsquo;t include your name or any personal details.</p>
-          <button type="submit" className={`${primaryButton} w-full`}>
-            Send report
+          {state === 'failed' && (
+            <p role="alert" className="text-sm font-semibold text-seal-red">
+              Couldn&rsquo;t send right now — please try again later.
+            </p>
+          )}
+          <button type="submit" className={`${primaryButton} w-full`} disabled={state === 'sending'}>
+            {state === 'sending' ? 'Sending…' : 'Send report'}
           </button>
         </form>
       )}

@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import { saveSubmission } from './backend';
 import { SAVING_ENABLED } from './config/site';
 import { satDates, schoolById, schoolIds, schools } from './data/appData';
 import { buildReport, type Report as ReportData, type StudentInput } from './logic';
@@ -30,6 +31,8 @@ export default function App() {
   function onSubmit(input: StudentInput) {
     setResult({ input, report: buildReport(input, schools, satDates.dates, today) });
     requestAnimationFrame(() => scrollAndFocus('report-heading'));
+    // One anonymous record per browser, in the background. Failures stay silent (PRD).
+    if (SAVING_ENABLED) saveSubmission(input).catch(() => {});
   }
 
   return (
@@ -87,7 +90,7 @@ export default function App() {
       </footer>
 
       <ReportErrorDialog
-        schoolName={errorSchool ? (schoolById.get(errorSchool)?.name ?? null) : null}
+        school={errorSchool ? (schoolById.get(errorSchool) ?? null) : null}
         onClose={() => setErrorSchool(null)}
       />
     </div>

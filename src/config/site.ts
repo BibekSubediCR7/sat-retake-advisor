@@ -1,3 +1,5 @@
+import { backendConfigured } from '../backend/config';
+
 // Outside links and switches. A null link is hidden in the UI ("Link coming soon").
 // Never fill these with guesses: each value must come from Bibek Subedi.
 
@@ -17,5 +19,5 @@ export const site = {
   tutorTeam: null as string | null,
 } as const;
 
-/** Anonymous submissions and error reports are saved only from Milestone 4. */
-export const SAVING_ENABLED = false;
+/** Saving is on only when the Firebase env vars are set (see .env.example). */
+export const SAVING_ENABLED = backendConfigured;
