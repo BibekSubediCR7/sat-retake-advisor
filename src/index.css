@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* Design tokens: "Official score report" (see CLAUDE.md). */
+@theme {
+  --color-paper: #f3ede1;
+  --color-paper-light: #fdfcf9;
+  --color-ink: #1a1611;
+  --color-seal-red: #8c2f24;
+  --color-stamp-green: #3c5a3c;
+  --color-stamp-amber: #7a5b1e;
+  --color-rule: #c9bfae;
+  --color-rule-light: #e2dacc;
+
+  --font-scoreDisplay: "Playfair Display", Georgia, serif;
+  --font-scoreSerif: "Source Serif 4", Georgia, serif;
+  --font-scoreMono: "Courier Prime", "Courier New", monospace;
+}
+
+@layer base {
+  html {
+    font-size: 16px;
+  }
+  body {
+    @apply bg-paper text-ink font-scoreSerif antialiased;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-seal-red);
+    outline-offset: 2px;
+  }
+}
