@@ -1,4 +1,5 @@
 // Lazy Firebase setup. The SDK is downloaded on the first save, never on page load.
+// App Check uses reCAPTCHA Enterprise: classic reCAPTCHA v3 is deprecated for App Check.
 import type { Firestore } from 'firebase/firestore/lite';
 import { backendConfigured, firebaseConfig, recaptchaSiteKey, useEmulator } from './config';
 
@@ -20,7 +21,7 @@ export function getDb(): Promise<Firestore> {
         (self as unknown as { FIREBASE_APPCHECK_DEBUG_TOKEN?: boolean }).FIREBASE_APPCHECK_DEBUG_TOKEN = true;
       }
       appCheck.initializeAppCheck(app, {
-        provider: new appCheck.ReCaptchaV3Provider(recaptchaSiteKey),
+        provider: new appCheck.ReCaptchaEnterpriseProvider(recaptchaSiteKey),
         isTokenAutoRefreshEnabled: true,
       });
     }

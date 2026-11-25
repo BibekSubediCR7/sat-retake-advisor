@@ -1,5 +1,5 @@
 // Firebase web config from Vite env vars (see .env.example). These are public identifiers;
-// the reCAPTCHA secret key lives only in the Firebase console.
+// reCAPTCHA Enterprise needs only the public site key (no secret key anywhere).
 const env = import.meta.env;
 
 export const useEmulator = env.DEV === true && env.VITE_USE_EMULATOR === '1';

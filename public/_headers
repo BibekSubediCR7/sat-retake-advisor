@@ -1,5 +1,5 @@
 # Cloudflare Pages response headers. Keep connect-src/script-src in step with src/backend/
-# (Firestore, App Check, reCAPTCHA v3) and Cloudflare Web Analytics.
+# (Firestore, App Check with reCAPTCHA Enterprise: www.google.com/recaptcha/enterprise.js) and Cloudflare Web Analytics.
 /*
   Content-Security-Policy: default-src 'self'; script-src 'self' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://static.cloudflareinsights.com; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://firestore.googleapis.com https://firebaseappcheck.googleapis.com https://content-firebaseappcheck.googleapis.com https://cloudflareinsights.com; frame-src https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
   Referrer-Policy: strict-origin-when-cross-origin
