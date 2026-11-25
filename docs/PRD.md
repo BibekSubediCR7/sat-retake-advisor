@@ -139,7 +139,7 @@ Every value carries its source URL and data year. A value with no official sourc
 **Files**
 
 - `data/schools.json` — 61 schools (collected Nov 25, 2026). Needs conversion of `testPolicy` to the per-year list below, using each record's `recentChange` text.
-- `data/sat-dates.json` — official test dates from March 2027 onward.
+- `data/sat-dates.json` — official test dates from December 2026 onward, with score release dates where published.
 - `docs/CHECKLIST.md` — what a human must verify before launch.
 
 **Target school record format**

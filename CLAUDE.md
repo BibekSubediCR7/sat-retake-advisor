@@ -10,27 +10,37 @@ Free tool by the Digital SAT Questions group (creator: Bibek Subedi). A student 
 - Data: `data/schools.json` (61 schools), `data/sat-dates.json` (official SAT dates)
 - Data checks still needed: `docs/CHECKLIST.md`
 
-## Repo state & commands
+## Commands
 
-- Not a git repository yet: run `git init` (and create the private GitHub remote) before the first commit.
-- No `package.json` yet — Milestone 1 creates the Vite project. When it exists, replace this line with the real commands:
-  - `npm run dev` · `npm run build` · `npm test`
-  - single test: `npx vitest run <path> -t "<name>"`
-  - schema check: `npm run check:data`
+- `npm run dev` — Vite dev server
+- `npm run build` — runs `check:data`, then `tsc -b`, then `vite build` (bad data fails the build)
+- `npm test` — all Vitest suites · `npm run test:watch`
+- single test: `npx vitest run src/logic/labels.test.ts -t "<name>"`
+- `npm run check:data` — schema check of `data/*.json` (add `-- --quiet` to hide warnings)
+- `npm run typecheck`
+- Git: local repo on `main`, no remote yet (create the private GitHub remote before pushing).
 
-## Current data vs PRD format (read before touching data/)
+## Data layout (read before touching data/)
 
-`data/schools.json` is NOT yet in the PRD target format. Milestone 1 converts it:
-
-- **testPolicy**: all 61 records hold one object `{domestic, international, cycle}`. Convert to the per-year list `[{fromEntryYear, domestic, international}]`. Planned changes exist only as free text in `recentChange` (27 records). Build the list from that text, list every conversion in a table for human review, and when the text is unclear keep only the current-cycle entry and add a note — never guess a future rule.
-- **Extra fields — keep them** (move under a `meta` object where noted):
-  - keep top-level: `category`, `pctSubmittingSAT` (show as "X% of enrolled students sent SAT scores"), `entryTerm`, `selfReporting`, `deadlines.eaType`
-  - move to `meta`: `superscoreQuote`, `scoreSendingQuote`, `notes` (evidence for reviewers, not shown in UI)
+- `src/data/schema.ts` is the single source of truth for the data shape (zod + cross-field rules) and exports the `School` / `SatDate` types. Import those types with `import type` in app code so zod stays out of the bundle.
+- `testPolicy` is a list `[{fromEntryYear, domestic, international, source, note?}]`, sorted, first entry 2027. Look up the entry with the highest `fromEntryYear` ≤ the student's entry year. `"not-announced"` = the school's announced policy ends before that year (card: "Policy for fall YYYY entry not yet announced"). A single 2027 entry is open-ended: show it as "policy as published for the fall 2027 cycle".
+- Policy history is hand-written in `scripts/policy-history.ts` (evidence quote + source per entry); `docs/policy-conversion.md` is the human review table. To change a policy, edit the JSON directly and keep `source` pointing to one of that school's `sources.policy` URLs. `scripts/convert-schools.ts` was a one-time conversion and refuses to run again.
+- Evidence fields (`superscoreQuote`, `scoreSendingQuote`, `notes`, `recentChange`, old `policyCycle`) live under `meta` — for reviewers, never shown in the UI.
+- Top-level extras kept: `category`, `pctSubmittingSAT` (show as "X% of enrolled students sent SAT scores"), `entryTerm`, `selfReporting`, `deadlines.eaType`. `deadlines.ED: []` = not offered, `null` = unknown.
+- Printed odd values (Columbia R&W 777, UW 1502) are allowlisted in `knownOddValues`; add to it only for values printed that way in an official CDS.
 - **Non-standard values** (never fall back to a guess):
   - `superscore: "not stated"` → treat as NOT superscored (use best single sitting) and show "Superscore policy not stated — using your best single test date."
   - `scoreSending: "not stated"` → show no score-sending note.
   - `"n/a"` (test-blind schools) → hide superscore/score-sending lines; card shows "SAT not considered."
 - **22 records have `status.scores: "needs-official-check"`** → no retake label; show "Data not yet verified" plus the source link. Their CDS links are in `docs/CHECKLIST.md` §1. Only a human sets `verified: true`.
+
+## Retake logic decisions (beyond the PRD; agreed 2026-11-25)
+
+- Fit at or above the 75th percentile: Safety if admit rate ≥ 30%, else Target; admit rate unpublished → Target (never Safety). Admit rate < 15% → always Reach.
+- The "gains usually shrink" note counts all sittings, including the latest (≥ 3).
+- No published total (e.g. Harvard): total "Not published", show section ranges/gaps, no retake label, excluded from the verdict with a note.
+- Deadline year: MM ≥ 07 → year before entry; MM ≤ 06 → entry year. Two ED deadlines → use ED I and mention ED II. Round not offered → use RD with a note. Null deadline → "Deadline not yet verified" and no "No time to retake".
+- Entry year "2029 or later" is looked up as 2029. Logic functions take `today` as a parameter (never read the clock inside logic).
 
 ## Mockup notes
 
@@ -38,7 +48,7 @@ Free tool by the Digital SAT Questions group (creator: Bibek Subedi). A student 
 
 ## Stack
 
-React + Vite + TypeScript + Tailwind CSS, lucide-react (line icons, allowed; always `aria-hidden` when decorative), Recharts (or hand-drawn SVG) for charts, Firebase Firestore (with App Check), Cloudflare Pages hosting, GitHub Actions for daily stats, Vitest for tests.
+React + Vite + TypeScript + Tailwind CSS, lucide-react (line icons, allowed; always `aria-hidden` when decorative), Recharts (or hand-drawn SVG) for charts, Firebase Firestore (with App Check), Cloudflare Pages hosting, GitHub Actions for daily stats, Vitest for tests, zod + tsx for the data check (dev only).
 
 ## Build order
 

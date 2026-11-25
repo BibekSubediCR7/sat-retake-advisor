@@ -45,6 +45,10 @@ Generated 2026-11-25. Scores come only from official Common Data Sets; policies 
 - Georgetown: all-scores rule appears dropped in 2026 (no official announcement found)
 - UC Berkeley CDS says 'considered if submitted' but UC system is test-blind (UC site used)
 - WashU: early action yes/no unclear in CDS
+- Claremont McKenna and Harvey Mudd: 'return to required for the Fall 2028 application cycle' was converted as fall 2028 entry. Confirm it doesn't mean applying in fall 2028 (fall 2029 entry).
+- Wisconsin: the Regents' suspension runs through the 2027-28 academic year (to spring 2028), so fall 2028 entry is stored as 'not-announced'. Re-check after the vote on making test-optional permanent.
+- Dartmouth: international policy (required-with-alternatives) uses the main testing page as its source; the international page is labeled Class of 2029. Confirm it still applies.
+- Cornell: CDS link is http:// (kept as recorded). Check whether an https:// link exists.
 
 ## 4. Not collected yet
 
