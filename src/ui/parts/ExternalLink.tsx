@@ -1,7 +1,10 @@
 import type { ReactNode } from 'react';
 import { textLink } from './styles';
 
-/** A link to an outside page, or plain "Link coming soon" when the URL isn't set yet. */
+/**
+ * A link to an outside page. When the URL isn't set yet (see src/config/site.ts),
+ * renders the same content as plain text with "(link coming soon)" — never a fake link.
+ */
 export function ExternalLink({
   href,
   children,
@@ -13,8 +16,9 @@ export function ExternalLink({
 }) {
   if (!href) {
     return (
-      <span className="text-ink-muted">
-        {children} <span className="italic">(link coming soon)</span>
+      <span className={className === textLink ? 'text-ink-muted' : `${className} cursor-default opacity-75`}>
+        {children}
+        <span className="ml-1 normal-case tracking-normal italic">(link coming soon)</span>
       </span>
     );
   }

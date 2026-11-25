@@ -21,4 +21,5 @@ export const linkButton =
   'inline-flex min-h-[44px] items-center font-scoreMono text-xs font-bold uppercase tracking-[0.15em] text-seal-red ' +
   'underline underline-offset-4 hover:text-ink';
 
-export const textLink = 'text-seal-red underline underline-offset-2 hover:text-ink break-words';
+/** Inline link. Vertical padding on an inline element grows the tap area to 44px without moving text. */
+export const textLink = 'py-4 text-seal-red underline underline-offset-2 hover:text-ink break-words';
