@@ -1,0 +1,97 @@
+{
+  "checked": "2026-11-25",
+  "appliesTo": "All students, U.S. and international (same dates worldwide)",
+  "note": "Score release dates from College Board's official 2026-27 international important-dates flyer. 2027-28 dates are 'anticipated' (no deadlines or score release yet). October 2027 date: one version of the College Board page shows Oct 9, another Oct 2 \u2014 verify before launch.",
+  "dates": [
+    {
+      "testDate": "2026-12-05",
+      "registrationDeadline": "2026-11-20",
+      "lateRegistrationDeadline": "2026-11-24",
+      "scoreRelease": "2026-12-18",
+      "status": "confirmed",
+      "note": "Registration closed Nov 24, 2026 \u2014 usable only by students already registered."
+    },
+    {
+      "testDate": "2027-03-06",
+      "registrationDeadline": "2027-02-19",
+      "lateRegistrationDeadline": "2027-02-23",
+      "scoreRelease": "2027-03-19",
+      "status": "confirmed"
+    },
+    {
+      "testDate": "2027-05-01",
+      "registrationDeadline": "2027-04-16",
+      "lateRegistrationDeadline": "2027-04-20",
+      "scoreRelease": "2027-05-14",
+      "status": "confirmed"
+    },
+    {
+      "testDate": "2027-06-05",
+      "registrationDeadline": "2027-05-21",
+      "lateRegistrationDeadline": "2027-05-25",
+      "scoreRelease": "2027-06-21",
+      "status": "confirmed"
+    },
+    {
+      "testDate": "2027-08-28",
+      "registrationDeadline": null,
+      "lateRegistrationDeadline": null,
+      "scoreRelease": null,
+      "status": "anticipated"
+    },
+    {
+      "testDate": "2027-09-18",
+      "registrationDeadline": null,
+      "lateRegistrationDeadline": null,
+      "scoreRelease": null,
+      "status": "anticipated"
+    },
+    {
+      "testDate": "2027-10-09",
+      "registrationDeadline": null,
+      "lateRegistrationDeadline": null,
+      "scoreRelease": null,
+      "status": "anticipated",
+      "note": "Conflicting: College Board page versions show Oct 9 and Oct 2, 2027. Verify."
+    },
+    {
+      "testDate": "2027-11-06",
+      "registrationDeadline": null,
+      "lateRegistrationDeadline": null,
+      "scoreRelease": null,
+      "status": "anticipated"
+    },
+    {
+      "testDate": "2027-12-04",
+      "registrationDeadline": null,
+      "lateRegistrationDeadline": null,
+      "scoreRelease": null,
+      "status": "anticipated"
+    },
+    {
+      "testDate": "2028-03-04",
+      "registrationDeadline": null,
+      "lateRegistrationDeadline": null,
+      "scoreRelease": null,
+      "status": "anticipated"
+    },
+    {
+      "testDate": "2028-05-06",
+      "registrationDeadline": null,
+      "lateRegistrationDeadline": null,
+      "scoreRelease": null,
+      "status": "anticipated"
+    },
+    {
+      "testDate": "2028-06-03",
+      "registrationDeadline": null,
+      "lateRegistrationDeadline": null,
+      "scoreRelease": null,
+      "status": "anticipated"
+    }
+  ],
+  "sources": {
+    "dates": "https://satsuite.collegeboard.org/sat/dates-deadlines",
+    "scoreRelease": "https://international.collegeboard.org/media/pdf/2627-sat-suite-important-dates-flyer-intl.pdf"
+  }
+}
