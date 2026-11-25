@@ -45,7 +45,7 @@ Classic reCAPTCHA (v3) is deprecated for App Check, so this project uses **reCAP
 2. **Create key**:
    - Display name: `sat-retake-advisor web`
    - Platform: **Website**
-   - Domains: your Pages domain (e.g. `sat-retake-advisor.pages.dev`), plus the custom domain later. Don't add `localhost`; local development uses a debug token (point 7).
+   - Domains: `sat-retake-advisor.crharrybibek123.workers.dev`, plus the custom domain later. Don't add `localhost`; local development uses a debug token (point 7).
    - Leave **Use checkbox challenge** off (score-based, invisible).
    - Create it, then copy the **key id** (it looks like `6L…`). This is the public site key. Send it to me or put it in `VITE_RECAPTCHA_SITE_KEY`. There is **no secret key**.
 3. Firebase console → **App Check** (under Security or Build) → **Get started** if shown → **Apps** tab → your web app → choose **reCAPTCHA Enterprise** → paste the **key id** → keep the default token time (1 hour) and risk threshold (0.5) → **Save**.
@@ -54,25 +54,30 @@ Classic reCAPTCHA (v3) is deprecated for App Check, so this project uses **reCAP
 6. If you created a classic v3 key earlier, delete it in the reCAPTCHA admin console. It isn't used.
 7. Local development against the real project: the dev build prints an App Check debug token in the browser console. Add it under **App Check → Apps → ⋮ → Manage debug tokens**. Never add debug tokens for production.
 
-## 4. Cloudflare Pages
+## 4. Cloudflare (Workers with static assets) — done
 
-1. <https://dash.cloudflare.com> → **Workers & Pages → Create → Pages → Connect to Git** → choose `BibekSubediCR7/sat-retake-advisor`.
-2. Build settings: framework preset **None**, build command `npm run build`, output directory `dist`.
-3. **Environment variables** (Production and Preview):
+The site is deployed as the Worker **sat-retake-advisor** at <https://sat-retake-advisor.crharrybibek123.workers.dev>, connected to GitHub (`main`). Every push to `main` builds and deploys.
 
-   | Name | Value |
-   | --- | --- |
-   | `NODE_VERSION` | `22` |
-   | `VITE_FIREBASE_API_KEY` | from step 1 |
-   | `VITE_FIREBASE_AUTH_DOMAIN` | from step 1 |
-   | `VITE_FIREBASE_PROJECT_ID` | from step 1 |
-   | `VITE_FIREBASE_APP_ID` | from step 1 |
-   | `VITE_RECAPTCHA_SITE_KEY` | reCAPTCHA Enterprise key id from step 3 |
+- Build command: `npm run build`. Deploy command: `npx wrangler deploy`. Root directory: `/`.
+- `wrangler.jsonc` in the repo tells Wrangler to upload `dist/`. Without it, Cloudflare runs Wrangler's auto-setup on each deploy and builds twice.
+- Security headers and caching come from `public/_headers`. They're confirmed on the live site.
 
-   Don't set `VITE_USE_EMULATOR` here.
-4. Deploy. Every push to `main` then deploys, and pull requests get preview URLs.
-5. **Web Analytics:** in the Pages project, open **Metrics → Web Analytics** and enable it (no code change; the CSP already allows it).
-6. Custom domain (optional, once the name is decided): **Custom domains → Set up**. Add the domain to the reCAPTCHA Enterprise key too.
+**Still to do: build variables.** Vite bakes these into the site at build time, so they go under **Settings → Build → Variables and secrets** (not "Runtime variables", which a static-assets Worker can't have). Add them as plain text, then **Retry build** or push:
+
+| Name | Value |
+| --- | --- |
+| `VITE_FIREBASE_API_KEY` | from step 1 |
+| `VITE_FIREBASE_AUTH_DOMAIN` | from step 1 |
+| `VITE_FIREBASE_PROJECT_ID` | `sat-retake-advisor` |
+| `VITE_FIREBASE_APP_ID` | from step 1 |
+| `VITE_RECAPTCHA_SITE_KEY` | reCAPTCHA Enterprise key id from step 3 |
+
+Don't set `VITE_USE_EMULATOR` here. Saving stays off until all five are set.
+
+Then:
+1. **reCAPTCHA Enterprise key domains:** add `sat-retake-advisor.crharrybibek123.workers.dev`.
+2. **Web Analytics:** a `workers.dev` address isn't on a Cloudflare zone, so analytics can't be switched on automatically. Either add a custom domain (below) and enable Web Analytics for it, or add the site under **Analytics → Web analytics → Add a site**. That gives a small script tag with a token, which I add to `index.html`; the CSP already allows `static.cloudflareinsights.com`.
+3. **Custom domain** (optional, once the name is decided): **Domains** tab → **Add custom domain**. Add the domain to the reCAPTCHA Enterprise key too.
 
 For local development against the real project, copy `.env.example` to `.env.local` and fill in the same values. `.env.local` is gitignored.
 
