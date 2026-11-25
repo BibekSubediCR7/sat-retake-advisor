@@ -149,7 +149,7 @@ export interface SchoolResult {
   disclaimer: string | null;
 }
 
-export type VerdictKind = 'retake' | 'optional' | 'dont' | 'none';
+export type VerdictKind = 'retake' | 'optional' | 'no-time' | 'dont' | 'none';
 
 export interface Verdict {
   kind: VerdictKind;

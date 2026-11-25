@@ -1,0 +1,60 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`buildReport (real data) > builds results in the chosen order with a verdict 1`] = `
+[
+  [
+    "mit",
+    "labeled",
+    "strongly",
+  ],
+  [
+    "harvard",
+    "no-total",
+    null,
+  ],
+  [
+    "ucla",
+    "test-blind",
+    null,
+  ],
+  [
+    "princeton",
+    "unverified",
+    null,
+  ],
+  [
+    "gatech",
+    "labeled",
+    "if-time",
+  ],
+  [
+    "uw",
+    "labeled",
+    "optional",
+  ],
+]
+`;
+
+exports[`buildReport (real data) > builds results in the chosen order with a verdict 2`] = `
+{
+  "belowMedian": 2,
+  "counted": 3,
+  "excluded": [
+    {
+      "count": 1,
+      "status": "test-blind",
+    },
+    {
+      "count": 1,
+      "status": "unverified",
+    },
+    {
+      "count": 1,
+      "status": "no-total",
+    },
+  ],
+  "excludedText": "3 schools not counted: 1 does not consider the SAT; 1 has data not yet verified; 1 does not publish a total score range.",
+  "kind": "retake",
+  "sentence": "Retake: below the median at 2 of 3 schools",
+}
+`;

@@ -41,6 +41,12 @@ Free tool by the Digital SAT Questions group (creator: Bibek Subedi). A student 
 - No published total (e.g. Harvard): total "Not published", show section ranges/gaps, no retake label, excluded from the verdict with a note.
 - Deadline year: MM ≥ 07 → year before entry; MM ≤ 06 → entry year. Two ED deadlines → use ED I and mention ED II. Round not offered → use RD with a note. Null deadline → "Deadline not yet verified" and no "No time to retake".
 - Entry year "2029 or later" is looked up as 2029. Logic functions take `today` as a parameter (never read the clock inside logic).
+- Order in `evaluateSchool`: test-blind first (for the student's applicant type), then unverified scores, then no total. "No time" replaces only "strongly", "if you have time" and "optional"; "Don't retake" stays. A date whose late registration has closed is listed but doesn't count as time to retake (note: "Only usable if you are already registered").
+- Verdict uses the final labels; if no school is below the median but some have no time left, the verdict is "No time to retake". No labeled schools → "No verdict".
+
+## Logic layout
+
+`src/logic/` holds pure functions with a test file beside each: `validate` → `superscore` → `policy` / `ranges` / `labels` / `sectionGaps` / `timeline` → `evaluateSchool` (one school, all adjustments) → `verdict`. `index.ts` exposes `buildReport(input, schools, dates, today)` for the UI. Test fixtures, including the real data parsed through the schema, are in `src/logic/fixtures.ts`.
 
 ## Mockup notes
 
