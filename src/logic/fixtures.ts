@@ -1,5 +1,9 @@
 // Small hand-made schools and inputs for logic tests. Not real data.
 import type { SatDate, School } from '../data/schema';
+import { z } from 'zod';
+import { satDatesFileSchema, schoolSchema } from '../data/schema';
+import schoolsJson from '../../data/schools.json';
+import satDatesJson from '../../data/sat-dates.json';
 import type { StudentInput } from './types';
 
 const SRC = 'https://example.edu/testing';
@@ -55,4 +59,13 @@ export function makeDate(testDate: string, overrides: Partial<SatDate> = {}): Sa
     status: 'confirmed',
     ...overrides,
   };
+}
+
+/** Real data, parsed through the schema (tests only). */
+export const realSchools: School[] = z.array(schoolSchema).parse(schoolsJson);
+export const realDates: SatDate[] = satDatesFileSchema.parse(satDatesJson).dates;
+export function real(id: string): School {
+  const s = realSchools.find((x) => x.id === id);
+  if (!s) throw new Error(`no school ${id}`);
+  return s;
 }
