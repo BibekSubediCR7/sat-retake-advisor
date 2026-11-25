@@ -1,0 +1,12 @@
+// Cloudflare Workers static-assets deployment (Workers Builds runs `npm run build`,
+// then `npx wrangler deploy`). Having this file stops Wrangler's auto-setup, which
+// otherwise installs extra packages and rebuilds the site on every deploy.
+// Security headers and caching come from public/_headers (copied into dist/).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sat-retake-advisor",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist"
+  }
+}
