@@ -44,5 +44,10 @@
     "vite": "^6.4.6",
     "vitest": "^3.2.7",
     "zod": "^3.25.76"
+  },
+  "overrides": {
+    "@firebase/firestore": {
+      "@grpc/grpc-js": "^1.14.7"
+    }
   }
 }
