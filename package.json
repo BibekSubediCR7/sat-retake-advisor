@@ -20,7 +20,7 @@
     "deploy:rules": "npm run rules:check && firebase deploy --only firestore:rules"
   },
   "dependencies": {
-    "firebase": "^11.10.0",
+    "firebase": "^13.4.0",
     "lucide-react": "^1.80.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
