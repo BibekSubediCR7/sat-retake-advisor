@@ -45,7 +45,7 @@ Classic reCAPTCHA (v3) is deprecated for App Check, so this project uses **reCAP
 2. **Create key**:
    - Display name: `sat-retake-advisor web`
    - Platform: **Website**
-   - Domains: `sat-retake-advisor.crharrybibek123.workers.dev`, plus the custom domain later. Don't add `localhost`; local development uses a debug token (point 7).
+   - Domains: `app.satretake.workers.dev`, plus the custom domain later. Don't add `localhost`; local development uses a debug token (point 7).
    - Leave **Use checkbox challenge** off (score-based, invisible).
    - Create it, then copy the **key id** (it looks like `6L…`). This is the public site key. Send it to me or put it in `VITE_RECAPTCHA_SITE_KEY`. There is **no secret key**.
 3. Firebase console → **App Check** (under Security or Build) → **Get started** if shown → **Apps** tab → your web app → choose **reCAPTCHA Enterprise** → paste the **key id** → keep the default token time (1 hour) and risk threshold (0.5) → **Save**.
@@ -56,7 +56,7 @@ Classic reCAPTCHA (v3) is deprecated for App Check, so this project uses **reCAP
 
 ## 4. Cloudflare (Workers with static assets) — done
 
-The site is deployed as the Worker **sat-retake-advisor** at <https://sat-retake-advisor.crharrybibek123.workers.dev>, connected to GitHub (`main`). Every push to `main` builds and deploys.
+The site is deployed as the Worker **app** (account subdomain `satretake`) at <https://app.satretake.workers.dev>, connected to GitHub (`main`). Every push to `main` builds and deploys.
 
 - Build command: `npm run build`. Deploy command: `npx wrangler deploy`. Root directory: `/`.
 - `wrangler.jsonc` in the repo tells Wrangler to upload `dist/`. Without it, Cloudflare runs Wrangler's auto-setup on each deploy and builds twice.
@@ -75,7 +75,7 @@ The site is deployed as the Worker **sat-retake-advisor** at <https://sat-retake
 Don't set `VITE_USE_EMULATOR` here. Saving stays off until all five are set.
 
 Then:
-1. **reCAPTCHA Enterprise key domains:** add `sat-retake-advisor.crharrybibek123.workers.dev`.
+1. **reCAPTCHA Enterprise key domains:** add `app.satretake.workers.dev`.
 2. **Web Analytics:** a `workers.dev` address isn't on a Cloudflare zone, so analytics can't be switched on automatically. Either add a custom domain (below) and enable Web Analytics for it, or add the site under **Analytics → Web analytics → Add a site**. That gives a small script tag with a token, which I add to `index.html`; the CSP already allows `static.cloudflareinsights.com`.
 3. **Custom domain** (optional, once the name is decided): **Domains** tab → **Add custom domain**. Add the domain to the reCAPTCHA Enterprise key too.
 
