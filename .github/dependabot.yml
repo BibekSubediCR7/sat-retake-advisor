@@ -1,12 +1,17 @@
 version: 2
 updates:
+  # Library updates: minor and patch only. Major upgrades (e.g. React 19, Firebase 13)
+  # are done deliberately in one tested change. Security updates still arrive separately.
   - package-ecosystem: npm
     directory: /
     schedule:
       interval: weekly
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
     groups:
-      dev-dependencies:
-        dependency-type: development
+      minor-and-patch:
+        update-types: ["minor", "patch"]
   - package-ecosystem: github-actions
     directory: /
     schedule:
