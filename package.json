@@ -22,7 +22,7 @@
   "dependencies": {
     "firebase": "^11.10.0",
     "lucide-react": "^1.80.0",
-    "react": "^18.3.1",
+    "react": "^19.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
@@ -32,7 +32,7 @@
     "@testing-library/react": "^16.3.3",
     "@testing-library/user-event": "^14.6.13",
     "@types/node": "^26.6.10",
-    "@types/react": "^18.3.32",
+    "@types/react": "^19.3.0",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react": "^4.7.0",
     "axe-core": "^4.14.1",
