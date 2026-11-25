@@ -18,7 +18,7 @@ Free tool by the Digital SAT Questions group (creator: Bibek Subedi). A student 
 - single test: `npx vitest run src/logic/labels.test.ts -t "<name>"`
 - `npm run check:data` — schema check of `data/*.json` (add `-- --quiet` to hide warnings)
 - `npm run typecheck`
-- Git: local repo on `main`, no remote yet (create the private GitHub remote before pushing).
+- Git: `main` tracks `origin` = private repo https://github.com/BibekSubediCR7/sat-retake-advisor (pushes use HTTPS via the gh credential helper).
 
 ## Data layout (read before touching data/)
 
