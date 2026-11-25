@@ -104,7 +104,9 @@ export function CandidateForm({ schools, knownIds, today, onSubmit, notice }: Ca
       <form ref={formRef} onSubmit={submit} noValidate className="space-y-7">
         <fieldset>
           <legend className={`${monoLabel} mb-3 text-seal-red`}>Latest SAT scores</legend>
-          <p className="-mt-2 mb-3 text-sm text-ink-muted">R&amp;W = Reading and Writing.</p>
+          <p className="-mt-2 mb-3 text-sm text-ink-muted">
+            Total 400–1600; R&amp;W (Reading and Writing) and Math 200–800 each.
+          </p>
           <div className="grid grid-cols-3 gap-3">
             {SCORE_FIELDS.map((f) => (
               <Field
@@ -121,7 +123,6 @@ export function CandidateForm({ schools, knownIds, today, onSubmit, notice }: Ca
                     min={f.min}
                     max={f.max}
                     step={10}
-                    placeholder={`${f.min}–${f.max}`}
                     value={form[f.key]}
                     onChange={(e) => set(f.key, e.target.value)}
                     aria-invalid={invalid}
