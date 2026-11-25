@@ -11,3 +11,7 @@ coverage/
 # Local Claude Code instructions (kept out of the repo)
 CLAUDE.md
 src/data/generated/
+
+# Firebase emulator logs
+*-debug.log
+.firebase/

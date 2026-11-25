@@ -1,0 +1,95 @@
+rules_version = '2';
+
+// TEMPLATE for firestore.rules. Do not edit firestore.rules by hand:
+// run `npm run rules:build`, which fills the placeholders from data/schools.json
+// and src/logic (school ids, enums, error-report fields and limits).
+//
+// Model: no login. The browser writes one anonymous submission per browser id,
+// create-only error reports, and a +1 help-click counter. Nothing is readable
+// except the daily statistics summary (written by the GitHub Action with the Admin SDK).
+// App Check enforcement is switched on in the Firebase console, not here.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function schoolIds() {
+      return __SCHOOL_IDS__;
+    }
+
+    function isScore(v, lo, hi) {
+      return v is int && v >= lo && v <= hi && v % 10 == 0;
+    }
+
+    function hasExactly(d, keys) {
+      return d.keys().hasAll(keys) && d.keys().hasOnly(keys);
+    }
+
+    function validSubmission(d, anonId) {
+      return hasExactly(d, ['anonId', 'total', 'rw', 'math', 'attempts', 'grade', 'entryYear',
+                            'applicantType', 'country', 'round', 'schools', 'updatedAt'])
+        && anonId.matches('^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$')
+        && d.anonId == anonId
+        && isScore(d.total, 400, 1600)
+        && isScore(d.rw, 200, 800)
+        && isScore(d.math, 200, 800)
+        && d.total == d.rw + d.math
+        && d.attempts is int && d.attempts >= 1 && d.attempts <= __MAX_SITTINGS__
+        && d.grade in __GRADES__
+        && d.entryYear in __ENTRY_YEARS__
+        && d.applicantType in __APPLICANT_TYPES__
+        && d.round in __ROUNDS__
+        && d.country is string && d.country.matches('^[A-Z]{2}$')
+        && d.schools is list
+        && d.schools.size() >= 1 && d.schools.size() <= __MAX_SCHOOLS__
+        && d.schools.toSet().size() == d.schools.size()
+        && d.schools.hasOnly(schoolIds())
+        && d.updatedAt == request.time;
+    }
+
+    function validErrorReport(d) {
+      return hasExactly(d, ['schoolId', 'field', 'correctValue', 'sourceUrl', 'createdAt'])
+        && d.schoolId in schoolIds()
+        && d.field in __ERROR_FIELDS__
+        && d.correctValue is string
+        && d.correctValue.size() >= 1 && d.correctValue.size() <= __MAX_VALUE__
+        && d.sourceUrl is string
+        && d.sourceUrl.size() <= __MAX_URL__
+        && d.sourceUrl.matches('^https://[^\\s]+$')
+        && d.createdAt == request.time;
+    }
+
+    // One document per browser. Ids are random UUIDs, so they can't be guessed.
+    match /submissions/{anonId} {
+      allow create, update: if validSubmission(request.resource.data, anonId);
+      allow read, delete: if false;
+    }
+
+    match /errorReports/{reportId} {
+      allow create: if validErrorReport(request.resource.data);
+      allow read, update, delete: if false;
+    }
+
+    // "Get help" clicks: starts at 1 and can only ever go up by exactly 1.
+    match /counters/{name} {
+      allow create: if name == 'helpClicks'
+        && hasExactly(request.resource.data, ['count', 'updatedAt'])
+        && request.resource.data.count == 1
+        && request.resource.data.updatedAt == request.time;
+      allow update: if name == 'helpClicks'
+        && hasExactly(request.resource.data, ['count', 'updatedAt'])
+        && request.resource.data.count == resource.data.count + 1
+        && request.resource.data.updatedAt == request.time;
+      allow read, delete: if false;
+    }
+
+    match /stats/{doc} {
+      allow read: if doc == 'summary';
+      allow write: if false;
+    }
+
+    // Everything else is closed.
+    match /{path=**} {
+      allow read, write: if false;
+    }
+  }
+}
