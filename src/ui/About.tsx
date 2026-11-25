@@ -1,6 +1,7 @@
 import { HeartHandshake } from 'lucide-react';
 import { SAVING_ENABLED, site } from '../config/site';
 import { ExternalLink } from './parts/ExternalLink';
+import { Tutors } from './Tutors';
 import { Section } from './parts/Section';
 import { monoLabel, secondaryButton } from './parts/styles';
 
@@ -51,12 +52,7 @@ export function About() {
             <p className="mt-1">Nothing you enter is stored. Your report is worked out in your browser.</p>
           )}
         </div>
-        {site.tutorTeam && (
-          <div>
-            <h3 className={`${monoLabel} text-ink`}>Tutor team</h3>
-            <p className="mt-1">{site.tutorTeam}</p>
-          </div>
-        )}
+        <Tutors />
         <div>
           <h3 className={`${monoLabel} text-ink`}>Links</h3>
           <ul className="mt-2 space-y-1">

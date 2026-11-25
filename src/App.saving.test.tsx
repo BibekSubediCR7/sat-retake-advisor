@@ -67,11 +67,11 @@ describe('App with saving on', () => {
     expect(document.getElementById('verdict-headline')?.textContent).toMatch(/Retake/);
   });
 
-  it('counts a Get help click', async () => {
+  it('counts a click on "Ask a question in the group"', async () => {
     const user = userEvent.setup();
     render(<App />);
     await fillAndSubmit(user);
-    await user.click(screen.getByRole('link', { name: /Get help from our tutors/ }));
+    await user.click(screen.getByRole('link', { name: /Ask a question in the group/ }));
     expect(backend.countHelpClick).toHaveBeenCalledTimes(1);
   });
 

@@ -1,4 +1,4 @@
-import { GraduationCap, HeartHandshake, PencilLine } from 'lucide-react';
+import { HeartHandshake, MessageCircleQuestion, PencilLine } from 'lucide-react';
 import { countHelpClick } from '../../backend';
 import { SAVING_ENABLED, site } from '../../config/site';
 import type { AppSchool, SatDatesFile } from '../../data/schema';
@@ -11,6 +11,7 @@ import { Section } from '../parts/Section';
 import { SourceLine } from '../parts/SourceLine';
 import { Stamp } from '../parts/Stamp';
 import { monoLabel, primaryButton, secondaryButton } from '../parts/styles';
+import { Tutors } from '../Tutors';
 import { SchoolCard } from './SchoolCard';
 import { TestCalendar } from './TestCalendar';
 
@@ -128,13 +129,13 @@ export function Report({ report, input, schools, satDates, onEdit, onReportError
 
       <div className="flex flex-col gap-3 sm:flex-row">
         <ExternalLink
-          href={site.tutorContactUrl ?? site.groupUrl}
+          href={site.groupUrl}
           className={`${primaryButton} flex-1 bg-seal-red hover:bg-ink`}
           onClick={() => {
             if (SAVING_ENABLED) countHelpClick().catch(() => {});
           }}
         >
-          <GraduationCap size={18} aria-hidden="true" /> Get help from our tutors
+          <MessageCircleQuestion size={18} aria-hidden="true" /> Ask a question in the group
         </ExternalLink>
         <button type="button" onClick={onEdit} className={`${secondaryButton} flex-1`}>
           <PencilLine size={18} aria-hidden="true" /> Edit inputs
@@ -143,6 +144,7 @@ export function Report({ report, input, schools, satDates, onEdit, onReportError
           <HeartHandshake size={18} aria-hidden="true" /> Support this tool
         </ExternalLink>
       </div>
+      <Tutors />
     </div>
   );
 }

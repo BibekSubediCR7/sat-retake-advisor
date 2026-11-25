@@ -143,12 +143,15 @@ describe('App', () => {
     expect(dialog.getByRole('status').textContent).toMatch(/Error reports open soon/);
   });
 
-  it('renders no link for unset config values', () => {
+  it('links the set config values and shows "coming soon" for unset ones', () => {
     render(<App />);
     expect(site.patreonUrl).toBeNull();
     const about = within(document.getElementById('about')!);
-    expect(about.queryAllByRole('link')).toHaveLength(0);
-    expect(about.getAllByText('(link coming soon)').length).toBeGreaterThan(0);
+    const hrefs = about.getAllByRole('link').map((a) => a.getAttribute('href'));
+    expect(hrefs).toEqual([site.groupUrl, site.linkedinUrl, site.githubUrl]);
+    expect(about.getByText('(link coming soon)')).toBeTruthy(); // Patreon
+    expect(about.getByText(site.contactEmail!)).toBeTruthy();
+    expect(about.queryByText('Need tutoring help?')).toBeNull(); // no tutors yet
   });
 
   it('has no axe violations on the form or the report', async () => {
