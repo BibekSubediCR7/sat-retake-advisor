@@ -1,4 +1,4 @@
-import type { SatDate, School } from '../data/schema';
+import type { AppSchool, SatDate } from '../data/schema';
 import { fitLabel, retakeBand } from './labels';
 import { policyFor, policyNotes } from './policy';
 import { rangeView } from './ranges';
@@ -37,7 +37,7 @@ const RETAKE_ADVICE: ReadonlySet<RetakeLabel> = new Set(['strongly', 'if-time', 
  * `today` is "YYYY-MM-DD".
  */
 export function evaluateSchool(
-  school: School,
+  school: AppSchool,
   input: StudentInput,
   dates: readonly SatDate[],
   today: string,

@@ -111,6 +111,8 @@ export const satDatesFileSchema = z.object({
 });
 
 export type School = z.infer<typeof schoolSchema>;
+/** A school as the app loads it: evidence fields (meta) are stripped at build time. */
+export type AppSchool = Omit<School, 'meta'>;
 export type TestPolicyValue = z.infer<typeof testPolicyValue>;
 export type TestPolicyEntry = z.infer<typeof testPolicyEntry>;
 export type PercentileRange = z.infer<typeof percentileRange>;

@@ -3,6 +3,8 @@ export const colors = {
   paper: '#f3ede1',
   paperLight: '#fdfcf9',
   ink: '#1a1611',
+  inkSoft: '#3d362c',
+  inkMuted: '#6b6154',
   sealRed: '#8c2f24',
   stampGreen: '#3c5a3c',
   stampAmber: '#7a5b1e',

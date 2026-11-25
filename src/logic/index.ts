@@ -1,5 +1,5 @@
 // Public entry point for the retake logic. Everything here is pure and runs in the browser.
-import type { SatDate, School } from '../data/schema';
+import type { AppSchool, SatDate } from '../data/schema';
 import { evaluateSchool } from './evaluateSchool';
 import { overallVerdict } from './verdict';
 import type { SchoolResult, StudentInput, Verdict } from './types';
@@ -12,7 +12,7 @@ export interface Report {
 /** Builds the full report for validated input. `today` is "YYYY-MM-DD". */
 export function buildReport(
   input: StudentInput,
-  schools: readonly School[],
+  schools: readonly AppSchool[],
   dates: readonly SatDate[],
   today: string,
 ): Report {
