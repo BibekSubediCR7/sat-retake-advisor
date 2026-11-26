@@ -55,8 +55,8 @@ export default function App() {
         </p>
         <p className="mt-2 max-w-2xl text-base text-ink-soft">
           Enter your SAT scores and the US universities on your list. For each school you see where your score falls
-          among its admitted students, whether it&rsquo;s a reach, target or safety by score, and whether a retake is
-          worth it before that school&rsquo;s deadline. Every number comes from the school&rsquo;s latest Common Data Set
+          among its admitted students, whether it&rsquo;s a reach, target or safety by score, how much the school says
+          it weighs test scores, and whether a retake is worth it before that school&rsquo;s deadline. Every number comes from the school&rsquo;s latest Common Data Set
           or its admissions website, with the link beside it.
         </p>
         <UsageLine />
