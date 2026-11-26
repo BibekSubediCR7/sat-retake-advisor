@@ -43,11 +43,11 @@ export default function App() {
     <div className="min-h-screen">
       <a
         href="#candidate"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-paper-light focus:p-3"
+        className="print:hidden sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-paper-light focus:p-3"
       >
         Skip to the form
       </a>
-      <header className="mx-auto max-w-[1200px] px-4 pb-4 pt-6 sm:pt-8">
+      <header className="mx-auto max-w-[1200px] px-4 pb-4 pt-6 sm:pt-8 print:hidden">
         <p className={`${monoLabel} text-ink-muted`}>Free tool · Digital SAT Questions</p>
         <h1 className="mt-1 font-scoreDisplay text-3xl font-black text-ink sm:text-4xl">SAT Retake Advisor</h1>
         <p className="mt-1 font-scoreSerif text-lg italic text-ink">
@@ -62,8 +62,8 @@ export default function App() {
         <UsageLine />
       </header>
 
-      <main className="mx-auto grid max-w-[1200px] gap-8 px-4 pb-10 lg:grid-cols-[minmax(0,26rem)_minmax(0,1fr)] lg:items-start">
-        <div className="lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto">
+      <main className="mx-auto grid max-w-[1200px] gap-8 px-4 pb-10 lg:grid-cols-[minmax(0,26rem)_minmax(0,1fr)] lg:items-start print:block print:max-w-none print:p-0">
+        <div className="lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto print:hidden">
           <CandidateForm
             schools={schools}
             knownIds={schoolIds}
@@ -78,6 +78,7 @@ export default function App() {
               input={result.input}
               schools={schools}
               satDates={satDates}
+              today={today}
               onEdit={() => scrollAndFocus('candidate-heading')}
               onReportError={setErrorSchool}
             />
@@ -90,12 +91,14 @@ export default function App() {
               </p>
             </div>
           )}
-          <About />
+          <div className="print:hidden">
+            <About />
+          </div>
         </div>
       </main>
 
-      <footer className="border-t border-rule bg-paper">
-        <p className="mx-auto max-w-[1200px] px-4 py-6 text-base text-ink-soft">{DISCLAIMER}</p>
+      <footer className="border-t border-rule bg-paper print:border-0 print:bg-transparent">
+        <p className="mx-auto max-w-[1200px] px-4 py-6 text-base text-ink-soft print:px-0 print:py-2 print:text-sm">{DISCLAIMER}</p>
       </footer>
 
       <ReportErrorDialog

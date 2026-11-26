@@ -82,6 +82,31 @@ describe('App with saving on', () => {
     expect(backend.countHelpClick).toHaveBeenCalledTimes(1);
   });
 
+  it('prints the optional name on the PDF only: never saved or sent, even after resubmitting', async () => {
+    const print = vi.fn();
+    window.print = print;
+    document.title = 'SAT Retake Advisor';
+    const user = userEvent.setup();
+    render(<App />);
+    await fillAndSubmit(user);
+    await user.type(screen.getByLabelText('Name to print on the report (optional)'), 'Sita Sharma');
+    expect(screen.getByText('Score report for Sita Sharma')).toBeTruthy();
+    await user.click(screen.getByRole('button', { name: /Save as PDF/ }));
+    expect(print).toHaveBeenCalledTimes(1);
+    expect(document.title).toMatch(/^SAT report - Sita Sharma - \d{4}-\d{2}-\d{2}$/);
+    window.dispatchEvent(new Event('afterprint'));
+    expect(document.title).toBe('SAT Retake Advisor');
+    await user.click(screen.getByRole('button', { name: 'Check my scores' }));
+    const calls = JSON.stringify([
+      backend.saveSubmission.mock.calls,
+      backend.countCheck.mock.calls,
+      backend.countHelpClick.mock.calls,
+      backend.sendErrorReport.mock.calls,
+    ]);
+    expect(backend.saveSubmission).toHaveBeenCalledTimes(2);
+    expect(calls).not.toMatch(/Sita/);
+  });
+
   it('sends an error report, and says so when it fails', async () => {
     const user = userEvent.setup();
     render(<App />);

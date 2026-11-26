@@ -194,7 +194,7 @@ export function SchoolCard({
             />
           )
         )}
-        <button type="button" className={linkButton} onClick={() => onReportError(r.schoolId)}>
+        <button type="button" className={`${linkButton} print:hidden`} onClick={() => onReportError(r.schoolId)}>
           <Flag size={14} className="mr-1.5" aria-hidden="true" /> Report an error
           <span className="sr-only"> for {r.name}</span>
         </button>

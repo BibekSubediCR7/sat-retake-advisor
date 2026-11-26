@@ -5,6 +5,12 @@ import { Stamp } from '../parts/Stamp';
 import { monoLabel } from '../parts/styles';
 import { buildCalendar } from './calendar';
 
+const EMPTY_TEXT = {
+  'no-sat': 'None of your schools considers the SAT, so no test dates are listed.',
+  'too-late': 'No SAT date you can still take arrives before your deadlines.',
+  'not-announced': 'Test dates not announced yet.',
+} as const;
+
 /** "IV. Test calendar" (FR-9). Dates come from data/sat-dates.json, never hard-coded. */
 export function TestCalendar({
   results,
@@ -17,11 +23,17 @@ export function TestCalendar({
   sourceUrl: string;
   checked: string;
 }) {
-  const { rows, notAnnouncedAfter } = buildCalendar(results, dates);
+  const { rows, notAnnouncedAfter, deadlinesUnknown, empty } = buildCalendar(results, dates);
   return (
     <div className="space-y-4">
+      {deadlinesUnknown && rows.length > 0 && (
+        <p className="text-base text-ink-soft">
+          None of your schools&rsquo; deadlines is verified yet, so dates are listed up to the end of January of your
+          entry year.
+        </p>
+      )}
       {rows.length === 0 ? (
-        <p className="text-base text-ink-soft">Test dates not announced yet.</p>
+        <p className="text-base text-ink-soft">{EMPTY_TEXT[empty ?? 'not-announced']}</p>
       ) : (
         <ol className="m-0 list-none divide-y divide-dashed divide-rule p-0">
           {rows.map((d) => (
@@ -59,7 +71,9 @@ export function TestCalendar({
                     {d.registrationClosed ? ' — only if you are already registered.' : ''}
                   </>
                 ) : (
-                  <span className="text-ink-muted">Too late for your deadlines.</span>
+                  <span className="text-ink-muted">
+                    {deadlinesUnknown ? 'Your deadlines are not yet verified.' : 'Too late for your deadlines.'}
+                  </span>
                 )}
               </p>
             </li>
@@ -70,7 +84,7 @@ export function TestCalendar({
         <p className="text-base text-ink-soft">Test dates after {formatDate(notAnnouncedAfter)} not announced yet.</p>
       )}
       <p className="text-sm text-ink-muted">
-        TBD means College Board has not published that date yet. Where the score release date is TBD, a date
+        {!deadlinesUnknown && 'Only dates that reach at least one of your deadlines in time are listed. '}TBD means College Board has not published that date yet. Where the score release date is TBD, a date
         counts if the test itself is before your deadline.
       </p>
       <SourceLine label="College Board SAT dates" url={sourceUrl} detail={`checked ${formatDate(checked)}`} />

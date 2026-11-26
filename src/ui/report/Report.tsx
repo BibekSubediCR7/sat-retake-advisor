@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { HeartHandshake, MessageCircleQuestion, PencilLine } from 'lucide-react';
 import { countHelpClick } from '../../backend';
 import { SAVING_ENABLED, site } from '../../config/site';
@@ -13,6 +14,7 @@ import { Stamp } from '../parts/Stamp';
 import { monoLabel, primaryButton, secondaryButton } from '../parts/styles';
 import { Tutors } from '../Tutors';
 import { ResultsSummary } from './ResultsSummary';
+import { PrintHeader, SaveReport } from './SaveReport';
 import { SchoolCard } from './SchoolCard';
 import { TestCalendar } from './TestCalendar';
 
@@ -86,16 +88,21 @@ interface ReportProps {
   input: StudentInput;
   schools: readonly AppSchool[];
   satDates: SatDatesFile;
+  /** "YYYY-MM-DD", printed on the PDF. */
+  today: string;
   onEdit: () => void;
   onReportError: (schoolId: string) => void;
 }
 
 /** Sections II–IV of the report, plus next steps. */
-export function Report({ report, input, schools, satDates, onEdit, onReportError }: ReportProps) {
+export function Report({ report, input, schools, satDates, today, onEdit, onReportError }: ReportProps) {
+  // Printed on the PDF only; never sent or stored.
+  const [name, setName] = useState('');
   const byId = new Map(schools.map((s) => [s.id, s]));
   const ordered = sortResults(report.results);
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 print:space-y-4">
+      <PrintHeader name={name} input={input} today={today} />
       <Section id="report" numeral="II" title="Score particulars" kicker="Advisory report">
         <div className="space-y-6">
           <Verdict verdict={report.verdict} input={input} />
@@ -129,7 +136,9 @@ export function Report({ report, input, schools, satDates, onEdit, onReportError
         )}
       </Section>
 
-      <div className="flex flex-col gap-3 sm:flex-row">
+      <SaveReport name={name} onNameChange={setName} today={today} />
+
+      <div className="flex flex-col gap-3 sm:flex-row print:hidden">
         <ExternalLink
           href={site.groupUrl}
           className={`${primaryButton} flex-1 bg-seal-red hover:bg-ink`}
@@ -148,7 +157,9 @@ export function Report({ report, input, schools, satDates, onEdit, onReportError
           </ExternalLink>
         )}
       </div>
-      <Tutors />
+      <div className="print:hidden">
+        <Tutors />
+      </div>
     </div>
   );
 }

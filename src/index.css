@@ -53,3 +53,36 @@
     scroll-behavior: auto;
   }
 }
+
+/* Printed report ("Save as PDF"): white pages, no on-screen-only parts, full link addresses. */
+@media print {
+  @page {
+    margin: 14mm;
+  }
+  html,
+  body {
+    background: #fff;
+  }
+  * {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .stamp {
+    animation: none;
+  }
+  article,
+  tr,
+  #report li {
+    break-inside: avoid;
+  }
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.75em;
+    word-break: break-all;
+    color: var(--color-ink-muted);
+  }
+}
