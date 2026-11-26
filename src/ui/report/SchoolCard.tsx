@@ -19,6 +19,7 @@ import {
   scoreUsedText,
   submittingText,
   superscoreText,
+  testImportanceText,
   timelineStatusText,
 } from './cardText';
 import { RangeChart } from './RangeChart';
@@ -70,6 +71,7 @@ export function SchoolCard({
   const ss = superscoreText(school.superscore);
   const sending = scoreSendingText(school.scoreSending);
   const submitting = submittingText(school);
+  const importance = testImportanceText(school);
   const status = timelineStatusText(r.timeline);
 
   return (
@@ -132,6 +134,7 @@ export function SchoolCard({
               </>
             )}
           </Row>
+          {r.status !== 'test-blind' && importance && <Row label="Test weight">{importance}</Row>}
           {(ss || sending) && (
             <Row label="Scores">
               {ss && <span className="block">{ss}</span>}

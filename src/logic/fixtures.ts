@@ -21,6 +21,7 @@ export function makeSchool(overrides: Partial<School> = {}): School {
       math: { p25: 710, p50: 740, p75: 770 },
     },
     pctSubmittingSAT: 50,
+    testImportance: 'considered',
     dataYear: '2025-26',
     entryTerm: 'Fall 2025',
     testPolicy: [{ fromEntryYear: 2027, domestic: 'required', international: 'required', source: SRC }],

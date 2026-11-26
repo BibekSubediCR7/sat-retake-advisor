@@ -76,6 +76,9 @@ describe('App', () => {
       'University of California, Los Angeles',
     ]);
     expect(within(cards[2]!).getByText('SAT not considered')).toBeTruthy();
+    // CDS C7 rating: shown for MIT, hidden for test-blind UCLA.
+    expect(within(cards[0]!).getByText(/^Important in admission decisions \(Common Data Set 2025-26, section C7\)$/)).toBeTruthy();
+    expect(within(cards[2]!).queryByText(/in admission decisions/)).toBeNull();
     expect(screen.getAllByText(/not a chance of admission/).length).toBeGreaterThan(0);
     // Fall 2028 entry reaches the 2027-28 dates, whose deadlines and score release are not published yet.
     expect(screen.getAllByText('TBD').length).toBeGreaterThan(0);

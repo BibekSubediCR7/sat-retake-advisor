@@ -34,6 +34,7 @@ export const scoreSendingValue = z.enum([
   'n/a',
 ]);
 export const selfReportingValue = z.enum(['yes', 'no', 'not stated', 'n/a']);
+export const testImportanceValue = z.enum(['very-important', 'important', 'considered', 'not-considered']);
 
 // http:// is accepted (some official pages still use it) but reported as a warning.
 const httpsUrl = z.string().regex(/^https?:\/\/\S+$/, 'must be an http(s):// URL');
@@ -71,6 +72,8 @@ export const schoolSchema = z.object({
     math: percentileRange.nullable(),
   }),
   pctSubmittingSAT: z.number().min(0).max(100).nullable(),
+  /** CDS C7 "Standardized test scores" row, as checked by the school. null = not read yet. */
+  testImportance: testImportanceValue.nullable(),
   dataYear: dataYear.nullable(),
   entryTerm: z.string().nullable(),
   testPolicy: z.array(testPolicyEntry).min(1),

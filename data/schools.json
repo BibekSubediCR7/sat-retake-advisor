@@ -27,6 +27,7 @@
       }
     },
     "pctSubmittingSAT": 83,
+    "testImportance": "important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -68,7 +69,8 @@
       "notes": [
         "Source: ir.mit.edu CDS 2025-26 HTML page. C21 ED explicitly 'No' (empty list = not offered). C22 EA Yes, 'Nov. 1', restrictive = No. C14 closing 'Jan. 1'.",
         "'We require the SAT or the ACT' for all first-year applicants; no international-specific SAT/ACT rule (English proficiency exam strongly recommended for non-native speakers). Score Choice not mentioned; wording 'should' self-report all exams could be read as an expectation rather than a mere recommendation. MIT does not require official scores; self-reported, verified on enrollment. Only 2026 change on page: TOEFL moved to 1-6 scale for tests on/after 2026-01-21. Requirement itself was reinstated earlier (pre-2025).",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://mitadmissions.org/apply/firstyear/deadlines-requirements/: RD \"01-01\" -> \"01-04\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://mitadmissions.org/apply/firstyear/deadlines-requirements/: RD \"01-01\" -> \"01-04\".",
+        "2026-11-26 CDS C7 'Standardized test scores' = Important (HTML CDS table)."
       ]
     }
   },
@@ -100,6 +102,7 @@
       }
     },
     "pctSubmittingSAT": 60,
+    "testImportance": "very-important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -152,7 +155,8 @@
         "Official PDF and the ir.princeton.edu CDS page both fail (site client_error for WebFetch; host refused by sandbox proxy for curl); Wayback blocked. No values recorded. URL learned from search/esslo pointer only.",
         "Scores, if submitted, 'must' be sent directly from the testing firms (self-reporting only suggested for AP/IB). Does not superscore between paper and digital SAT. ACT: highest composite only. Announcement date from Princeton Alumni Weekly (paw.princeton.edu, 2025-10-09). Active-duty military exempt under future requirement. English proficiency test required for applicants not schooled in English.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): CDS 2025-26 v2. C1 totals from the residency table (42,303 / 1,868). EA notification mid-December.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission.princeton.edu/apply/first-year-application-dates-deadlines: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission.princeton.edu/apply/first-year-application-dates-deadlines: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Very Important (X)."
       ]
     }
   },
@@ -180,6 +184,7 @@
       }
     },
     "pctSubmittingSAT": 79,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -230,7 +235,8 @@
         "composite left blank in CDS",
         "C8A says SAT/ACT used in admission (Yes), cycle Fall 2027, score receipt deadline 1-Mar, but the X's column (required vs other) is not recoverable from PDF text; left null. No C8F narrative. C21 ED = No. C22 EA Yes, closing 11/1, notification 12/16; a 'Yes' near the restrictive question could not be reliably mapped, so eaType null. C14 closing 1/1.",
         "SAT or ACT required. Only in exceptional cases (cost/access to test sites, no seat before RD deadline) can AP, IB, GCSE/A-Level, or national leaving exams meet the requirement; students who can access SAT/ACT are expected to take it. Harvard says 'We do not create superscores for applicants' but considers highest SAT section scores across dates (effectively section superscoring); ACT: strongest single sitting. English proficiency tests cannot meet the requirement. Requirement reinstated in 2024 (FAS announcement 2024-04-11), not a 2025/26 change.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://college.harvard.edu/admissions/apply/first-year-applicants: eaType null -> \"restrictive\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://college.harvard.edu/admissions/apply/first-year-applicants: eaType null -> \"restrictive\".",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (X)."
       ]
     }
   },
@@ -262,6 +268,7 @@
       }
     },
     "pctSubmittingSAT": 67,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -308,7 +315,8 @@
         "Newer official file (20260616) found on oir.yale.edu/common-data-set; older 20260410 URL fails. C1 prints men/women only, no total row: applied=22819+27445, admitted=1189+1198 (SUMMED). C9 = Fall 2025 enrollees; 1092 SAT submitters. C21 ED = No. C14 printed '1/2'. C8E says EA test deadline November 20 / RD March 15, which conflicts with C22 EA closing 11/1 (C22 used). C8F lists 'ACT' twice (typo in source).",
         "'All first-year and transfer applicants must include scores from the ACT or SAT.' AP/IB now optional supplements only. Same requirement for internationals, plus English proficiency test for non-native speakers without 2+ years at English-medium school. Enrolling students must provide official results of all self-reported scores. ACT superscore must match the testing agency's, not recalculated.",
         "2026-11-26 ED checked at https://admissions.yale.edu/timelines: Timelines are Single-Choice Early Action, QuestBridge Match and Regular Decision: no ED.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.yale.edu/timelines: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.yale.edu/timelines: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (checked box, confirmed visually)."
       ]
     }
   },
@@ -336,6 +344,7 @@
       }
     },
     "pctSubmittingSAT": 78,
+    "testImportance": "very-important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -387,7 +396,8 @@
         "Official PDF (linked from iro.caltech.edu/data) opens but its text layer is font-garbled: year digits missing, labels detached from numbers, checkboxes lost. Fragments seen but NOT recorded because labels can't be confirmed: SAT-submitting ~78% (190), unlabeled SAT triplets '760 760 780' and '790 790 800', admitted men 224/women 204, EA-like dates '11 1'/'12 15', ED fields possibly N/A. 2024-25 file (documents/31491/Caltech_CDS_2024-2025_May_2025.pdf) equally garbled. Needs visual reading of the PDF.",
         "'Caltech requires first-year applicants to submit either the SAT or the ACT.' International applicants who could not test (exam unavailable nearby, site cancellations) may explain in the Caltech-specific application and show preparation otherwise. Self-reporting of SAT/ACT not stated on fetched pages (AP/IB self-report via Beaver Breakroom). Requirement reinstated April 2024 for fall 2025 entry. Test re-submissions must meet the same deadlines.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): No C1 totals printed: applied = 7,772 + 3,513, admitted = 224 + 204. SAT Composite row left blank (no published total).",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.admissions.caltech.edu/apply/first-year-applicants/deadlines: RD \"01-03\" -> \"01-04\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.admissions.caltech.edu/apply/first-year-applicants/deadlines: RD \"01-03\" -> \"01-04\".",
+        "2026-11-26 CDS C7 'Standardized test scores' = Very Important (check mark)."
       ]
     }
   },
@@ -419,6 +429,7 @@
       }
     },
     "pctSubmittingSAT": 56,
+    "testImportance": null,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -488,6 +499,7 @@
       }
     },
     "pctSubmittingSAT": 52,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -536,7 +548,8 @@
         "Official link from ira.upenn.edu/penn-numbers/common-data-set is a Box share (file UPenn-Common-Data-Set-2025-26-June-2026.pdf). Box viewer is JS-only; shared/static direct link is robots-disallowed; curl host blocked. 2024-25 is also on Box (https://upenn.box.com/s/ckv4frz37rzxa4u6bdiv2h4yzykqm4ef), same problem. Needs manual browser download.",
         "SAT or ACT required; applicants facing hardship who have not tested may submit a waiver (requirement 'automatically waived'). 'Applicants who have taken standardized testing are required to submit their scores' (i.e., cannot use the waiver if tested). Self-reporting allowed with some exceptions (e.g., recruited athletes). Internationals: same SAT/ACT rule; official English proficiency score required (no self-report), taken on/after 2025-04-01.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): No SAT Composite row printed (no published total).",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.upenn.edu/how-to-apply/first-year-applicants: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.upenn.edu/how-to-apply/first-year-applicants: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (x, confirmed visually)."
       ]
     }
   },
@@ -568,6 +581,7 @@
       }
     },
     "pctSubmittingSAT": 48,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -612,7 +626,8 @@
         "applicant/admit totals summed from male+female columns",
         "C8 checkbox column not recoverable from text; policy from printed narrative. C21 ED Yes; closing printed as '11 months 1 day' (spreadsheet date-format artifact, read as 11/1), notification '12 months 15 days' (12/15); no ED II. C22 EA 'N/A'. C14 'Jan. 2nd'.",
         "'Duke University will be test-optional for both first-year and transfer applicants in the 2026-2027 admissions cycle', including international students and merit-scholarship candidates (ROTC exceptions may apply). 'Superscore' term not used; the 'highest score' wording does not clearly say section-level combining, so marked not stated. 'Applicants may choose the Score Choice option for the SAT.' Official scores required only if enrolling.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.duke.edu/apply/: ED [\"11-01\"] -> [\"11-02\"]; RD \"01-02\" -> \"01-04\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.duke.edu/apply/: ED [\"11-01\"] -> [\"11-02\"]; RD \"01-02\" -> \"01-04\".",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (X, confirmed visually)."
       ]
     }
   },
@@ -644,6 +659,7 @@
       }
     },
     "pctSubmittingSAT": 57,
+    "testImportance": "very-important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -693,7 +709,8 @@
         "USING 2024-2025 (Fall 2024) because the 2025-26 official PDF (oira.jhu.edu/wp-content/uploads/2025-2026-CDS-Johns-Hopkins-University-v2.pdf) and the oira CDS pages fail to load. C1 totals printed (men 20391/1419, women 25469/1527, another 12/0, unknown 23/8). C9 = Fall 2024 enrollees, 691 SAT submitters. C8 checkbox marks lost in text extraction (policy not recorded; CDS only links apply.jhu.edu standardized-testing page; C8 wording refers to Fall 2026 admission). C21: dates 11/1, 12/10, 1/3, 2/11 printed but labels detached; ED I=11/1 and ED II=1/3 inferred from order; ED Yes/No mark not recoverable (7028 ED apps, 825 ED admits printed). C22 EA not determinable. C14 closing 1/3.",
         "'Johns Hopkins University requires first-year applicants to submit SAT or ACT scores.' Requirement announced Aug 2024 for fall 2026 entry (JHU Hub), so not a 2025/26 change. No hardship waiver mentioned on page. Page has a section headed 'Score-Choice Policy' but its content describes superscoring, and applicants are told to report all scores; considers 'most competitive testing profile'. English proficiency tests recommended (not required) for non-native speakers. Transfers exempt.",
         "2026-11-26 deadlines checked against the 2026-27 admissions page https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/: ED [\"11-01\", \"01-03\"] -> [\"11-01\", \"01-02\"]; RD \"01-03\" -> \"01-02\"; eaType null -> \"not offered\".",
-        "2026-11-26 CDS 2025-26 (v2) read: C1 applied 21,916 + 28,298 + 45 = 50,259 and admitted 1,402 + 1,659 + 11 = 3,072 (both match the printed residency-table totals). C9 Fall 2025: 57% (783) submitted SAT; Composite 1530/1550/1565 (75th printed as 1565, kept as printed), R&W 750/760/780, Math 780/790/800. Deadlines kept from the admissions site."
+        "2026-11-26 CDS 2025-26 (v2) read: C1 applied 21,916 + 28,298 + 45 = 50,259 and admitted 1,402 + 1,659 + 11 = 3,072 (both match the printed residency-table totals). C9 Fall 2025: 57% (783) submitted SAT; Composite 1530/1550/1565 (75th printed as 1565, kept as printed), R&W 750/760/780, Math 780/790/800. Deadlines kept from the admissions site.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Very Important (X)."
       ]
     }
   },
@@ -725,6 +742,7 @@
       }
     },
     "pctSubmittingSAT": 48,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -768,7 +786,8 @@
       "notes": [
         "C21 ED Yes, closing 11/1, notification 12/15, no ED II. C22 EA No. C14 'January 1'. C8E score receipt date not filled in.",
         "'Northwestern is test-optional and does not require ACT or SAT scores from first-year or transfer candidates.' No separate international SAT rule; English proficiency (TOEFL/IELTS/DET) required for non-native speakers taught in another language and cannot be self-reported. ACT: no Northwestern-calculated superscore; report MyACT superscore. Enrolling students must send official scores matching self-reported highs.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.northwestern.edu/apply/: RD \"01-01\" -> \"01-04\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.northwestern.edu/apply/: RD \"01-01\" -> \"01-04\".",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (checked box)."
       ]
     }
   },
@@ -800,6 +819,7 @@
       }
     },
     "pctSubmittingSAT": 57,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -852,7 +872,8 @@
         "Test-optional with a 'No Harm' policy; 'This policy is open to all applicants', including international and transfer applicants. Official pages could not be fetched directly (site error); quotes come from search-engine snippets of the official FAQ, so re-verify before publishing.",
         "2026-11-26: No C1 totals printed: applied = 19,929 + 24,578 + 1,026, admitted = 1,169 + 870 + 0. ED/EA/RD dates not stated in the CDS (stay null); EA non-restrictive per Bibek.",
         "2026-11-26 deadline from official admissions page https://collegeadmissions.uchicago.edu/apply/application/: 2026-27 cycle: ED I and EA Nov 2, 2026; ED II and RD Jan 4, 2027 (CDS gives no dates; the counselor page says Nov 1 / Jan 6).",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://collegeadmissions.uchicago.edu/apply/application/: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://collegeadmissions.uchicago.edu/apply/application/: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (X)."
       ]
     }
   },
@@ -884,6 +905,7 @@
       }
     },
     "pctSubmittingSAT": 50,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -939,7 +961,8 @@
         "Columbia College + Columbia Engineering; RW 75th reported as 777",
         "C8 applies to Fall 2027; C8A Yes; score receipt 'February 1'; C8F blank. Checkbox column not recoverable; 67% of enrollees submitted scores (C9) suggests not-required, but that is inference only, so null. C21 ED Yes, 'November 1', notification 'December 15', no ED II. C22 EA No. C14 'January 1'.",
         "Applies to Columbia College and Columbia Engineering (School of General Studies has separate rules). Internationals: same optional policy; English proficiency requirements apply to non-native speakers. Self-report in the application testing section.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://undergrad.admissions.columbia.edu/apply/firstyear: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://undergrad.admissions.columbia.edu/apply/firstyear: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (check mark)."
       ]
     }
   },
@@ -971,6 +994,7 @@
       }
     },
     "pctSubmittingSAT": 69,
+    "testImportance": "very-important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -1022,7 +1046,8 @@
       "notes": [
         "C8 applies to Fall 2027; C8A Yes; score receipt 1-Feb; no C8F narrative; checkbox column not recoverable. C21 ED Yes, closing 11/1, notification 'mid-December', no ED II. C22 EA Yes/No mark not printed in extracted text and no EA dates (EA likely not offered, but not confirmed). C14 closing 1/3.",
         "US high school students must submit SAT or ACT. Students at high schools outside the US may meet the requirement 5 ways: SAT/ACT, three AP exams, IB Diploma exam scores, A-Level results, or final national exam scores (page labeled Class of 2029; main testing page still references the five options). Self-reported scores considered until official scores arrive; official required before enrolling. Requirement reactivated Feb 2024. Minor change: ACT composite superscore uses only English/Math/Reading from 2025-26 cycle.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.dartmouth.edu/apply-dartmouth: RD \"01-03\" -> \"01-01\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.dartmouth.edu/apply-dartmouth: RD \"01-03\" -> \"01-01\".",
+        "2026-11-26 CDS C7 'Standardized test scores' = Very Important (X)."
       ]
     }
   },
@@ -1054,6 +1079,7 @@
       }
     },
     "pctSubmittingSAT": 65.5,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025 (C1); SAT table printed as Fall 2024 enrollees",
     "testPolicy": [
@@ -1097,7 +1123,8 @@
       "notes": [
         "Cover: CDS 2025-2026, 'Revised 25Sep2025'. C8 text says policies for Fall 2025; X on 'SAT or ACT' row but column not recoverable; score receipt January 1; C8F blank. C21 ED Yes, November 1 (not available for Acting, Directing, Dramaturgy, Music Theater, School of Music), notification Dec 15, no ED II. C22 EA No. C14 'January 1 (December 1 for Drama and Music)'. TERM CHECK: C9 heading reads 'first-time, first-year students enrolled in Fall 2024' (printed twice), while C1 says Fall 2025 and the whole file is labeled 2025-2026. As printed, C9 describes Fall 2024 enrollees; it could be a stale template label, which the document alone cannot confirm.",
         "Policy varies by college: School of Computer Science REQUIRES SAT or ACT; College of Engineering, Dietrich, Heinz (Information Systems), Mellon College of Science, Tepper are TEST-FLEXIBLE (must submit one of SAT, ACT, AP, IB predicted/actual, Cambridge A-Level predicted/actual, French Bac predicted/actual); College of Fine Arts is TEST-OPTIONAL. Same for international applicants plus TOEFL/IELTS/Cambridge/DET for non-native speakers. ACT superscores not accepted. Self-report via Common App; official only if admitted and enrolling. Test-flexible policy began fall 2026 entry (announced Aug 2024).",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission-pantheon.cmu.edu/admission/application-plans-deadlines (cmu.edu/admission/apply redirects here): ED [\"11-01\"] -> [\"11-02\"]; RD \"01-01\" -> \"01-04\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission-pantheon.cmu.edu/admission/application-plans-deadlines (cmu.edu/admission/apply redirects here): ED [\"11-01\"] -> [\"11-02\"]; RD \"01-01\" -> \"01-04\".",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (X)."
       ]
     }
   },
@@ -1129,6 +1156,7 @@
       }
     },
     "pctSubmittingSAT": null,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -1176,7 +1204,8 @@
       "notes": [
         "Official PDF version found on irp.cornell.edu/university-factbook/common-data-set (xlsx not machine-readable via fetch). C1 totals printed (men 36834/2794, women 35687/3282, unknown 2/1). C9 = Fall 2025 enrollees; 1639 SAT submitters printed but percent field not in extracted text (left null, not computed). C8 checkbox not extractable; only form code EXAM_CODE_S1A: ADMS_REQ suggests 'Required' (C8 asks about Fall 2027) - policy left null. C21 ED first plan closing Nov 1, notification Dec 15 (10057 apps / 1889 admits; labelled 'Fall 2024 entering class' in form text). Section I-3 header says 2024-2025 (template carryover).",
         "'Effective for Fall 2026 and beyond, first-year applicants are required to submit the SAT or ACT.' No alternatives listed; transfers exempt. Internationals: same requirement plus English proficiency unless exempt. Enrolling students must provide official scores; mismatch may lead to revocation. Reinstatement announced April 2024.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.cornell.edu/how-to-apply/first-year-applicants: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.cornell.edu/how-to-apply/first-year-applicants: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (form field C)."
       ]
     }
   },
@@ -1208,6 +1237,7 @@
       }
     },
     "pctSubmittingSAT": 24,
+    "testImportance": "important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -1264,7 +1294,8 @@
         "Policy covers first-year, transfer, international and homeschool applicants; proof of English proficiency still required for internationals. Note: the international section of the page says test-optional 'through fall 2027' while main policy says fall 2027 and 2028 (internal inconsistency). Vanderbilt superscores SAT using both digital and paper results.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Excel CDS. ED offered but the ED date cells show #VALUE!, so ED dates stay unknown.",
         "2026-11-26 deadline from official admissions page https://admissions.vanderbilt.edu/apply/: ED I 11/1, ED II 1/1 (2026-27 cycle dates; CDS ED cells showed #VALUE!).",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.vanderbilt.edu/apply/: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.vanderbilt.edu/apply/: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Important (Excel CDS-C D104 and answer sheet)."
       ]
     }
   },
@@ -1296,6 +1327,7 @@
       }
     },
     "pctSubmittingSAT": 77,
+    "testImportance": null,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -1377,6 +1409,7 @@
       }
     },
     "pctSubmittingSAT": 59,
+    "testImportance": "very-important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -1429,7 +1462,8 @@
       "notes": [
         "C8 checkbox column not recoverable; policy from narrative. C21 Yes/No mark position unclear but ED dates printed: 1-Nov (notif 15-Dec) and 4-Jan (notif Early Feb); mapping of dates to ED I/ED II inferred from label order. C22 EA: X position unclear and no EA dates printed. C14 closing 4-Jan. Note C8 says 'Fall 2026', not Fall 2027.",
         "Test-optional but 'Rice recommends' SAT/ACT if available. Self-reported scores allowed only for students graduating from a U.S. high school; international (non-US high school) applicants must send official scores from the testing agency. Once you opt in to score consideration you cannot opt out or remove scores. No recent change found.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission.rice.edu/apply/freshman-applicants: eaType null -> \"not offered\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission.rice.edu/apply/freshman-applicants: eaType null -> \"not offered\".",
+        "2026-11-26 CDS C7 'Standardized test scores' = Very Important (X)."
       ]
     }
   },
@@ -1461,6 +1495,7 @@
       }
     },
     "pctSubmittingSAT": 32,
+    "testImportance": "very-important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -1513,7 +1548,8 @@
       "notes": [
         "C1 totals printed (males 15251/1874, females 18016/2093, unknown 16/1). C9 = Fall 2025 enrollees, 619 SAT submitters. C21 ED I closing Nov 2 (notify Dec 11), ED II closing Jan 4 (notify Feb 12); 4934 ED apps/1333 admits. C22 text shows 'Yes', EA closing November 2, notification December 23, restrictive 'No', but Yes/No alignment is ambiguous in extraction - verify EA visually before showing it to users.",
         "'WashU has adopted a test optional policy'; fall 2027 updates page says no change to test-optional policy. International differences not stated. Last accepted test date: December (October for ED I). Aug 2026 official interview: policy under review, announcement expected 'within this year' -- watch for change affecting future cycles.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.washu.edu/how-to-apply/application-dates-deadlines/: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.washu.edu/how-to-apply/application-dates-deadlines/: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Very Important (X)."
       ]
     }
   },
@@ -1533,6 +1569,7 @@
       "math": null
     },
     "pctSubmittingSAT": null,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -1588,7 +1625,8 @@
         "UC test-blind; sat set to null per task. Official CDS is a Google Sheet linked from https://opa.berkeley.edu/campus-data/common-data-set (sheet title 'CDS 2025-26 UC Berkeley (July 17)'); read the CDS-C tab via its CSV export. Totals printed in residency 'Unknown' column (126,864 / 14,524); male+female match (62,395+64,469; 5,978+8,546). In-state/out-of-state split blank ('State applicant data not yet available'). C9 percent submitting and all SAT percentiles blank. C21 N, C22 N.",
         "UC system-wide (one source covers all campuses): 'UC does not consider SAT or ACT test scores when making admissions decisions or awarding scholarships.' Fall 2027 applicants 'will not be required to submit SAT or ACT scores' (no change to policy). Scores can still be self-reported in the application (only after first submitting it without scores) and 'may be used as an alternate method of fulfilling minimum requirements' for eligibility or 'for course placement after matriculation' (incl. Entry Level Writing Requirement). English proficiency: old SAT 'Writing and Language' 31+ or ACT ELA 24+ accepted, but 'the digital SAT Reading and Writing section score has not been approved to meet English language proficiency' (UCSD ELWR page likewise says digital SAT R&W cannot fulfill ELWR). Recommended to test by December of senior year if using scores for these purposes.",
         "2026-11-26 ED checked at https://admissions.berkeley.edu/apply-to-berkeley/: Berkeley does not take part in early action or early decision.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.berkeley.edu/apply-to-berkeley/dates-deadlines/: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.berkeley.edu/apply-to-berkeley/dates-deadlines/: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (Google Sheet CDS-C E104 (printed as 'Considered' although UC is test-blind))."
       ]
     }
   },
@@ -1608,6 +1646,7 @@
       "math": null
     },
     "pctSubmittingSAT": null,
+    "testImportance": "not-considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -1663,7 +1702,8 @@
         "UC test-blind; sat set to null per task. SUMMED: form total cells read as 0, so applied = 65,079 M + 73,508 F + 6,499 unknown = 145,086 and admitted = 5,546 + 7,274 + 839 = 13,659 (computed by me from printed sex columns; verify against UCLA's printed totals). Residency breakdown blank. Waitlist: 20,563 offered, 13,612 accepted, 1,514 admitted. C9 blank. ED/EA No.",
         "UC system-wide (one source covers all campuses): 'UC does not consider SAT or ACT test scores when making admissions decisions or awarding scholarships.' Fall 2027 applicants 'will not be required to submit SAT or ACT scores' (no change to policy). Scores can still be self-reported in the application (only after first submitting it without scores) and 'may be used as an alternate method of fulfilling minimum requirements' for eligibility or 'for course placement after matriculation' (incl. Entry Level Writing Requirement). English proficiency: old SAT 'Writing and Language' 31+ or ACT ELA 24+ accepted, but 'the digital SAT Reading and Writing section score has not been approved to meet English language proficiency' (UCSD ELWR page likewise says digital SAT R&W cannot fulfill ELWR). Recommended to test by December of senior year if using scores for these purposes.",
         "2026-11-26 ED checked at https://admission.ucla.edu/apply/first-year: No early action or early decision option.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission.ucla.edu/apply/first-year: unchanged. Page intro says Oct 1-Dec 1 but its table says Nov 30; kept 11-30."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission.ucla.edu/apply/first-year: unchanged. Page intro says Oct 1-Dec 1 but its table says Nov 30; kept 11-30.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Not Considered (form field NC)."
       ]
     }
   },
@@ -1695,6 +1735,7 @@
       }
     },
     "pctSubmittingSAT": null,
+    "testImportance": "important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -1751,7 +1792,8 @@
         "Official page links only to a Google Drive folder (drive.google.com/drive/folders/1TsZYMnJhOYuNfNYsaziNrbm9uJIqLS_u); 2025-26 file reportedly drive.google.com/file/d/13Y3nSs6H6hBvzfzroJodtXrKpAiaHkqy. Drive fetch is robots-disallowed/client_error and not accessible via the Drive connector. A third-party storage copy exists (supabase) but was not used as a data source.",
         "Under the future (2027-28) requirement, students studying outside the US may use predicted IB Diploma, Cambridge A-Levels (3+), or French Bac results instead; hardship exceptions available. For the current 2026-27 cycle the policy is test-optional for all. Self-reported scores verified for enrolling students.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): % submitting SAT not printed (only the number, 726).",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.nd.edu/apply/how-to-apply/: RD \"01-02\" -> \"01-04\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.nd.edu/apply/how-to-apply/: RD \"01-02\" -> \"01-04\".",
+        "2026-11-26 CDS C7 'Standardized test scores' = Important (X)."
       ]
     }
   },
@@ -1783,6 +1825,7 @@
       }
     },
     "pctSubmittingSAT": 47,
+    "testImportance": "very-important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -1838,7 +1881,8 @@
       "notes": [
         "C1 totals printed (M 14990/F 22566/U 5 applied; M 1764/F 2105/U 0 admitted). Residency (C1): admitted in-state 447, out-of-state 2846, international 576. C9: 47% (671) submitted SAT, 21% (302) ACT. C21 values printed unlabeled in extraction as 11/1, 12/15, 1/1, 2/15 -> mapped by standard CDS order to ED1 close 11/1, ED1 notify 12/15, ED2 close 1/1, ED2 notify 2/15. C22: No EA. C14 closing 1/1. Test-policy column needs visual check of PDF.",
         "Page: 'Emory University is test optional for first-year students who would start in fall 2027.' Self-reported scores can be uploaded to the applicant portal; enrolling students must send official scores and a negative discrepancy can lead to the admission offer being withdrawn. No separate SAT rule for international applicants; English proficiency can be shown with SAT EBRW 700+ or a TOEFL/IELTS/DET score. Score Choice is not addressed.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://apply.emory.edu/apply/plans-deadlines: eaType null -> \"not offered\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://apply.emory.edu/apply/plans-deadlines: eaType null -> \"not offered\".",
+        "2026-11-26 CDS C7 'Standardized test scores' = Very Important (X)."
       ]
     }
   },
@@ -1870,6 +1914,7 @@
       }
     },
     "pctSubmittingSAT": 78,
+    "testImportance": "very-important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -1920,7 +1965,8 @@
         "Georgetown DOES publish a CDS: the official list at oads.georgetown.edu (Explore Data > Common Data Set) links 2025-2026 to this Box share (file name CDS_2025-2026.pdf). The Box viewer is JavaScript-only and could not be read, so no values were recorded. Open the Box file manually. Not from the CDS (admissions site uadmissions.georgetown.edu/applying/first-year-application, seen only in a search snippet): EA closes Nov 1, RD Jan 10, no ED; Georgetown requires SAT/ACT. Third-party sites cite SAT 1405-1530 but that was not used.",
         "CONFIRMED CHANGE: the old 'all scores required' rule is gone from the current official pages. 'does not accept superscores' means it evaluates a single full sitting. One stale cached copy of the international page still shows the old wording (highest EBRW + highest Math, no Score Choice), but the live international page (Aug 3, 2026) has no such text. selfReporting is set to 'no' because the page says official scores must come directly from College Board or ACT; self-reporting is not explicitly addressed. Only EBRW and Math are considered. International students must also submit SAT/ACT.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Composite 25th printed as 1405 (kept as printed).",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://uadmissions.georgetown.edu/applying/first-year/: RD \"01-10\" -> \"01-01\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://uadmissions.georgetown.edu/applying/first-year/: RD \"01-10\" -> \"01-01\".",
+        "2026-11-26 CDS C7 'Standardized test scores' = Very Important (x)."
       ]
     }
   },
@@ -1952,6 +1998,7 @@
       }
     },
     "pctSubmittingSAT": 55,
+    "testImportance": "important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2000,7 +2047,8 @@
         "C1 sum of printed columns: applied M 53044 + F 56068 (unknown blank); admitted M 7593 + F 10322 (unknown blank). Totals also printed as 109112 / 17915. C1 has no in-state/out-of-state breakdown. C9: 55% (4503) submitted SAT. C21: No ED. C22: EA 11/1, notification 1/31, restrictive No. C14: 2/1 (priority 11/1). C8E latest score receipt 2/1.",
         "Applicants may self-report their own superscore or send all scores and U-M calculates it, so sending all scores is optional. Self-reports for ED/EA are due Nov 1, or the applicant is reviewed test-optional. Admitted students must send official scores. No international-specific SAT rule. 'The university will review the policy on an ongoing basis.' Test-optional formally adopted Feb 21, 2024.",
         "2026-11-26 ED checked at https://admissions.umich.edu/apply/first-year-applicants/first-year-application-plans: Binding Early Decision, deadline Nov. 1 (new plan; not in the 2025-26 CDS).",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.umich.edu/apply/first-year-applicants/first-year-application-plans: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.umich.edu/apply/first-year-applicants/first-year-application-plans: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Important (checked box)."
       ]
     }
   },
@@ -2032,6 +2080,7 @@
       }
     },
     "pctSubmittingSAT": null,
+    "testImportance": null,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2112,6 +2161,7 @@
       }
     },
     "pctSubmittingSAT": 28,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2159,7 +2209,8 @@
         "Official PDF read, but the text extraction separates labels from values. C1 rows mapped by order: applied M 31665 + W 44582 + U 0 = 76247; admitted 5305 + 7446 + 0 = 12751; enrolled 5084. Residency values printed unlabeled (and the table header says 'Fall 2024', likely a template label): 17846/48645/9756 (likely applicants in-state/out-of-state/intl), 6605/4685/1461 (likely admits), 4063/728/300 (likely enrolled, sum 5091 not 5084). C9 shows '41% 1,945' and '28% 1,102' without clear SAT/ACT labels; 1945/5084 = 38%, so the denominator is unclear and pctSubmittingSAT is left null. SAT percentiles were read with their labels. C8: policy grid mark not legible; text says students with weighted GPA below 2.8 must submit SAT/ACT; grid refers to Fall 2027 applicants. C22: EA close Oct. 15, notify Jan. 31; restrictive mark unclear. C21 yes/no not legible. C14 likely Jan. 15 but not confirmed. Check visually.",
         "Effectively test-optional with a GPA condition: 'students with a weighted GPA of 2.8 or above (on a 4.0 scale) are not required to submit a test score.' Students below 2.8 must submit SAT 930+ or ACT 17+. The same rule applies to in-state, out-of-state and international applicants; A-level or similar exam grades are used for systems without a GPA. Self-reported scores are used in review, and enrolling students must send official scores. Score Choice is not addressed.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): C14 closing Jan 15, priority Oct 15.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.unc.edu/apply/decisions/ (read by Bibek): Early Action (non-binding) Oct 15, 2026; Regular Decision Jan 15, 2027; no Early Decision. Dates unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.unc.edu/apply/decisions/ (read by Bibek): Early Action (non-binding) Oct 15, 2026; Regular Decision Jan 15, 2027; no Early Decision. Dates unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (X)."
       ]
     }
   },
@@ -2191,6 +2242,7 @@
       }
     },
     "pctSubmittingSAT": 33,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2243,7 +2295,8 @@
         "File is CDS_2025-26_FINAL with cover 'Common Data Set 2025-2026', but page headers say 'Common Data Set 2024-2025' (template carry-over); C1/C9 refer to Fall 2025. C1 sums: applied M 37036 + F 46419 + U 33 = 83488; admitted 4580 + 4759 + 6 = 9345. Residency admitted: in-state 3692, out-of-state 3378, international 2275. C9: 33% (1243) SAT, 12% (453) ACT. C21: No ED. C22: EA Yes, close 11/1; a 'No' appears near the restrictive question but alignment is unclear, so eaType is null. C14 1/10 (priority 11/1).",
         "USC's own site says 'We do not accept self-reported scores'; scores are considered only if official reports are sent from the testing agency. This conflicts with USC's QuestBridge partner page (self-reported accepted for QuestBridge applicants), so the main admission site is used. 'International applicants are not required to submit SAT or ACT scores.' SAT EBRW can satisfy English proficiency. FairTest (Aug 25, 2026) lists USC as optional at least through fall 2027. This is the University of Southern California, not South Carolina.",
         "2026-11-26 ED checked at https://admission.usc.edu/prospective-students/how-to-apply/first-year-students/: Early Decision (most majors) Nov 1; Early Action Nov 1; RD Jan 10 (performing arts Dec 1).",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission.usc.edu/apply/first-year-students/: eaType null -> \"non-restrictive\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission.usc.edu/apply/first-year-students/: eaType null -> \"non-restrictive\".",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (x)."
       ]
     }
   },
@@ -2275,6 +2328,7 @@
       }
     },
     "pctSubmittingSAT": 78,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2295,7 +2349,7 @@
       "RD": "01-06"
     },
     "sources": {
-      "cds": "https://irp.gatech.edu/files/CDS/CDS_2025-2026_FINAL_23JAN2026.pdf",
+      "cds": "https://irp.gatech.edu/sites/default/files/CDS/CDS_2025-2026_FINAL_R4_03JUN2026.pdf",
       "policy": [
         {
           "url": "https://admission.gatech.edu/first-year/standardized-tests",
@@ -2321,7 +2375,9 @@
         "C1 sums: applied M 44517 + F 22363 + U 1 = 66881; admitted 4937 + 3983 + 1 = 8921. Residency admitted: in-state 3691, out-of-state 4513, international 716 (sum 8920, one short of the 8921 total, as printed). C9: 78% (3181) SAT. C21: No ED. C22: EA close 11/1, notify 1/31, restrictive read as No (check alignment). C14: 1/5; priority dates 10/15 and 11/1. C8E 23-Jan. Policy column needs visual check.",
         "'All first-year applicants must submit results from at least one SAT and/or ACT in order to be considered for admission.' The page states no international exception; the University System of Georgia requires tests. GT 'highly recommend[s]' self-reporting through the Common App or the admission portal; scores sent by email, fax or mail are not used. Official scores are needed only for enrolling students. Superscore is inferred from 'highest section score'; the page does not explicitly say scores are combined across dates. CLT, AP and IB are optional.",
         "2026-11-26 ED checked at https://admission.gatech.edu/first-year/deadlines: Plans are Early Action 1, Early Action 2 and Regular Decision: no ED.",
-        "2026-11-26 deadlines updated from https://admission.gatech.edu/first-year/deadlines ('2026-2027 Important Dates'): EA changed 11/01 -> 11/02 (Early Action 2, for non-Georgia students incl. international); RD changed 01/05 -> 01/06 (open to all). Georgia students' Early Action 1 is Oct 15; the data holds one EA date, so it stores EA2. EA is non-binding."
+        "2026-11-26 deadlines updated from https://admission.gatech.edu/first-year/deadlines ('2026-2027 Important Dates'): EA changed 11/01 -> 11/02 (Early Action 2, for non-Georgia students incl. international); RD changed 01/05 -> 01/06 (open to all). Georgia students' Early Action 1 is Oct 15; the data holds one EA date, so it stores EA2. EA is non-binding.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (X (revised CDS R4, June 2026)).",
+        "2026-11-26 CDS link updated to the revised 2025-26 file (R4, 3 Jun 2026); the old FINAL link returns 404. C1 and C9 values re-checked: unchanged."
       ]
     }
   },
@@ -2341,6 +2397,7 @@
       "math": null
     },
     "pctSubmittingSAT": null,
+    "testImportance": "not-considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2400,7 +2457,8 @@
         "UC test-blind; sat set to null per task. Totals printed in residency table (136,750 / 39,054); sex columns match (62,344+69,786+4,620; 16,244+21,283+1,527), column labels inferred by text order. Residency admitted: in-state 21,677, out-of-state 9,881, international 7,496. C9 SAT percentiles blank; score-range tables 0.00%. ED/EA No.",
         "UC system-wide (one source covers all campuses): 'UC does not consider SAT or ACT test scores when making admissions decisions or awarding scholarships.' Fall 2027 applicants 'will not be required to submit SAT or ACT scores' (no change to policy). Scores can still be self-reported in the application (only after first submitting it without scores) and 'may be used as an alternate method of fulfilling minimum requirements' for eligibility or 'for course placement after matriculation' (incl. Entry Level Writing Requirement). English proficiency: old SAT 'Writing and Language' 31+ or ACT ELA 24+ accepted, but 'the digital SAT Reading and Writing section score has not been approved to meet English language proficiency' (UCSD ELWR page likewise says digital SAT R&W cannot fulfill ELWR). Recommended to test by December of senior year if using scores for these purposes.",
         "2026-11-26 ED checked at https://ir.ucsd.edu/stats/undergrad/CDS-2025-2026-Final4.pdf: CDS C21 Early Decision: No; C22 Early Action: No.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.ucsd.edu/first-year/application-timeline.html: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.ucsd.edu/first-year/application-timeline.html: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Not Considered (X under Not Considered, confirmed visually)."
       ]
     }
   },
@@ -2432,6 +2490,7 @@
       }
     },
     "pctSubmittingSAT": 41,
+    "testImportance": "important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2481,7 +2540,8 @@
         "The official 2025-2026 CDS PDF is linked from the bc.edu Institutional Research page, but bc.edu robots.txt blocked the fetcher (the ccc.bc.edu mirrors too). No CDS values recorded. Not from the CDS (official bc.edu 'common data set' summary page, data as of 9/5/25): Class of 2029 applicants 39,686; SAT 25th 1440, 75th 1520, average 1471. A third-party article cites CDS C1 applications as 38,658, which conflicts with the summary page. Check the PDF manually.",
         "The 2026-27 cycle is confirmed explicitly only on BC's QuestBridge partner page ('Boston College will continue its test-optional admission policy for the 2026-27 application cycle'); BC's own testing page names no cycle. 'Yes, submitting the SAT or ACT is optional for international students.' English proficiency tests are still required. Self-reporting model; enrolled students submit official reports. Once submitted, scores cannot be withdrawn.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): R&W median printed as 735 (kept as printed). Totals from the residency table.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.bc.edu/bc-web/admission/apply.html: ED [\"11-01\", \"01-02\"] -> [\"11-01\", \"01-04\"]; RD \"01-02\" -> \"01-04\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.bc.edu/bc-web/admission/apply.html: ED [\"11-01\", \"01-02\"] -> [\"11-01\", \"01-04\"]; RD \"01-02\" -> \"01-04\".",
+        "2026-11-26 CDS C7 'Standardized test scores' = Important (x, confirmed visually)."
       ]
     }
   },
@@ -2513,6 +2573,7 @@
       }
     },
     "pctSubmittingSAT": 27,
+    "testImportance": "important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2565,7 +2626,8 @@
         "nyu.edu returned client errors for every URL tried: this PDF, the 'FINAL(including G July_2026)' PDF, and the IR Factbook/CDS page. No values recorded. Open the PDF manually (also linked from nyu.edu/employees/.../institutional-research/self-service-reporting-resources/factbook.html).",
         "Test-flexible: applicants choose one testing type on the Common App (SAT, ACT, IB, AP, A-levels, national exams, etc.). 'If you choose to submit standardized testing, you can only submit one form of testing.' 'Applicants are welcome to self-report unofficial test scores for application review through their Applicant Portal.' International students may apply with predicted results; Indian Class XII and Australian ATAR students must submit predictions or final results. The page does not say whether superscoring is by section.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): No C1 totals printed: applied = 46,307 + 67,818, admitted = 4,231 + 6,109.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://steinhardt.nyu.edu/degree/bfa-studio-art/how-apply (read by Bibek): ED I Nov 1, 2026; ED II Jan 1, 2027; Regular Decision Jan 5, 2027; no Early Action (NYU program page for Fall 2027; the main admissions page blocks automated reading). Dates unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://steinhardt.nyu.edu/degree/bfa-studio-art/how-apply (read by Bibek): ED I Nov 1, 2026; ED II Jan 1, 2027; Regular Decision Jan 5, 2027; no Early Action (NYU program page for Fall 2027; the main admissions page blocks automated reading). Dates unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Important (X, confirmed visually)."
       ]
     }
   },
@@ -2597,6 +2659,7 @@
       }
     },
     "pctSubmittingSAT": 42,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2646,7 +2709,8 @@
         "Official PDF read via WebFetch, but its text layer is font-garbled (labels/checkboxes scrambled). File is listed as 2025-2026 on the official Tufts IR CDS page. applied/admitted are the printed Total column of the C1 residency table (in-state/out-of-state/intl/unknown: applied 4733/19414/9260/8; admitted 659/2422/531/1); the gender cells read as men 14444/women 18947/unknown 4 applied and 1568/2044/0 admitted, which do NOT sum to the totals (33395 and 3612), so gender-column mapping is unreliable. C9 (42% SAT, 749 students; percentiles) was consistent across two separate reads, but should be spot-checked visually. NOT READABLE: C8 test policy (checkmarks lost), C14 RD closing date, C21 ED dates, C22 EA. Unlabeled fragments seen near those items: '11 4', '12 15' (possibly ED I close/notify), '1 6', '2 15'; ED apps 3344 / ED admits 1071 appear but row alignment unconfirmed. Do not use these fragments without a visual check of the PDF.",
         "The last dated extension found covered falls 2024-2026; the current testing page states the policy without an end date. 'Tufts will accept self-reported testing on the Common Application'; enrolling students verify with official scores. Test-optional applies to international applicants; English proficiency requirements remain.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): No C1 totals printed: applied = 14,444 + 18,947 + 4, admitted = 1,568 + 2,044.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.tufts.edu/apply/applying-to-tufts/: ED [\"11-04\", \"01-06\"] -> [\"11-02\", \"01-04\"]; RD \"01-06\" -> \"01-04\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.tufts.edu/apply/applying-to-tufts/: ED [\"11-04\", \"01-06\"] -> [\"11-02\", \"01-04\"]; RD \"01-06\" -> \"01-04\".",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (radio button, confirmed visually)."
       ]
     }
   },
@@ -2678,6 +2742,7 @@
       }
     },
     "pctSubmittingSAT": 36,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2733,7 +2798,8 @@
       "notes": [
         "Used BU's updated Section C file (July 2026) of the 2025-2026 CDS; full CDS at https://www.bu.edu/asir/files/2026/05/CDS-2025-2026-2.pdf. applied/admitted are the printed Total column of the C1 residency table (in-state/out-of-state/intl/unknown: applied 8059/50764/15794/2159; admitted 1075/5908/2521/349). C1 main table prints two unlabeled numbers per row (applied 30,474 + 46,302; admitted 4,070 + 5,783) that sum to those totals; gender cells blank. C8A 'SAT or ACT' X column not recoverable from text, policy taken from C8 text. ED I closes Nov 1 (notify Dec 15), ED II Jan 5 (notify Feb 15). EA not offered. RD close Jan 5 (Dec 1 priority date for Presidential/Menino scholar consideration). SAT submitters 1,257.",
         "Score Choice is permitted, but BU 'strongly recommend[s]' sending every sitting, so this could also be classed as all-scores-recommended. 'Boston University accepts self-reported standardized test scores on your application'; an official report is required before enrolling. The testing choice cannot be changed after the application is submitted. International students must submit TOEFL, IELTS or DET.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.bu.edu/admissions/apply/deadlines/: ED [\"11-01\", \"01-05\"] -> [\"11-02\", \"01-05\"]."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.bu.edu/admissions/apply/deadlines/: ED [\"11-01\", \"01-05\"] -> [\"11-02\", \"01-05\"].",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (X)."
       ]
     }
   },
@@ -2753,6 +2819,7 @@
       "math": null
     },
     "pctSubmittingSAT": null,
+    "testImportance": "not-considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2808,7 +2875,8 @@
         "UC test-blind; sat set to null per task. Totals printed (102,988 / 45,674); sex column mapping inferred. Residency admitted: in-state 25,473, out-of-state 8,315, international 11,886. Enrolled sex columns sum to 6,810 vs 6,824 residency total (minor internal inconsistency, not used). C9 blank. ED/EA No. Generic filename CDS_UCD_0.pdf -- CDS year 2025-2026 stated in document.",
         "UC system-wide (one source covers all campuses): 'UC does not consider SAT or ACT test scores when making admissions decisions or awarding scholarships.' Fall 2027 applicants 'will not be required to submit SAT or ACT scores' (no change to policy). Scores can still be self-reported in the application (only after first submitting it without scores) and 'may be used as an alternate method of fulfilling minimum requirements' for eligibility or 'for course placement after matriculation' (incl. Entry Level Writing Requirement). English proficiency: old SAT 'Writing and Language' 31+ or ACT ELA 24+ accepted, but 'the digital SAT Reading and Writing section score has not been approved to meet English language proficiency' (UCSD ELWR page likewise says digital SAT R&W cannot fulfill ELWR). Recommended to test by December of senior year if using scores for these purposes.",
         "2026-11-26 ED checked at https://aggiedata.ucdavis.edu/sites/g/files/dgvnsk1841/files/media/documents/CDS_UCD_0.pdf: CDS C21 Early Decision: No; C22 Early Action: No.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.ucdavis.edu/admissions/undergraduate/first-year/timeline: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.ucdavis.edu/admissions/undergraduate/first-year/timeline: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Not Considered (X)."
       ]
     }
   },
@@ -2828,6 +2896,7 @@
       "math": null
     },
     "pctSubmittingSAT": null,
+    "testImportance": "not-considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2882,7 +2951,8 @@
       "notes": [
         "UC test-blind; sat set to null per task. Read via redirect target https://bpb-us-e2.wpmucdn.com/sites.uci.edu/dist/2/5478/files/2026/05/2025-26-CDS-PDF-Upload.pdf (UCI's WordPress CDN). Totals printed (58,513 M + 65,718 F; unknown blank). Residency admitted: in-state 18,922, out-of-state 7,784, international 9,258. C9 blank. ED/EA No.",
         "UC system-wide (one source covers all campuses): 'UC does not consider SAT or ACT test scores when making admissions decisions or awarding scholarships.' Fall 2027 applicants 'will not be required to submit SAT or ACT scores' (no change to policy). Scores can still be self-reported in the application (only after first submitting it without scores) and 'may be used as an alternate method of fulfilling minimum requirements' for eligibility or 'for course placement after matriculation' (incl. Entry Level Writing Requirement). English proficiency: old SAT 'Writing and Language' 31+ or ACT ELA 24+ accepted, but 'the digital SAT Reading and Writing section score has not been approved to meet English language proficiency' (UCSD ELWR page likewise says digital SAT R&W cannot fulfill ELWR). Recommended to test by December of senior year if using scores for these purposes.",
-        "2026-11-26 RD 11-30 confirmed by the UC system page https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html ('Fall 2027 admission application filing period', ends November 30). No official UC or UCI page states whether Early Decision/Early Action are offered, so ED stays unknown (null)."
+        "2026-11-26 RD 11-30 confirmed by the UC system page https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html ('Fall 2027 admission application filing period', ends November 30). No official UC or UCI page states whether Early Decision/Early Action are offered, so ED stays unknown (null).",
+        "2026-11-26 CDS C7 'Standardized test scores' = Not Considered (form field NC)."
       ]
     }
   },
@@ -2914,6 +2984,7 @@
       }
     },
     "pctSubmittingSAT": 78,
+    "testImportance": "important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2961,7 +3032,8 @@
       "notes": [
         "UF Main Campus CDS 2025-26 v8 (08.14.2026). applied/admitted are printed Totals of C1 residency table: in-state applied 42,172 / admitted 9,387; out-of-state 39,420 / 8,086; international 8,931 / 930. Gender cells (men 40,876 + women 49,647; admitted 8,725 + 9,678) match these totals. C21: ED marked Yes with closing date printed as 10/15/2026 and notification 12/11/2026 (i.e., a new ED plan for the Fall 2027 cycle); ED apps/admits for Fall 2025 blank. C22 EA Yes, close 11/1, notify 1/23, not restrictive. C14 closing 1/15, priority date 11/1. C8 policy column (required vs. considered) could not be read from the text layer; verify visually. SAT submitters 5,839.",
         "'All applicants must submit test scores from the SAT, ACT and/or CLT.' Scores can be self-reported through the application status page. The requirement page states no international exception. The 'encourage you to submit all' quote comes from the Spanish-language version of the freshman page. Per secondary sources, official scores must arrive by May 1 to enroll. The ACT Science section is no longer used.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.ufl.edu/apply/freshman/deadlines: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.ufl.edu/apply/freshman/deadlines: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Important (X, confirmed visually)."
       ]
     }
   },
@@ -2993,6 +3065,7 @@
       }
     },
     "pctSubmittingSAT": 43,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -3036,7 +3109,8 @@
         "Total score from a single sitting (highest SAT total); sub-scores are also reported, by best section across dates. The tool should treat this as no total superscore. 'Illinois is test-optional.' Students self-report and send official scores only if they enroll. Applicants who do not submit ACT/SAT may need an English-language test. Test-optional applies to international applicants (Senate AD.23.02).",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Excel CDS. % submitting SAT printed as 0.4259. Composite median printed as 1442 (kept as printed). ED question unanswered; sheet has #REF! errors.",
         "2026-11-26 deadline from official admissions page https://www.admissions.illinois.edu/apply/freshman/dates: Only Early Action (11/1) and Regular (1/5) listed: no ED.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.illinois.edu/first-year-dates/: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.illinois.edu/first-year-dates/: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (Excel CDS-C E104 and answer sheet)."
       ]
     }
   },
@@ -3056,6 +3130,7 @@
       "math": null
     },
     "pctSubmittingSAT": null,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -3107,7 +3182,8 @@
         "Official SAT/ACT (or CLT) scores from the testing agency are required to complete the application; self-reported scores do not substitute. The international page lets applicants self-report in MyStatus after requesting official scores, but official scores must arrive by the deadline. The 'score-choice' classification is inferred because UT uses a single best sitting and does not state an all-scores rule. The page gives no supporting quote, so treat it as 'not stated' if strictness is needed. International applicants must also send at least one official SAT/ACT.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): C1 totals p14. C9 SAT table and % submitting are blank in the published CDS, and no official range was found elsewhere: scores stay unverified. C14 closing 12/1, priority 10/15. EA answers blank.",
         "2026-11-26 deadline from official admissions page https://admissions.utexas.edu/apply/freshman/: Early Action 10/15 (materials 10/22), not binding; Regular 12/1 matches the CDS.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.utexas.edu/apply/freshman/: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.utexas.edu/apply/freshman/: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (check mark)."
       ]
     }
   },
@@ -3139,6 +3215,7 @@
       }
     },
     "pctSubmittingSAT": 12,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -3193,7 +3270,8 @@
         "'We do not accept self-reported test scores'; scores must be sent officially from the testing agency. Single best composite. The FAQ says the Regents 'have not yet made a decision regarding this waiver for the fall 2028 application and beyond.' No separate international SAT rule; English proficiency is required for non-native speakers. The 'score-choice' classification is inferred because only the top composite is used.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Excel CDS. % submitting SAT printed as 0.118. ED cells blank; EA restrictive answer not printed.",
         "2026-11-26 deadline from official admissions page https://admissions.wisc.edu/deadlines/: Only Early Action (11/1) and Regular (1/15) listed: no ED.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.wisc.edu/deadlines/: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.wisc.edu/deadlines/: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (Excel CDS-C E104 and answer sheet)."
       ]
     }
   },
@@ -3225,6 +3303,7 @@
       }
     },
     "pctSubmittingSAT": 24,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -3273,7 +3352,8 @@
       "notes": [
         "Values read from the official PDF's form fields (visible table cells did not extract as text). SUMMED: applied = men 8235 + women 11360 + unknown 5 = 19600; admitted = 1965 + 2103 + 0 = 4068. The form's own total fields (AP_RECD_1ST_N, AP_ADMT_1ST_N) are 0 (unpopulated), so totals are our sums. SAT submitters 365 (24%); ACT 22%. ED I 11/15, ED II 1/1; EA 11/15 (notify 1/15), not restrictive; C14 closing 1/1. Test-policy column inferred from field code, not a visible checkmark - worth a visual check.",
         "Test-optional since 2008. 'Scores are only required if you indicate in your application that you want them considered.' 'We accept self-reported scores as part of our application review process.' Enrollees send official scores the summer before arrival. International students must submit TOEFL, IELTS or DET. 'Report all' is phrased as a request, so it is classified as recommended, not required.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.wfu.edu/apply/: unchanged. Early Action is only for first-generation college students."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.wfu.edu/apply/: unchanged. Early Action is only for first-generation college students.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (form field C)."
       ]
     }
   },
@@ -3305,6 +3385,7 @@
       }
     },
     "pctSubmittingSAT": 22,
+    "testImportance": "very-important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -3357,7 +3438,8 @@
       "notes": [
         "Official CDS is published as an HTML page on Northeastern's University Decision Support site (no 2025-26 PDF found). Page heading still reads 'Northeastern 2024-2025', but C1 states Fall 2025 applicants and costs are 2026-27, so treated as the 2025-2026 CDS - flag the heading mismatch. applied = residency table Total 105,256; gender cells (46,252 + 58,959 + 46) sum to 105,257 (1 off) and no gender total row is printed. admitted 5,920 (gender 2,458+3,458+4; residency 1,384 in-state/3,801 OOS/735 intl). SAT submitters 608. ED I 11/1 (notify 1/1), ED II 1/1 (notify 3/1); EA 11/1 (notify 2/15) not restrictive; C14 closing 1/1.",
         "Scores can be self-reported through the Application Status Check; enrollees send official scores. 'All applicants from U.S. and international high schools will be able to choose to submit standardized testing.' Non-native English speakers need an English test.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.northeastern.edu/academics/specialized-entry-programs/admissions-deadlines-decisions/: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.northeastern.edu/academics/specialized-entry-programs/admissions-deadlines-decisions/: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Very Important (HTML CDS table)."
       ]
     }
   },
@@ -3389,6 +3471,7 @@
       }
     },
     "pctSubmittingSAT": 19,
+    "testImportance": null,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -3469,6 +3552,7 @@
       }
     },
     "pctSubmittingSAT": 52,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -3517,7 +3601,8 @@
       "notes": [
         "C1 totals printed (men 19,890 + women 19,442 applied; 7,257 + 6,633 admitted). C1 residency printed: in-state admitted 972, out-of-state 10,558, international 2,360. C9: 52% (858) submitted SAT, 15% ACT. ED notification 12/5; ED apps 1,053, admits 263; CDS printed no second ED date. EA notification 12/21; 'restrictive = No' pairing inferred from text layout. Read via WebFetch text extraction; verify C8 checkbox column and EA restrictive flag visually.",
         "Self-reporting is available via the Common App, Coalition with Scoir, or the applicant portal; enrollees confirm with official reports. Applicants can switch their testing decision 'up until two weeks before your decision release date.' The international SAT policy is not stated on the testing page; test-optional is described for all applicants.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://case.edu/admission/apply/deadlines-and-requirements: ED [\"11-01\"] -> [\"11-01\", \"01-15\"]."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://case.edu/admission/apply/deadlines-and-requirements: ED [\"11-01\"] -> [\"11-01\", \"01-15\"].",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (x)."
       ]
     }
   },
@@ -3549,6 +3634,7 @@
       }
     },
     "pctSubmittingSAT": 33.03,
+    "testImportance": "important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -3593,7 +3679,8 @@
       "notes": [
         "Used the revised published version (June 2026) rather than the Jan 2026 FINAL. C1 totals printed (applied 9,791 M + 9,542 F + 9 unknown = 19,342; admitted 2,690 M + 2,911 F, unknown cell blank). Residency admitted: in-state 1,010, out-of-state 4,415, international 176. C9 SAT 33.03% (507), ACT 10.29% (158). ED I 11/1 (notify 12/5), ED II 1/1 (notify 2/5); ED apps 2,040, admits 966. EA not offered. Priority date 1/1. C8E date 1-Jan mapping inferred.",
         "Self-reporting is available via the Common App, Coalition with Scoir, or email; official scores must arrive before the first day of classes. Non-U.S. citizens need English proficiency unless waived. The international SAT policy follows the general test-optional rule.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www2.lehigh.edu/admissions/: eaType null -> \"not offered\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www2.lehigh.edu/admissions/: eaType null -> \"not offered\".",
+        "2026-11-26 CDS C7 'Standardized test scores' = Important (x)."
       ]
     }
   },
@@ -3625,6 +3712,7 @@
       }
     },
     "pctSubmittingSAT": 25,
+    "testImportance": "very-important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -3675,7 +3763,8 @@
         "Official 2025-26 Columbus CDS located (fillable PDF) but WebFetch returned the form with all values stripped; direct download blocked by sandbox egress policy. 2024-25 official file (https://irp.osu.edu/media/276) is robots-disallowed. No values recorded; read the PDF in a browser/Acrobat. Third-party (esslo) says the CDS lists SAT/ACT as required for a future cycle; NOT verified, not used.",
         "Requirement applies to Columbus campus only; regional campuses and ATI are test-optional. Official scores only ('Scores must come directly from the testing agency'; transcripts/images not accepted per regional campus pages). Applicants out of high school 2+ years by enrollment exempt. SAT/ACT can serve as an English-proficiency alternative for non-native speakers (page lists 'SAT: 27 or higher on the Reading Test'; ACT English 21+). Scores must arrive by application deadline.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): No C1 totals printed: applied = 39,510 + 41,882, admitted = 19,444 + 20,603. Priority Nov 1.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://undergrad.osu.edu/apply/freshmen-columbus/apply-step-by-step: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://undergrad.osu.edu/apply/freshmen-columbus/apply-step-by-step: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Very Important (check mark, confirmed visually)."
       ]
     }
   },
@@ -3703,6 +3792,7 @@
       }
     },
     "pctSubmittingSAT": 49,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -3750,7 +3840,8 @@
         "Rutgers 'maintains test-optional and test-blind policies through 2027' (NB and Camden optional; Newark test-blind for most). 'Unofficial test scores cannot be accepted' (self-reporting system STARS covers courses/grades only). Once sent, scores 'become a permanent part of your application'; testing preference can be changed once within one week of submitting. No separate international SAT rule stated. SAT EBRW 650+ exempts NB students from English placement exam if scores were sent. SAT and ACT not combined.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): No C1 totals printed: applied = 36,942 + 41,163 + 17, admitted = 21,265 + 24,525 + 10. SAT Composite row blank (no published total). C14 closing date blank; priority date 12/1.",
         "2026-11-26 deadline from official admissions page https://admissions.rutgers.edu/apply/dates-deadlines/new-brunswick: Regular decision due 12/1 (CDS printed it only as the priority date); EA 11/1 does not restrict other applications.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.rutgers.edu/apply/dates-deadlines/new-brunswick: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.rutgers.edu/apply/dates-deadlines/new-brunswick: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (check mark)."
       ]
     }
   },
@@ -3770,6 +3861,7 @@
       "math": null
     },
     "pctSubmittingSAT": null,
+    "testImportance": "not-considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -3825,7 +3917,8 @@
         "UC test-blind; sat set to null per task. The official 2025-26 CDS is a Google Drive PDF linked from https://bap.ucsb.edu/institutional-research (file 'common.data.set.2025.26.pdf'); the Drive viewer returned no text and the direct download is robots-disallowed. No values recorded. Third-party mirrors exist but were not used.",
         "UC system-wide (one source covers all campuses): 'UC does not consider SAT or ACT test scores when making admissions decisions or awarding scholarships.' Fall 2027 applicants 'will not be required to submit SAT or ACT scores' (no change to policy). Scores can still be self-reported in the application (only after first submitting it without scores) and 'may be used as an alternate method of fulfilling minimum requirements' for eligibility or 'for course placement after matriculation' (incl. Entry Level Writing Requirement). English proficiency: old SAT 'Writing and Language' 31+ or ACT ELA 24+ accepted, but 'the digital SAT Reading and Writing section score has not been approved to meet English language proficiency' (UCSD ELWR page likewise says digital SAT R&W cannot fulfill ELWR). Recommended to test by December of senior year if using scores for these purposes.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): SAT table blank (test-blind).",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.sa.ucsb.edu/deadlines: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.sa.ucsb.edu/deadlines: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Not Considered (x)."
       ]
     }
   },
@@ -3857,6 +3950,7 @@
       }
     },
     "pctSubmittingSAT": 37,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -3911,7 +4005,8 @@
         "'Official standardized test scores must be sent to us directly (electronically or mailed) by the test administrator' (Submitting Documents page) — so self-reported scores not accepted (FAQ itself does not mention self-reporting). Test-optional choice is final once application submitted; opted-out scores not considered. International: no separate SAT rule; English proficiency (DET/IELTS/TOEFL) still required for non-native speakers.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Excel CDS. C21 ED question blank. Priority 11/1 (Early Action).",
         "2026-11-26 deadline from official admissions page https://admissions.umd.edu/apply/freshman-applicants: Only Early Action (11/1) and Regular (1/20) listed: no ED.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.umd.edu/apply/application-deadlines: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.umd.edu/apply/application-deadlines: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (Excel CDS-C E104)."
       ]
     }
   },
@@ -3943,6 +4038,7 @@
       }
     },
     "pctSubmittingSAT": 15.7,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -3991,7 +4087,8 @@
       "notes": [
         "Version updated June 9, 2026 (an April 2026 version also exists). C1 totals as printed in residency table (21,609 / 9,056); sex columns: applied 10,660 M + 10,932 F + 17 unknown, admitted 4,142 + 4,904 + 10. Residency admitted: in-state 2,292, out-of-state 5,311, international 1,453. C9: SAT 15.7% (196), ACT 6.4% (80) -- small submitter share. ED I 11/1 (notify mid-Dec), ED II 1/5 (notify early Feb); ED apps 1,129, admits 472. EA not offered. Priority date 11/1.",
         "'Test optional truly does mean test optional – for all applications through all phases.' Self-reported scores accepted on application/transcript or uploaded to MyROC ('We are not able to accept student self-reported test scores via email, phone, or postal mail'); official report required on enrollment. Does not combine SAT and ACT into a hybrid superscore. Once scores are on record 'they will not be removed', but if applicant opts out they are not used. Also test-flexible options (AP/IB/national exams). TOEFL/IELTS required for some international students.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.rochester.edu/applying/dates-and-deadlines/: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.rochester.edu/applying/dates-and-deadlines/: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (x)."
       ]
     }
   },
@@ -4023,6 +4120,7 @@
       }
     },
     "pctSubmittingSAT": 19.12,
+    "testImportance": "not-considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -4065,7 +4163,8 @@
         "Totals printed (applied 33,584 M + 39,263 F + 86 unknown; admitted 13,032 + 17,369 + 45). Residency admitted: in-state 6,980, out-of-state 18,813, international 4,653. C9: SAT 19.12% (1,364), ACT 4.89% (349). Composite 75th printed as 1502 (unusual, not a multiple of 10 -- verify). C8A 'No' conflicts with scores being reported in C9 for submitters; record as printed. C14 closing date 11/15 (yes/no box not visible; date field present). ED/EA No.",
         "'The UW is technically test-optional' — 'we will not be using test scores at all during the holistic review', though 'high test scores (1400 SAT/31 ACT or above) may be considered for a handful of students who may not otherwise be admitted.' Not used for Honors or admission scholarships. Self-reported scores accepted; official scores may be requested if used. Send by Dec 31 of application year. International applicants still must prove English proficiency (TOEFL/IELTS/DET). Practically close to test-blind; retake value very low.",
         "2026-11-26 ED checked at https://admit.washington.edu/apply/first-year/: UW does not participate in early decision or early action. (Admissions extended the fall deadline to Dec 1; data RD kept at the CDS value 11/15.)",
-        "2026-11-26 RD changed from the CDS value 11/15 to 12/01: https://admit.washington.edu/apply/first-year/ gives Dec 1 as the fall deadline for the current cycle."
+        "2026-11-26 RD changed from the CDS value 11/15 to 12/01: https://admit.washington.edu/apply/first-year/ gives Dec 1 as the fall deadline for the current cycle.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Not Considered (form field NC)."
       ]
     }
   },
@@ -4097,6 +4196,7 @@
       }
     },
     "pctSubmittingSAT": 43,
+    "testImportance": null,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -4177,6 +4277,7 @@
       }
     },
     "pctSubmittingSAT": 40,
+    "testImportance": null,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -4257,6 +4358,7 @@
       }
     },
     "pctSubmittingSAT": 34.76,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -4301,7 +4403,8 @@
       "notes": [
         "C1 totals printed (14045 applied = 6690 men + 7355 women + 0 unknown; 957 admitted = 440 + 517 + 0). C9: SAT submitters 179 (34.76%), ACT 89 (17.28%). C21 ED I 11/15 (notify 12/15), ED II 1/5 (notify 2/15). C22 EA: No. C14 closing 1/5. Values read from PDF form fields; one page header (I-3) says 2024-2025. C8 cycle wording (Fall 2027) is the CDS template's question, not necessarily what Bowdoin's text says.",
         "'We accept self-reported scores for all applicants'; scores verified for enrolling students. Scores on school transcript or sent by counselor/CBO count as official. Applicants can suppress scores until the application deadline. Superscore page still references 'Critical Reading and Math' wording. No separate international SAT rule on testing page.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.bowdoin.edu/admissions/apply/dates-deadlines/index.html: eaType null -> \"not offered\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.bowdoin.edu/admissions/apply/dates-deadlines/index.html: eaType null -> \"not offered\".",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (form field C)."
       ]
     }
   },
@@ -4333,6 +4436,7 @@
       }
     },
     "pctSubmittingSAT": 34,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -4387,7 +4491,8 @@
       "notes": [
         "Also checked annotated version CDS_2025-26_Annotated(Updated20260605).pdf (listed on cmc.edu/ir/cds): same values. C1 totals printed (6939 = 3460 M + 3476 F + 3 unknown; 655 = 301 + 354 + 0). C9 SAT 34% (115 students), ACT 14% (48). C8A Yes, but which policy column is checked could not be read from the extraction -> testPolicyCDS null. Policy text only says 'CMC uses either the highest superscored ACT, or highest superscored SAT when making admission decisions.' C8E score deadline 1-Feb. C21 ED Yes; dates printed 11/1, 12/15, 1/10, 2/15 without legible labels, mapped by CDS template order to ED I close 11/1 (notify 12/15) and ED II close 1/10 (notify 2/15) -- verify. C22 EA No. C14 closing 1/10. Inner page headers read 'Common Data Set 2024-2025' though file is the 2025-26 CDS with Fall 2025 data.",
         "Self-report via Common App/Coalition, CMC portal form, or PDF emailed; official scores due before first day of classes for enrollees who submitted. Does not superscore across test types. Can change test-optional preference once within 7 days of submitting. Non-submitters who enroll must send scores afterward for institutional research only. Some international applicants need English proficiency tests.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.cmc.edu/admission/first-year-application-instructions: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.cmc.edu/admission/first-year-application-instructions: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (X)."
       ]
     }
   },
@@ -4419,6 +4524,7 @@
       }
     },
     "pctSubmittingSAT": 37,
+    "testImportance": null,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025 (C1); SAT table heading says Fall 2024 enrollees",
     "testPolicy": [
@@ -4500,6 +4606,7 @@
       }
     },
     "pctSubmittingSAT": 40.14,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -4549,7 +4656,8 @@
       "notes": [
         "SUMMED: C1 totals not printed (total fields hold 0). applied = 5709 men + 7286 women (unknown blank); admitted = 472 + 505. C9 SAT 40.14% (171 students), ACT 14.79% (63). C21 ED I close Nov 15 (notify Dec 16), ED II close Jan 4 (notify Feb 15). C22 EA No. C14 closing Jan 4. Values from PDF form fields. IR page says 2025-26 is the most current CDS.",
         "Does NOT superscore the ACT (highest composite from a single date). 'We accept self-reported scores in lieu of official scores for all applicants.' Score suppression available. Applicants mostly educated in non-English curriculum encouraged to submit TOEFL/IELTS/DET.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.swarthmore.edu/admissions-aid/application-materials-deadlines: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.swarthmore.edu/admissions-aid/application-materials-deadlines: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (form field C)."
       ]
     }
   },
@@ -4581,6 +4689,7 @@
       }
     },
     "pctSubmittingSAT": 55,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -4635,7 +4744,8 @@
       "notes": [
         "Used 2025-26 CDS. The HMC CDS index lists a 'Common Data Set 2026-27 (PDF)' entry but it has no link (not yet posted), so 2025-26 is the newest readable file. C1 totals: 5217 applied (3452 M + 1761 F + 4 another/unknown), 643 admitted (276 + 365 + 2); totals match sums. C9 SAT 55% (130 students), ACT 21% (49). C8 policy text says optional 'until FA 26' -- policy for Fall 2027 and later not stated; verify current HMC policy. C21 ED I close 11/15 (notify 12/15), ED II close 1/5 (notify 2/15). C22: form field AD_EAD = Y but closing date, notification and restrictive fields are blank -- treated as not reliably offered; eaDeadline/eaType null, verify. C14 closing 1/5. Values from PDF form fields.",
         "Self-report on Common App or HMC Applicant Hub, or send official; official reports required only from depositing students who asked for scores to be considered. Testing-plan choice on Common App; can only switch from 'Do not consider' to 'Consider'. Cross-test (SAT+ACT) section combining per FAQ. Scores not used for merit scholarships. Self-report deadlines by round (e.g., Nov 30 ED I, Feb 5 RD).",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.hmc.edu/admission/apply/: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.hmc.edu/admission/apply/: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (form field C)."
       ]
     }
   },
@@ -4667,6 +4777,7 @@
       }
     },
     "pctSubmittingSAT": 44,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -4726,7 +4837,8 @@
       "notes": [
         "Linked from wellesley.edu OIR public-data page ('Common Data Set 2025/2026'). C1 totals printed: 8506 applied, 1258 admitted (all women; men/unknown 0). C9 SAT 44% (253 students), ACT 18% (103). C8A Yes but the checked policy column did not extract; only a link to wellesley.edu admission FAQ on testing; cycle text truncated -> testPolicyCDS null. C8E score deadline 15-Jan. C21 ED I close 11/1 (notify mid-Dec), ED II close 1/5 (notify mid-Feb); mapping by label order. C22 EA No. C14 closing 1/8.",
         "Applicants 'may submit self-reported scores with their application, but must provide official scores upon enrollment.' 'SAT-ACT Score Choice Form' in portal only switches consider/do-not-consider before round deadline — not a sitting-selection policy. Superscoring not stated on official pages checked. Wellesley does not require an English proficiency exam. Recommends finishing testing by end of junior year.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.wellesley.edu/admission-aid/apply/first-year-applicants (read by Bibek): ED I Nov 1, 2026; ED II Jan 5, 2027; Regular Decision Jan 8, 2027; no Early Action. Dates unchanged; eaType null -> \"not offered\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.wellesley.edu/admission-aid/apply/first-year-applicants (read by Bibek): ED I Nov 1, 2026; ED II Jan 5, 2027; Regular Decision Jan 8, 2027; no Early Action. Dates unchanged; eaType null -> \"not offered\".",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (X, confirmed visually)."
       ]
     }
   },
@@ -4758,6 +4870,7 @@
       }
     },
     "pctSubmittingSAT": 32,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -4807,7 +4920,8 @@
         "Vassar IR CDS menu (offices.vassar.edu/institutional-research/data/) lists a 2025/26 entry, but WebFetch could not read offices.vassar.edu at all (robots.txt unreachable) and the 2025-26 PDF URL could not be discovered. No values read.",
         "'Vassar does not require applicants to submit SAT or ACT scores' (permanent). Must declare via test-optional form in portal (ED I Nov 22; RD/ED II Jan 8). Self-reported accepted; enrollees provide official reports in spring; discrepancies can revoke offer. Latest test dates: November (ED I), December (RD/ED II).",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Values are PDF form fields (visible in a PDF viewer).",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.vassar.edu/admission/apply: unchanged. Page gives no cycle year."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.vassar.edu/admission/apply: unchanged. Page gives no cycle year.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (form field C)."
       ]
     }
   },
@@ -4839,6 +4953,7 @@
       }
     },
     "pctSubmittingSAT": 29.66,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -4894,7 +5009,8 @@
       "notes": [
         "SUMMED: C1 total cells not printed; raw extracted values in row order were applied 4600 / 4362 / 1 and admitted 561 / 653, read as men/women/unknown (CDS order). applied = 8963, admitted = 1214. Cross-check: C2-style residency rows on the same page sum to 8963 (923+3568+4472+0) and 1214 (209+925+80+0), and enrolled 230+269 = 499 matches B1. Same PDF is listed on wlu.edu/accreditation-and-institutional-research/common-data-set as 2025-26 (no 2026-27). C9 SAT 29.66% (148 students), ACT 22.24% (111). C8: one extraction pass suggested the X was under 'Required', which conflicts with the test-optional text -> left as partial text; verify. C8E 1-Feb. C21 ED Yes, both binding: ED I close 11/1 (notify 12/15), ED II close 1/5 (notify 2/1), mapping by printed order. C22 EA No. C14 closing 5-Jan.",
         "International students in local/national (non-US) curricula 'should strongly consider submitting standardized test scores' if testing is reasonably available. Self-reported or official accepted; official due after reserving a place. ACT Writing not reviewed; Science reviewed if submitted. Testing preference can be updated until deadline.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.wlu.edu/admissions/apply: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.wlu.edu/admissions/apply: unchanged.",
+        "2026-11-26 CDS C7 'Standardized test scores' = Considered (X)."
       ]
     }
   }

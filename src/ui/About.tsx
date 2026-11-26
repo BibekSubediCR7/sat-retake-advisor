@@ -40,6 +40,11 @@ export function About() {
               &ldquo;No time to retake&rdquo; if no SAT score would arrive before that school&rsquo;s deadline.
             </li>
             <li>
+              <strong className="text-ink">How much test scores count:</strong> the school&rsquo;s own rating of
+              standardized test scores in its Common Data Set (section C7): very important, important, considered or
+              not considered.
+            </li>
+            <li>
               <strong className="text-ink">Your score as each school counts it:</strong> superscore if the school
               superscores, otherwise your best single test date.
             </li>
@@ -77,8 +82,9 @@ export function About() {
           <h3 className={`${monoLabel} text-ink`}>Where the data comes from</h3>
           <ul className="mt-2 list-disc space-y-1 pl-5">
             <li>
-              <strong className="text-ink">SAT ranges and admit rates:</strong> each school&rsquo;s latest Common Data
-              Set (sections C1 and C9), the standard report schools publish themselves. The year is shown on each
+              <strong className="text-ink">SAT ranges, admit rates and how much test scores count:</strong> each
+              school&rsquo;s latest Common Data Set (sections C1, C7 and C9), the standard report schools publish
+              themselves. The year is shown on each
               school.
             </li>
             <li>

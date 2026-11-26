@@ -79,6 +79,20 @@ export function submittingText(s: AppSchool): string | null {
   return s.pctSubmittingSAT === null ? null : `${s.pctSubmittingSAT}% of enrolled students sent SAT scores`;
 }
 
+const TEST_IMPORTANCE_TEXT: Record<NonNullable<AppSchool['testImportance']>, string> = {
+  'very-important': 'Very important',
+  important: 'Important',
+  considered: 'Considered',
+  'not-considered': 'Not considered',
+};
+
+/** CDS C7 rating of "Standardized test scores"; null when it hasn't been read yet. */
+export function testImportanceText(s: AppSchool): string | null {
+  if (s.testImportance === null) return null;
+  const year = s.dataYear ? ` ${s.dataYear}` : '';
+  return `${TEST_IMPORTANCE_TEXT[s.testImportance]} in admission decisions (Common Data Set${year}, section C7)`;
+}
+
 /** Policy line; a single open-ended entry says which cycle it was published for. */
 export function policyLine(result: SchoolResult, school: AppSchool): string {
   const p = result.policy;
