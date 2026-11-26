@@ -127,9 +127,11 @@ export function About() {
             </li>
           </ul>
         </div>
-        <ExternalLink href={site.patreonUrl} className={secondaryButton}>
-          <HeartHandshake size={18} aria-hidden="true" /> Support this tool on Patreon
-        </ExternalLink>
+        {site.supportUrl && (
+          <ExternalLink href={site.supportUrl} className={secondaryButton}>
+            <HeartHandshake size={18} aria-hidden="true" /> Support this tool
+          </ExternalLink>
+        )}
         <p className="border-t border-dashed border-rule pt-4 text-sm text-ink-muted">{DISCLAIMER}</p>
       </div>
     </Section>

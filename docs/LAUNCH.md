@@ -95,7 +95,7 @@ For local development against the real project, copy `.env.example` to `.env.loc
 ## 6. Launch gate (before announcing in the group)
 
 - [ ] Data checks in `docs/CHECKLIST.md` done by a person. Unverified schools are fine to launch: they show "Data not yet verified".
-- [ ] Links in `src/config/site.ts` filled in: group, tutor contact, LinkedIn, GitHub, contact email, Patreon, and optionally the tutor team.
+- [ ] Links in `src/config/site.ts` filled in: group, tutor contact, LinkedIn, GitHub, contact email, support link (Buy Me a Coffee; `supportUrl`), and optionally the tutor team.
 - [ ] Product name and domain decided.
 - [ ] `/security-review` on the latest changes and the full security scan.
 - [ ] App Check enforced, usage alert set.

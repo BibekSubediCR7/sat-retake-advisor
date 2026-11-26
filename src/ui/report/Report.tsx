@@ -142,9 +142,11 @@ export function Report({ report, input, schools, satDates, onEdit, onReportError
         <button type="button" onClick={onEdit} className={`${secondaryButton} flex-1`}>
           <PencilLine size={18} aria-hidden="true" /> Edit inputs
         </button>
-        <ExternalLink href={site.patreonUrl} className={`${secondaryButton} flex-1`}>
-          <HeartHandshake size={18} aria-hidden="true" /> Support this tool
-        </ExternalLink>
+        {site.supportUrl && (
+          <ExternalLink href={site.supportUrl} className={`${secondaryButton} flex-1`}>
+            <HeartHandshake size={18} aria-hidden="true" /> Support this tool
+          </ExternalLink>
+        )}
       </div>
       <Tutors />
     </div>

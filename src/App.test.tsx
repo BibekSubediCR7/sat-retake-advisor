@@ -163,11 +163,13 @@ describe('App', () => {
 
   it('links the set config values and shows "coming soon" for unset ones', () => {
     render(<App />);
-    expect(site.patreonUrl).toBeNull();
+    expect(site.supportUrl).toBeNull();
     const about = within(document.getElementById('about')!);
     const hrefs = about.getAllByRole('link').map((a) => a.getAttribute('href'));
     expect(hrefs).toEqual([site.groupUrl, site.linkedinUrl, site.githubUrl]);
-    expect(about.getByText('(link coming soon)')).toBeTruthy(); // Patreon
+    expect(about.queryByText('(link coming soon)')).toBeNull();
+    expect(screen.queryByText(/Support this tool/)).toBeNull(); // hidden until a support link is set
+    expect(document.body.textContent).not.toMatch(/patreon/i);
     expect(about.getByText(site.contactEmail!)).toBeTruthy();
     expect(about.queryByText('Need tutoring help?')).toBeNull(); // no tutors yet
   });
