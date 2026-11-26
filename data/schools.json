@@ -429,7 +429,7 @@
       }
     },
     "pctSubmittingSAT": 56,
-    "testImportance": null,
+    "testImportance": "very-important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -471,7 +471,8 @@
       "notes": [
         "Mirror confirmed titled 'Stanford University Common Data Set 2025-2026'. C8 checkbox column not recoverable from text; policy taken from C8F narrative. C8A instruction says Fall 2027, C8F says Fall 2026 entry. Score receipt 15-Jan. C21 ED = No. C22 EA Yes, 11/1, notification 12/15, restrictive 'Yes' (text extraction). C14 closing 1/5.",
         "'ACT or SAT scores are required.' Score Choice is not named explicitly; scoreSending is based on the instruction to self-report highest scores, with official scores required on enrollment 'for all self-reported sittings'. English proficiency tests cannot substitute for SAT/ACT. Reinstatement predates 2025 (scores optional only through Class of 2029).",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission.stanford.edu/apply/first-year/index.html (read by Bibek): Restrictive Early Action Nov 1, 2026; Regular Decision Jan 5, 2027; no Early Decision. Dates unchanged; eaType \"restrictive (per extracted text; verify)\" -> \"restrictive\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission.stanford.edu/apply/first-year/index.html (read by Bibek): Restrictive Early Action Nov 1, 2026; Regular Decision Jan 5, 2027; no Early Decision. Dates unchanged; eaType \"restrictive (per extracted text; verify)\" -> \"restrictive\".",
+        "2026-11-26 CDS 2025-26 C7 'Standardized test scores' = Very Important (read by Bibek from the school's official CDS)."
       ]
     }
   },
@@ -1327,7 +1328,7 @@
       }
     },
     "pctSubmittingSAT": 77,
-    "testImportance": null,
+    "testImportance": "very-important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -1377,7 +1378,8 @@
         "Brown 'has returned to a policy requiring standardized test scores (either SAT or ACT scores)' since the 2024-25 cycle; the March 2024 announcement allowed exceptions only in rare circumstances (FAQ covers students unable to test by the deadline). No IB/A-level substitute stated for internationals; English proficiency requirements apply. Official scores required on enrollment if self-reported.",
         "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission.brown.edu/first-year: RD \"01-03\" -> \"01-05\".",
         "2026-11-26 https://admission.brown.edu/first-year lists only Early Decision (deadline November 1, binding) and Regular Decision (January 5); Early Action not offered.",
-        "2026-11-26 CDS 2025-26 (Fall 2025) read from Brown's Tableau CDS page (Bibek's screenshots): C1 applied 17,972 + 24,771 + 31 = 42,774, admitted 1,375 + 1,335 + 0 = 2,710 (no total row shown). C9: 77% (1,348) submitted SAT; Composite 1470/1520/1550, R&W 730/750/770, Math 730/770/790."
+        "2026-11-26 CDS 2025-26 (Fall 2025) read from Brown's Tableau CDS page (Bibek's screenshots): C1 applied 17,972 + 24,771 + 31 = 42,774, admitted 1,375 + 1,335 + 0 = 2,710 (no total row shown). C9: 77% (1,348) submitted SAT; Composite 1470/1520/1550, R&W 730/750/770, Math 730/770/790.",
+        "2026-11-26 CDS 2025-26 C7 'Standardized test scores' = Very Important (read by Bibek from the school's official CDS)."
       ]
     }
   },
@@ -2080,7 +2082,7 @@
       }
     },
     "pctSubmittingSAT": null,
-    "testImportance": null,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2129,7 +2131,8 @@
         "ira.virginia.edu (CDS page and PDFs) returned client errors/403 to the fetcher. The official UVA Qlik 'CDS Section C' page (virginia.edu host) gave C8, C14, C21, C22, but C1 and C9 tables only showed 'Loading...' so applicants, admits, SAT % and percentiles are missing. The page shows no year label (C1 says Fall 2025, C8 says Fall 2027), so check that it is the 2025-2026 edition. C14 printed as 'has closing date: NO' but fall closing date 01/05. C21 ED close 11/1, notify 12/15. C22 EA close 11/1, notify 2/15, restrictive NO. Need the 2025-2026 PDF from ira.virginia.edu/common-data-set/common-data-set-2025-2026.",
         "LOW CONFIDENCE ON SOURCES: most admission.virginia.edu pages could not be fetched, and the fetched FAQ is out of date. Fall 2027 optional status comes from UVA's official CDS on its IR server, and secondary sites agree. The CDS does not distinguish international applicants; the original policy covered domestic and international students. Self-reporting is not stated on a fetched official page, though the QuestBridge partner page says UVA uses self-reported scores. Applicants can reportedly change their testing choice until Nov 22 (early) or Jan 15 (RD) (secondary source; unverified). Manually verify admission.virginia.edu before publishing.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Interactive Qlik CDS 2025-26 (values from Bibek's screenshots). % submitting SAT not captured. C14 says 'No' closing date but lists 01/05.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission.virginia.edu/admission/deadlines-instructions: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission.virginia.edu/admission/deadlines-instructions: unchanged.",
+        "2026-11-26 CDS 2025-26 C7 'Standardized test scores' = Considered (read by Bibek from the school's official CDS)."
       ]
     }
   },
@@ -3471,7 +3474,7 @@
       }
     },
     "pctSubmittingSAT": 19,
-    "testImportance": null,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -3520,7 +3523,8 @@
       "notes": [
         "applied/admitted are printed Totals (residency table: applied 522 in-state/23,777 OOS/1,542 intl; admitted 216/6,882/174); gender cells 11,641+14,200+0 and 3,444+3,828+0 match. SAT submitters 346 (19%); ACT 9%. Composite and EBRW percentiles happen to equal Wake Forest's (1420/1450/1490; 700/730/750) - re-checked by a second raw-text read of C9 and confirmed; Math differs (710/730/770). C8 policy column not readable; verify visually. ED I 11/1, ED II 1/15; EA 11/1 not restrictive; C14 closing Jan 15.",
         "2026-27 is explicitly the last confirmed test-optional cycle: 'We continue to have ongoing conversations about the future of standardized testing in our admission process beyond that time.' A change for fall 2028 is possible. Scores self-reported via the Applicant Status Page; officials are needed only if the student enrolls. ED I/EA scores must be reported by Nov 10. 'Yes, international students can choose to apply test-optional.'",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.villanova.edu/university/undergraduate-admission/applying-to-villanova/dates-and-deadlines.html: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.villanova.edu/university/undergraduate-admission/applying-to-villanova/dates-and-deadlines.html: unchanged.",
+        "2026-11-26 CDS 2025-26 C7 'Standardized test scores' = Considered (read by Bibek from the school's official CDS)."
       ]
     }
   },
@@ -4196,7 +4200,7 @@
       }
     },
     "pctSubmittingSAT": 43,
-    "testImportance": null,
+    "testImportance": "important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -4245,7 +4249,8 @@
         "Official 2025-26 CDS PDF located (URL above, found via search; Williams IR index page text listed no links). Every fetch of the PDF (www and non-www) failed with a site client error, so no values were read. Nothing filled from third-party sites.",
         "'Williams is truly test optional.' Self-report via application testing section or emailed screenshot; or official. 'For testing to be considered, we require the full set of scores for the SAT or ACT' (i.e., all sections of a sitting). Can change mind about submitting before deadline. No separate international SAT rule stated.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Printed 'ALL' totals. Values from Bibek's screenshots of the 2025-26 CDS.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.williams.edu/admission-aid/how-to-apply/: RD \"01-05\" -> \"01-04\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.williams.edu/admission-aid/how-to-apply/: RD \"01-05\" -> \"01-04\".",
+        "2026-11-26 CDS 2025-26 C7 'Standardized test scores' = Important (read by Bibek from the school's official CDS)."
       ]
     }
   },
@@ -4277,7 +4282,7 @@
       }
     },
     "pctSubmittingSAT": 40,
-    "testImportance": null,
+    "testImportance": "very-important",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -4326,7 +4331,8 @@
         "Official 2025-26 CDS page URL located (amherst.edu/about/facts/common_data_sets/2025) but it failed with a site client error on every fetch (www and non-www). Index page amherst.edu/about/facts/common_data_sets loaded but showed no file links (mentions an interactive dashboard). No section C file for 2025-26 found. No values read.",
         "First-year page: 'Amherst College will continue its test-optional policy for all applicants' ('In June 2023, we formalized our four-year test-optional pilot program as our policy'). Self-reported or official accepted; official only if admitted and enrolling. CAUTION: the /firstyear/testing page as fetched says testing is 'a required part of our application process for first-year applicants' and that multi-testers 'are encouraged to submit all test results' — this appears to be stale pre-2020 text (mentions MELAB) and contradicts the first-year page and Amherst's 2027-28 QuestBridge requirements ('test-optional for all applicants - domestic and international'). Treated as optional; flag for manual re-check. No Amherst news of a return to required testing found.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): No C1 totals printed: applied = 7,425 + 8,375 + 19, admitted = 539 + 682 + 1. C21 dates printed one row high; read as closing 11/7, notification 12/15. Values from Bibek's screenshots.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.amherst.edu/admission/apply/firstyear: ED [\"11-07\"] -> [\"11-09\"]."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.amherst.edu/admission/apply/firstyear: ED [\"11-07\"] -> [\"11-09\"].",
+        "2026-11-26 CDS 2025-26 C7 'Standardized test scores' = Very Important (read by Bibek from the school's official CDS)."
       ]
     }
   },
@@ -4524,7 +4530,7 @@
       }
     },
     "pctSubmittingSAT": 37,
-    "testImportance": null,
+    "testImportance": "considered",
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025 (C1); SAT table heading says Fall 2024 enrollees",
     "testPolicy": [
@@ -4574,7 +4580,8 @@
         "Pomona publishes 2025-26 (and 2024-25) CDS only as an interactive Tableau workbook (linked from pomona.edu/administration/institutional-research/common-data-set); no PDF. HTML views render empty without JavaScript. CSV export works for sections A and B (e.g. .../B_EnrollmentandPersistence.csv) but the section C view name could not be found (tried several guesses). No 2026-27 listed. No values read; check section C in a browser.",
         "Permanently test-optional (faculty vote fall 2023). Applicants who opt in self-report scores in the Pomona applicant portal after submitting; official reports only for admitted/enrolling students. If submitting ACT, must include Science section. SAT superscoring is NOT stated on the pomona.edu page fetched; Pomona's QuestBridge partner page (non-.edu) says Pomona superscores both SAT and ACT. If applicant opts out, scores are not considered even if received.",
         "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Tableau CDS 2025-26 (Bibek's screenshots). No C1 totals printed: applied = 5,365 + 7,096 + 9, admitted = 418 + 471 + 1. R&W median printed as 755 (kept as printed).",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.pomona.edu/admissions/paths-apply: unchanged."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.pomona.edu/admissions/paths-apply: unchanged.",
+        "2026-11-26 CDS 2025-26 C7 'Standardized test scores' = Considered (read by Bibek from the school's official CDS)."
       ]
     }
   },
