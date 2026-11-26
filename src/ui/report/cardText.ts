@@ -115,7 +115,7 @@ export function timelineStatusText(t: Timeline): string | null {
     case 'has-dates':
       return `${open} SAT ${open === 1 ? 'date' : 'dates'} you can still use before this deadline.`;
     case 'no-time':
-      return 'No SAT date you can still register for is early enough for this deadline.';
+      return 'Too late for another SAT: scores from every date you can still register for would come out after this deadline.';
     case 'dates-not-announced':
       return 'Test dates not announced yet.';
     case 'deadline-unknown':

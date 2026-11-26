@@ -36,7 +36,7 @@ function NextTestLine({ next }: { next: NextTest }) {
   } else if (next.kind === 'not-announced') {
     body = 'Test dates not announced yet.';
   } else {
-    body = 'No SAT date you can still register for arrives before your deadlines.';
+    body = 'None. Scores from every SAT you can still register for would come out after your deadlines.';
   }
   return (
     <p className="text-base text-ink-soft">

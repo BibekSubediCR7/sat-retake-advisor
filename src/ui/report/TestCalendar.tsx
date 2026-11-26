@@ -7,7 +7,7 @@ import { buildCalendar } from './calendar';
 
 const EMPTY_TEXT = {
   'no-sat': 'None of your schools considers the SAT, so no test dates are listed.',
-  'too-late': 'No SAT date you can still take arrives before your deadlines.',
+  'too-late': 'No dates to list: scores from every SAT you can still register for would come out after your deadlines.',
   'not-announced': 'Test dates not announced yet.',
 } as const;
 
