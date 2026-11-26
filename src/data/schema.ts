@@ -8,7 +8,14 @@ import { z } from 'zod';
  * Printed CDS values that are not multiples of 10. Kept exactly as printed and
  * listed in docs/CHECKLIST.md §2 for a human to confirm. Key: `${id}.${section}.${pct}`.
  */
-export const knownOddValues: ReadonlySet<string> = new Set(['columbia.rw.p75', 'uw.total.p75']);
+export const knownOddValues: ReadonlySet<string> = new Set([
+  'columbia.rw.p75',
+  'uw.total.p75',
+  'boston-college.rw.p50',
+  'uiuc.total.p50',
+  'georgetown.total.p25',
+  'pomona.rw.p50',
+]);
 
 export const testPolicyValue = z.enum([
   'required',

@@ -77,16 +77,28 @@
     "category": "national-university",
     "usNewsRank2027": 2,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 42303,
+      "admitted": 1868,
+      "admitRate": 0.0442
     },
     "sat": {
-      "total": null,
-      "rw": null,
-      "math": null
+      "total": {
+        "p25": 1490,
+        "p50": 1530,
+        "p75": 1560
+      },
+      "rw": {
+        "p25": 740,
+        "p50": 760,
+        "p75": 780
+      },
+      "math": {
+        "p25": 760,
+        "p50": 790,
+        "p75": 800
+      }
     },
-    "pctSubmittingSAT": null,
+    "pctSubmittingSAT": 60,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -107,13 +119,13 @@
     "scoreSending": "score-choice",
     "selfReporting": "no",
     "deadlines": {
-      "ED": null,
-      "EA": null,
-      "eaType": null,
-      "RD": null
+      "ED": [],
+      "EA": "11-01",
+      "eaType": "restrictive",
+      "RD": "01-01"
     },
     "sources": {
-      "cds": "https://ir.princeton.edu/sites/g/files/toruqf2041/files/documents/CDS_2526_Princeton_v1.4.pdf",
+      "cds": "https://ir.princeton.edu/sites/g/files/toruqf2041/files/documents/CDS_2526_Princeton_v2.pdf",
       "policy": [
         {
           "url": "https://admission.princeton.edu/apply/standardized-testing",
@@ -126,7 +138,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -137,7 +149,8 @@
       "scoreSendingQuote": "We allow applicants to use the score choice feature of the SAT",
       "notes": [
         "Official PDF and the ir.princeton.edu CDS page both fail (site client_error for WebFetch; host refused by sandbox proxy for curl); Wayback blocked. No values recorded. URL learned from search/esslo pointer only.",
-        "Scores, if submitted, 'must' be sent directly from the testing firms (self-reporting only suggested for AP/IB). Does not superscore between paper and digital SAT. ACT: highest composite only. Announcement date from Princeton Alumni Weekly (paw.princeton.edu, 2025-10-09). Active-duty military exempt under future requirement. English proficiency test required for applicants not schooled in English."
+        "Scores, if submitted, 'must' be sent directly from the testing firms (self-reporting only suggested for AP/IB). Does not superscore between paper and digital SAT. ACT: highest composite only. Announcement date from Princeton Alumni Weekly (paw.princeton.edu, 2025-10-09). Active-duty military exempt under future requirement. English proficiency test required for applicants not schooled in English.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): CDS 2025-26 v2. C1 totals from the residency table (42,303 / 1,868). EA notification mid-December."
       ]
     }
   },
@@ -300,16 +313,24 @@
     "category": "national-university",
     "usNewsRank2027": 5,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 11285,
+      "admitted": 428,
+      "admitRate": 0.0379
     },
     "sat": {
       "total": null,
-      "rw": null,
-      "math": null
+      "rw": {
+        "p25": 760,
+        "p50": 760,
+        "p75": 780
+      },
+      "math": {
+        "p25": 790,
+        "p50": 790,
+        "p75": 800
+      }
     },
-    "pctSubmittingSAT": null,
+    "pctSubmittingSAT": 78,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -325,10 +346,10 @@
     "scoreSending": "not stated",
     "selfReporting": "not stated",
     "deadlines": {
-      "ED": null,
-      "EA": null,
-      "eaType": null,
-      "RD": null
+      "ED": [],
+      "EA": "11-01",
+      "eaType": "restrictive",
+      "RD": "01-03"
     },
     "sources": {
       "cds": "https://iro.caltech.edu/documents/35129/Caltech_CDS_2025-26_August_2026.pdf",
@@ -348,7 +369,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -359,7 +380,8 @@
       "scoreSendingQuote": null,
       "notes": [
         "Official PDF (linked from iro.caltech.edu/data) opens but its text layer is font-garbled: year digits missing, labels detached from numbers, checkboxes lost. Fragments seen but NOT recorded because labels can't be confirmed: SAT-submitting ~78% (190), unlabeled SAT triplets '760 760 780' and '790 790 800', admitted men 224/women 204, EA-like dates '11 1'/'12 15', ED fields possibly N/A. 2024-25 file (documents/31491/Caltech_CDS_2024-2025_May_2025.pdf) equally garbled. Needs visual reading of the PDF.",
-        "'Caltech requires first-year applicants to submit either the SAT or the ACT.' International applicants who could not test (exam unavailable nearby, site cancellations) may explain in the Caltech-specific application and show preparation otherwise. Self-reporting of SAT/ACT not stated on fetched pages (AP/IB self-report via Beaver Breakroom). Requirement reinstated April 2024 for fall 2025 entry. Test re-submissions must meet the same deadlines."
+        "'Caltech requires first-year applicants to submit either the SAT or the ACT.' International applicants who could not test (exam unavailable nearby, site cancellations) may explain in the Caltech-specific application and show preparation otherwise. Self-reporting of SAT/ACT not stated on fetched pages (AP/IB self-report via Beaver Breakroom). Requirement reinstated April 2024 for fall 2025 entry. Test re-submissions must meet the same deadlines.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): No C1 totals printed: applied = 7,772 + 3,513, admitted = 224 + 204. SAT Composite row left blank (no published total)."
       ]
     }
   },
@@ -441,16 +463,24 @@
     "category": "national-university",
     "usNewsRank2027": 7,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 72544,
+      "admitted": 3570,
+      "admitRate": 0.0492
     },
     "sat": {
       "total": null,
-      "rw": null,
-      "math": null
+      "rw": {
+        "p25": 740,
+        "p50": 760,
+        "p75": 770
+      },
+      "math": {
+        "p25": 770,
+        "p50": 790,
+        "p75": 800
+      }
     },
-    "pctSubmittingSAT": null,
+    "pctSubmittingSAT": 52,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -465,10 +495,12 @@
     "scoreSending": "all-scores-recommended",
     "selfReporting": "yes",
     "deadlines": {
-      "ED": null,
+      "ED": [
+        "11-01"
+      ],
       "EA": null,
-      "eaType": null,
-      "RD": null
+      "eaType": "not offered",
+      "RD": "01-05"
     },
     "sources": {
       "cds": "https://upenn.box.com/s/woo7d85yxpol6j9e2o121aucjc6dc1k5",
@@ -484,7 +516,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -495,7 +527,8 @@
       "scoreSendingQuote": "we encourage students to submit their entire testing history for both ACT and SAT exams",
       "notes": [
         "Official link from ira.upenn.edu/penn-numbers/common-data-set is a Box share (file UPenn-Common-Data-Set-2025-26-June-2026.pdf). Box viewer is JS-only; shared/static direct link is robots-disallowed; curl host blocked. 2024-25 is also on Box (https://upenn.box.com/s/ckv4frz37rzxa4u6bdiv2h4yzykqm4ef), same problem. Needs manual browser download.",
-        "SAT or ACT required; applicants facing hardship who have not tested may submit a waiver (requirement 'automatically waived'). 'Applicants who have taken standardized testing are required to submit their scores' (i.e., cannot use the waiver if tested). Self-reporting allowed with some exceptions (e.g., recruited athletes). Internationals: same SAT/ACT rule; official English proficiency score required (no self-report), taken on/after 2025-04-01."
+        "SAT or ACT required; applicants facing hardship who have not tested may submit a waiver (requirement 'automatically waived'). 'Applicants who have taken standardized testing are required to submit their scores' (i.e., cannot use the waiver if tested). Self-reporting allowed with some exceptions (e.g., recruited athletes). Internationals: same SAT/ACT rule; official English proficiency score required (no self-report), taken on/after 2025-04-01.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): No SAT Composite row printed (no published total)."
       ]
     }
   },
@@ -733,9 +766,9 @@
     "category": "national-university",
     "usNewsRank2027": 9,
     "admissions": {
-      "applied": null,
+      "applied": 45533,
       "admitted": 2039,
-      "admitRate": null
+      "admitRate": 0.0448
     },
     "sat": {
       "total": {
@@ -771,7 +804,7 @@
     "deadlines": {
       "ED": null,
       "EA": null,
-      "eaType": null,
+      "eaType": "non-restrictive",
       "RD": null
     },
     "sources": {
@@ -801,7 +834,8 @@
         "applicants = 19,929 + 24,578 + 1,026 unknown; column labels garbled in PDF - verify applicant total",
         "C8A Yes (SAT/ACT used); X on 'SAT or ACT' row but column not recoverable; no C8F narrative; no cycle stated. C21 ED offered = Yes but no closing dates printed (ED I/ED II blank). C22 EA offered = Yes, no date printed; restrictive answer unclear. C14 says it has a closing date but no date printed. C1 RE-CHECK: no grand total of applicants is printed. Applicant row values appear as 'Total' 19929, 24578, 1026 with sex labels not tied to columns; if the order is men/women/unknown (same as the admitted row), applicants = 45,533 (derived, not printed). Admitted printed: males 1169, females 870, unknown 0 -> 2,039 (derived sum). Enrolled: 1042 + 744 + 0 = 1,786. Some later section page headers read '2024-2025' though CDS-A says 2025-2026; C1 is labeled Fall 2025.",
         "No printed applicant total; column labels garbled (sum would be 45,533). Admit rate left blank until checked.",
-        "Test-optional with a 'No Harm' policy; 'This policy is open to all applicants', including international and transfer applicants. Official pages could not be fetched directly (site error); quotes come from search-engine snippets of the official FAQ, so re-verify before publishing."
+        "Test-optional with a 'No Harm' policy; 'This policy is open to all applicants', including international and transfer applicants. Official pages could not be fetched directly (site error); quotes come from search-engine snippets of the official FAQ, so re-verify before publishing.",
+        "2026-11-26: No C1 totals printed: applied = 19,929 + 24,578 + 1,026, admitted = 1,169 + 870 + 0. ED/EA/RD dates not stated in the CDS (stay null); EA non-restrictive per Bibek."
       ]
     }
   },
@@ -1131,16 +1165,28 @@
     "category": "national-university",
     "usNewsRank2027": 16,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 48196,
+      "admitted": 2593,
+      "admitRate": 0.0538
     },
     "sat": {
-      "total": null,
-      "rw": null,
-      "math": null
+      "total": {
+        "p25": 1510,
+        "p50": 1530,
+        "p75": 1560
+      },
+      "rw": {
+        "p25": 740,
+        "p50": 750,
+        "p75": 770
+      },
+      "math": {
+        "p25": 770,
+        "p50": 780,
+        "p75": 790
+      }
     },
-    "pctSubmittingSAT": null,
+    "pctSubmittingSAT": 24,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -1163,8 +1209,8 @@
     "deadlines": {
       "ED": null,
       "EA": null,
-      "eaType": null,
-      "RD": null
+      "eaType": "not offered",
+      "RD": "01-01"
     },
     "sources": {
       "cds": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2026/07/CDS_2025-2026.xlsx",
@@ -1180,7 +1226,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -1191,7 +1237,8 @@
       "scoreSendingQuote": "we encourage you to submit all of your scores if you choose to submit testing",
       "notes": [
         "Official CDS is published ONLY as .xlsx (vanderbilt.edu/dsa/common-data-set lists 2025-26 at .../2026/07/CDS_2025-2026.xlsx, newer than the .../2026/05/ URL used before; 2024-25 at .../2025/11/CDS_2024-2025.xlsx). WebFetch returns binary; curl to cdn.vanderbilt.edu blocked by sandbox proxy. Download and parse the xlsx manually.",
-        "Policy covers first-year, transfer, international and homeschool applicants; proof of English proficiency still required for internationals. Note: the international section of the page says test-optional 'through fall 2027' while main policy says fall 2027 and 2028 (internal inconsistency). Vanderbilt superscores SAT using both digital and paper results."
+        "Policy covers first-year, transfer, international and homeschool applicants; proof of English proficiency still required for internationals. Note: the international section of the page says test-optional 'through fall 2027' while main policy says fall 2027 and 2028 (internal inconsistency). Vanderbilt superscores SAT using both digital and paper results.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Excel CDS. ED offered but the ED date cells show #VALUE!, so ED dates stay unknown."
       ]
     }
   },
@@ -1591,14 +1638,26 @@
     "category": "national-university",
     "usNewsRank2027": 20,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 35401,
+      "admitted": 3320,
+      "admitRate": 0.0938
     },
     "sat": {
-      "total": null,
-      "rw": null,
-      "math": null
+      "total": {
+        "p25": 1460,
+        "p50": 1500,
+        "p75": 1540
+      },
+      "rw": {
+        "p25": 720,
+        "p50": 740,
+        "p75": 760
+      },
+      "math": {
+        "p25": 730,
+        "p50": 760,
+        "p75": 780
+      }
     },
     "pctSubmittingSAT": null,
     "dataYear": "2025-26",
@@ -1621,10 +1680,10 @@
     "scoreSending": "not stated",
     "selfReporting": "yes",
     "deadlines": {
-      "ED": null,
-      "EA": null,
-      "eaType": null,
-      "RD": null
+      "ED": [],
+      "EA": "11-01",
+      "eaType": "restrictive",
+      "RD": "01-02"
     },
     "sources": {
       "cds": "https://iris.nd.edu/institutional-research/common-data-set-cds/",
@@ -1644,7 +1703,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -1655,7 +1714,8 @@
       "scoreSendingQuote": null,
       "notes": [
         "Official page links only to a Google Drive folder (drive.google.com/drive/folders/1TsZYMnJhOYuNfNYsaziNrbm9uJIqLS_u); 2025-26 file reportedly drive.google.com/file/d/13Y3nSs6H6hBvzfzroJodtXrKpAiaHkqy. Drive fetch is robots-disallowed/client_error and not accessible via the Drive connector. A third-party storage copy exists (supabase) but was not used as a data source.",
-        "Under the future (2027-28) requirement, students studying outside the US may use predicted IB Diploma, Cambridge A-Levels (3+), or French Bac results instead; hardship exceptions available. For the current 2026-27 cycle the policy is test-optional for all. Self-reported scores verified for enrolling students."
+        "Under the future (2027-28) requirement, students studying outside the US may use predicted IB Diploma, Cambridge A-Levels (3+), or French Bac results instead; hardship exceptions available. For the current 2026-27 cycle the policy is test-optional for all. Self-reported scores verified for enrolling students.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): % submitting SAT not printed (only the number, 726)."
       ]
     }
   },
@@ -1751,16 +1811,28 @@
     "category": "national-university",
     "usNewsRank2027": 23,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 26822,
+      "admitted": 3618,
+      "admitRate": 0.1349
     },
     "sat": {
-      "total": null,
-      "rw": null,
-      "math": null
+      "total": {
+        "p25": 1405,
+        "p50": 1480,
+        "p75": 1530
+      },
+      "rw": {
+        "p25": 710,
+        "p50": 750,
+        "p75": 760
+      },
+      "math": {
+        "p25": 700,
+        "p50": 750,
+        "p75": 780
+      }
     },
-    "pctSubmittingSAT": null,
+    "pctSubmittingSAT": 78,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -1775,10 +1847,10 @@
     "scoreSending": "score-choice",
     "selfReporting": "no",
     "deadlines": {
-      "ED": null,
-      "EA": null,
-      "eaType": null,
-      "RD": null
+      "ED": [],
+      "EA": "11-01",
+      "eaType": "restrictive",
+      "RD": "01-10"
     },
     "sources": {
       "cds": "https://georgetown.box.com/s/0r8akn4cbm52zjkll6i7uttlb9k36px2",
@@ -1798,7 +1870,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -1809,7 +1881,8 @@
       "scoreSendingQuote": "Do I need to submit all my scores from both tests? No, Georgetown only requires submission of scores from one full SAT or ACT examination.",
       "notes": [
         "Georgetown DOES publish a CDS: the official list at oads.georgetown.edu (Explore Data > Common Data Set) links 2025-2026 to this Box share (file name CDS_2025-2026.pdf). The Box viewer is JavaScript-only and could not be read, so no values were recorded. Open the Box file manually. Not from the CDS (admissions site uadmissions.georgetown.edu/applying/first-year-application, seen only in a search snippet): EA closes Nov 1, RD Jan 10, no ED; Georgetown requires SAT/ACT. Third-party sites cite SAT 1405-1530 but that was not used.",
-        "CONFIRMED CHANGE: the old 'all scores required' rule is gone from the current official pages. 'does not accept superscores' means it evaluates a single full sitting. One stale cached copy of the international page still shows the old wording (highest EBRW + highest Math, no Score Choice), but the live international page (Aug 3, 2026) has no such text. selfReporting is set to 'no' because the page says official scores must come directly from College Board or ACT; self-reporting is not explicitly addressed. Only EBRW and Math are considered. International students must also submit SAT/ACT."
+        "CONFIRMED CHANGE: the old 'all scores required' rule is gone from the current official pages. 'does not accept superscores' means it evaluates a single full sitting. One stale cached copy of the international page still shows the old wording (highest EBRW + highest Math, no Score Choice), but the live international page (Aug 3, 2026) has no such text. selfReporting is set to 'no' because the page says official scores must come directly from College Board or ACT; self-reporting is not explicitly addressed. Only EBRW and Math are considered. International students must also submit SAT/ACT.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Composite 25th printed as 1405 (kept as printed)."
       ]
     }
   },
@@ -1895,14 +1968,26 @@
     "category": "national-university",
     "usNewsRank2027": 26,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 64457,
+      "admitted": 10086,
+      "admitRate": 0.1565
     },
     "sat": {
-      "total": null,
-      "rw": null,
-      "math": null
+      "total": {
+        "p25": 1410,
+        "p50": 1470,
+        "p75": 1510
+      },
+      "rw": {
+        "p25": 700,
+        "p50": 740,
+        "p75": 760
+      },
+      "math": {
+        "p25": 710,
+        "p50": 750,
+        "p75": 780
+      }
     },
     "pctSubmittingSAT": null,
     "dataYear": "2025-26",
@@ -1919,7 +2004,9 @@
     "scoreSending": "all-scores-recommended",
     "selfReporting": "not stated",
     "deadlines": {
-      "ED": null,
+      "ED": [
+        "11-01"
+      ],
       "EA": "11-01",
       "eaType": "non-restrictive",
       "RD": "01-05"
@@ -1938,7 +2025,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -1949,7 +2036,8 @@
       "scoreSendingQuote": "We hope you will submit all of your scores knowing that we will recombine the sections.",
       "notes": [
         "ira.virginia.edu (CDS page and PDFs) returned client errors/403 to the fetcher. The official UVA Qlik 'CDS Section C' page (virginia.edu host) gave C8, C14, C21, C22, but C1 and C9 tables only showed 'Loading...' so applicants, admits, SAT % and percentiles are missing. The page shows no year label (C1 says Fall 2025, C8 says Fall 2027), so check that it is the 2025-2026 edition. C14 printed as 'has closing date: NO' but fall closing date 01/05. C21 ED close 11/1, notify 12/15. C22 EA close 11/1, notify 2/15, restrictive NO. Need the 2025-2026 PDF from ira.virginia.edu/common-data-set/common-data-set-2025-2026.",
-        "LOW CONFIDENCE ON SOURCES: most admission.virginia.edu pages could not be fetched, and the fetched FAQ is out of date. Fall 2027 optional status comes from UVA's official CDS on its IR server, and secondary sites agree. The CDS does not distinguish international applicants; the original policy covered domestic and international students. Self-reporting is not stated on a fetched official page, though the QuestBridge partner page says UVA uses self-reported scores. Applicants can reportedly change their testing choice until Nov 22 (early) or Jan 15 (RD) (secondary source; unverified). Manually verify admission.virginia.edu before publishing."
+        "LOW CONFIDENCE ON SOURCES: most admission.virginia.edu pages could not be fetched, and the fetched FAQ is out of date. Fall 2027 optional status comes from UVA's official CDS on its IR server, and secondary sites agree. The CDS does not distinguish international applicants; the original policy covered domestic and international students. Self-reporting is not stated on a fetched official page, though the QuestBridge partner page says UVA uses self-reported scores. Applicants can reportedly change their testing choice until Nov 22 (early) or Jan 15 (RD) (secondary source; unverified). Manually verify admission.virginia.edu before publishing.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Interactive Qlik CDS 2025-26 (values from Bibek's screenshots). % submitting SAT not captured. C14 says 'No' closing date but lists 01/05."
       ]
     }
   },
@@ -1959,16 +2047,28 @@
     "category": "national-university",
     "usNewsRank2027": 27,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 76247,
+      "admitted": 12751,
+      "admitRate": 0.1672
     },
     "sat": {
-      "total": null,
-      "rw": null,
-      "math": null
+      "total": {
+        "p25": 1400,
+        "p50": 1470,
+        "p75": 1530
+      },
+      "rw": {
+        "p25": 690,
+        "p50": 730,
+        "p75": 750
+      },
+      "math": {
+        "p25": 700,
+        "p50": 750,
+        "p75": 780
+      }
     },
-    "pctSubmittingSAT": null,
+    "pctSubmittingSAT": 28,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -1984,10 +2084,10 @@
     "scoreSending": "not stated",
     "selfReporting": "yes",
     "deadlines": {
-      "ED": null,
+      "ED": [],
       "EA": "10-15",
-      "eaType": null,
-      "RD": null
+      "eaType": "non-restrictive",
+      "RD": "01-15"
     },
     "sources": {
       "cds": "https://oira.unc.edu/wp-content/uploads/sites/297/2026/06/CDS_UNCCH_2025-26_20260615.pdf",
@@ -2003,7 +2103,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -2014,7 +2114,8 @@
       "scoreSendingQuote": null,
       "notes": [
         "Official PDF read, but the text extraction separates labels from values. C1 rows mapped by order: applied M 31665 + W 44582 + U 0 = 76247; admitted 5305 + 7446 + 0 = 12751; enrolled 5084. Residency values printed unlabeled (and the table header says 'Fall 2024', likely a template label): 17846/48645/9756 (likely applicants in-state/out-of-state/intl), 6605/4685/1461 (likely admits), 4063/728/300 (likely enrolled, sum 5091 not 5084). C9 shows '41% 1,945' and '28% 1,102' without clear SAT/ACT labels; 1945/5084 = 38%, so the denominator is unclear and pctSubmittingSAT is left null. SAT percentiles were read with their labels. C8: policy grid mark not legible; text says students with weighted GPA below 2.8 must submit SAT/ACT; grid refers to Fall 2027 applicants. C22: EA close Oct. 15, notify Jan. 31; restrictive mark unclear. C21 yes/no not legible. C14 likely Jan. 15 but not confirmed. Check visually.",
-        "Effectively test-optional with a GPA condition: 'students with a weighted GPA of 2.8 or above (on a 4.0 scale) are not required to submit a test score.' Students below 2.8 must submit SAT 930+ or ACT 17+. The same rule applies to in-state, out-of-state and international applicants; A-level or similar exam grades are used for systems without a GPA. Self-reported scores are used in review, and enrolling students must send official scores. Score Choice is not addressed."
+        "Effectively test-optional with a GPA condition: 'students with a weighted GPA of 2.8 or above (on a 4.0 scale) are not required to submit a test score.' Students below 2.8 must submit SAT 930+ or ACT 17+. The same rule applies to in-state, out-of-state and international applicants; A-level or similar exam grades are used for systems without a GPA. Self-reported scores are used in review, and enrolling students must send official scores. Score Choice is not addressed.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): C14 closing Jan 15, priority Oct 15."
       ]
     }
   },
@@ -2257,16 +2358,28 @@
     "category": "national-university",
     "usNewsRank2027": 31,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 38658,
+      "admitted": 5497,
+      "admitRate": 0.1422
     },
     "sat": {
-      "total": null,
-      "rw": null,
-      "math": null
+      "total": {
+        "p25": 1440,
+        "p50": 1480,
+        "p75": 1520
+      },
+      "rw": {
+        "p25": 710,
+        "p50": 735,
+        "p75": 760
+      },
+      "math": {
+        "p25": 720,
+        "p50": 750,
+        "p75": 780
+      }
     },
-    "pctSubmittingSAT": null,
+    "pctSubmittingSAT": 41,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2281,10 +2394,13 @@
     "scoreSending": "all-scores-recommended",
     "selfReporting": "yes",
     "deadlines": {
-      "ED": null,
+      "ED": [
+        "11-01",
+        "01-02"
+      ],
       "EA": null,
-      "eaType": null,
-      "RD": null
+      "eaType": "not offered",
+      "RD": "01-02"
     },
     "sources": {
       "cds": "https://www.bc.edu/content/dam/bc1/offices/irp/ir/cds/CDS_2025-2026-PDF_FINAL.pdf",
@@ -2300,7 +2416,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -2311,7 +2427,8 @@
       "scoreSendingQuote": "Therefore, we recommend students list all SAT and/or ACT scores they have earned.",
       "notes": [
         "The official 2025-2026 CDS PDF is linked from the bc.edu Institutional Research page, but bc.edu robots.txt blocked the fetcher (the ccc.bc.edu mirrors too). No CDS values recorded. Not from the CDS (official bc.edu 'common data set' summary page, data as of 9/5/25): Class of 2029 applicants 39,686; SAT 25th 1440, 75th 1520, average 1471. A third-party article cites CDS C1 applications as 38,658, which conflicts with the summary page. Check the PDF manually.",
-        "The 2026-27 cycle is confirmed explicitly only on BC's QuestBridge partner page ('Boston College will continue its test-optional admission policy for the 2026-27 application cycle'); BC's own testing page names no cycle. 'Yes, submitting the SAT or ACT is optional for international students.' English proficiency tests are still required. Self-reporting model; enrolled students submit official reports. Once submitted, scores cannot be withdrawn."
+        "The 2026-27 cycle is confirmed explicitly only on BC's QuestBridge partner page ('Boston College will continue its test-optional admission policy for the 2026-27 application cycle'); BC's own testing page names no cycle. 'Yes, submitting the SAT or ACT is optional for international students.' English proficiency tests are still required. Self-reporting model; enrolled students submit official reports. Once submitted, scores cannot be withdrawn.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): R&W median printed as 735 (kept as printed). Totals from the residency table."
       ]
     }
   },
@@ -2321,16 +2438,28 @@
     "category": "national-university",
     "usNewsRank2027": 31,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 114125,
+      "admitted": 10340,
+      "admitRate": 0.0906
     },
     "sat": {
-      "total": null,
-      "rw": null,
-      "math": null
+      "total": {
+        "p25": 1480,
+        "p50": 1520,
+        "p75": 1550
+      },
+      "rw": {
+        "p25": 730,
+        "p50": 750,
+        "p75": 770
+      },
+      "math": {
+        "p25": 750,
+        "p50": 780,
+        "p75": 790
+      }
     },
-    "pctSubmittingSAT": null,
+    "pctSubmittingSAT": 27,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2352,10 +2481,13 @@
     "scoreSending": "not stated",
     "selfReporting": "yes",
     "deadlines": {
-      "ED": null,
+      "ED": [
+        "11-01",
+        "01-01"
+      ],
       "EA": null,
-      "eaType": null,
-      "RD": null
+      "eaType": "not offered",
+      "RD": "01-05"
     },
     "sources": {
       "cds": "https://www.nyu.edu/content/dam/nyu/institutionalResearch/documents/cds-2025-2026/CDS%202025-2026%20FINAL%20(no%20G).pdf",
@@ -2367,7 +2499,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -2378,7 +2510,8 @@
       "scoreSendingQuote": null,
       "notes": [
         "nyu.edu returned client errors for every URL tried: this PDF, the 'FINAL(including G July_2026)' PDF, and the IR Factbook/CDS page. No values recorded. Open the PDF manually (also linked from nyu.edu/employees/.../institutional-research/self-service-reporting-resources/factbook.html).",
-        "Test-flexible: applicants choose one testing type on the Common App (SAT, ACT, IB, AP, A-levels, national exams, etc.). 'If you choose to submit standardized testing, you can only submit one form of testing.' 'Applicants are welcome to self-report unofficial test scores for application review through their Applicant Portal.' International students may apply with predicted results; Indian Class XII and Australian ATAR students must submit predictions or final results. The page does not say whether superscoring is by section."
+        "Test-flexible: applicants choose one testing type on the Common App (SAT, ACT, IB, AP, A-levels, national exams, etc.). 'If you choose to submit standardized testing, you can only submit one form of testing.' 'Applicants are welcome to self-report unofficial test scores for application review through their Applicant Portal.' International students may apply with predicted results; Indian Class XII and Australian ATAR students must submit predictions or final results. The page does not say whether superscoring is by section.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): No C1 totals printed: applied = 46,307 + 67,818, admitted = 4,231 + 6,109."
       ]
     }
   },
@@ -2388,16 +2521,28 @@
     "category": "national-university",
     "usNewsRank2027": 31,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 33395,
+      "admitted": 3612,
+      "admitRate": 0.1082
     },
     "sat": {
-      "total": null,
-      "rw": null,
-      "math": null
+      "total": {
+        "p25": 1460,
+        "p50": 1500,
+        "p75": 1520
+      },
+      "rw": {
+        "p25": 720,
+        "p50": 740,
+        "p75": 760
+      },
+      "math": {
+        "p25": 730,
+        "p50": 760,
+        "p75": 780
+      }
     },
-    "pctSubmittingSAT": null,
+    "pctSubmittingSAT": 42,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2412,10 +2557,13 @@
     "scoreSending": "score-choice",
     "selfReporting": "yes",
     "deadlines": {
-      "ED": null,
+      "ED": [
+        "11-04",
+        "01-06"
+      ],
       "EA": null,
-      "eaType": null,
-      "RD": null
+      "eaType": "not offered",
+      "RD": "01-06"
     },
     "sources": {
       "cds": "https://provost.tufts.edu/institutionalresearch/wp-content/uploads/sites/5/CDS_2025-2026.pdf",
@@ -2431,7 +2579,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -2442,7 +2590,8 @@
       "scoreSendingQuote": "students may choose to submit only the highest sections across multiple test dates.",
       "notes": [
         "Official PDF read via WebFetch, but its text layer is font-garbled (labels/checkboxes scrambled). File is listed as 2025-2026 on the official Tufts IR CDS page. applied/admitted are the printed Total column of the C1 residency table (in-state/out-of-state/intl/unknown: applied 4733/19414/9260/8; admitted 659/2422/531/1); the gender cells read as men 14444/women 18947/unknown 4 applied and 1568/2044/0 admitted, which do NOT sum to the totals (33395 and 3612), so gender-column mapping is unreliable. C9 (42% SAT, 749 students; percentiles) was consistent across two separate reads, but should be spot-checked visually. NOT READABLE: C8 test policy (checkmarks lost), C14 RD closing date, C21 ED dates, C22 EA. Unlabeled fragments seen near those items: '11 4', '12 15' (possibly ED I close/notify), '1 6', '2 15'; ED apps 3344 / ED admits 1071 appear but row alignment unconfirmed. Do not use these fragments without a visual check of the PDF.",
-        "The last dated extension found covered falls 2024-2026; the current testing page states the policy without an end date. 'Tufts will accept self-reported testing on the Common Application'; enrolling students verify with official scores. Test-optional applies to international applicants; English proficiency requirements remain."
+        "The last dated extension found covered falls 2024-2026; the current testing page states the policy without an end date. 'Tufts will accept self-reported testing on the Common Application'; enrolling students verify with official scores. Test-optional applies to international applicants; English proficiency requirements remain.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): No C1 totals printed: applied = 14,444 + 18,947 + 4, admitted = 1,568 + 2,044."
       ]
     }
   },
@@ -2762,16 +2911,28 @@
     "category": "national-university",
     "usNewsRank2027": 34,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 83045,
+      "admitted": 30384,
+      "admitRate": 0.3659
     },
     "sat": {
-      "total": null,
-      "rw": null,
-      "math": null
+      "total": {
+        "p25": 1390,
+        "p50": 1442,
+        "p75": 1520
+      },
+      "rw": {
+        "p25": 690,
+        "p50": 720,
+        "p75": 750
+      },
+      "math": {
+        "p25": 700,
+        "p50": 760,
+        "p75": 790
+      }
     },
-    "pctSubmittingSAT": null,
+    "pctSubmittingSAT": 43,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2787,9 +2948,9 @@
     "selfReporting": "yes",
     "deadlines": {
       "ED": null,
-      "EA": null,
-      "eaType": null,
-      "RD": null
+      "EA": "11-01",
+      "eaType": "non-restrictive",
+      "RD": "01-05"
     },
     "sources": {
       "cds": "https://uofi.box.com/shared/static/orx4vnmzkt2drmgoiksxpfs39pr42uor.xlsx",
@@ -2801,7 +2962,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -2812,7 +2973,8 @@
       "scoreSendingQuote": "Report your highest sub-scores, even if they're from different test dates. (self-report model; no official scores until enrollment)",
       "notes": [
         "Official 2025-26 CDS is an .xlsx hosted on Box, linked from https://dair.illinois.edu/access-data/common-data-set/ (old dmi.illinois.edu URL redirects there). Box blocks automated fetching (robots disallowed) and direct download is blocked by this environment's proxy, so no values could be read. All fields left null; no third-party values used.",
-        "Total score from a single sitting (highest SAT total); sub-scores are also reported, by best section across dates. The tool should treat this as no total superscore. 'Illinois is test-optional.' Students self-report and send official scores only if they enroll. Applicants who do not submit ACT/SAT may need an English-language test. Test-optional applies to international applicants (Senate AD.23.02)."
+        "Total score from a single sitting (highest SAT total); sub-scores are also reported, by best section across dates. The tool should treat this as no total superscore. 'Illinois is test-optional.' Students self-report and send official scores only if they enroll. Applicants who do not submit ACT/SAT may need an English-language test. Test-optional applies to international applicants (Senate AD.23.02).",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Excel CDS. % submitting SAT printed as 0.4259. Composite median printed as 1442 (kept as printed). ED question unanswered; sheet has #REF! errors."
       ]
     }
   },
@@ -2822,9 +2984,9 @@
     "category": "national-university",
     "usNewsRank2027": 34,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 90690,
+      "admitted": 20154,
+      "admitRate": 0.2222
     },
     "sat": {
       "total": null,
@@ -2846,10 +3008,10 @@
     "scoreSending": "score-choice",
     "selfReporting": "no",
     "deadlines": {
-      "ED": null,
+      "ED": [],
       "EA": null,
       "eaType": null,
-      "RD": null
+      "RD": "12-01"
     },
     "sources": {
       "cds": "https://utexas.box.com/s/z5p8zzbr6yk4eluam3v3dt2wyaha3cja",
@@ -2880,7 +3042,8 @@
       "scoreSendingQuote": null,
       "notes": [
         "Official 2025-26 CDS PDF (UT_PUB_CDS_2025-2026_AY_public2.pdf) is on Box, linked from https://reports.utexas.edu/common-data-set/pdf. Box viewer is a JS shell and static/download links are robots-disallowed; the interactive CDS dashboard is not text-readable. No values could be read; all null. (A third-party site claims UT's CDS omits SAT ranges - unverified, not used.)",
-        "Official SAT/ACT (or CLT) scores from the testing agency are required to complete the application; self-reported scores do not substitute. The international page lets applicants self-report in MyStatus after requesting official scores, but official scores must arrive by the deadline. The 'score-choice' classification is inferred because UT uses a single best sitting and does not state an all-scores rule. The page gives no supporting quote, so treat it as 'not stated' if strictness is needed. International applicants must also send at least one official SAT/ACT."
+        "Official SAT/ACT (or CLT) scores from the testing agency are required to complete the application; self-reported scores do not substitute. The international page lets applicants self-report in MyStatus after requesting official scores, but official scores must arrive by the deadline. The 'score-choice' classification is inferred because UT uses a single best sitting and does not state an all-scores rule. The page gives no supporting quote, so treat it as 'not stated' if strictness is needed. International applicants must also send at least one official SAT/ACT.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): C1 totals p14. C9 SAT table and % submitting are blank in the published CDS, and no official range was found elsewhere: scores stay unverified. C14 closing 12/1, priority 10/15. EA answers blank."
       ]
     }
   },
@@ -2890,16 +3053,28 @@
     "category": "national-university",
     "usNewsRank2027": 34,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 73912,
+      "admitted": 30167,
+      "admitRate": 0.4081
     },
     "sat": {
-      "total": null,
-      "rw": null,
-      "math": null
+      "total": {
+        "p25": 1400,
+        "p50": 1450,
+        "p75": 1490
+      },
+      "rw": {
+        "p25": 680,
+        "p50": 710,
+        "p75": 740
+      },
+      "math": {
+        "p25": 700,
+        "p50": 740,
+        "p75": 780
+      }
     },
-    "pctSubmittingSAT": null,
+    "pctSubmittingSAT": 12,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -2922,9 +3097,9 @@
     "selfReporting": "no",
     "deadlines": {
       "ED": null,
-      "EA": null,
+      "EA": "11-01",
       "eaType": null,
-      "RD": null
+      "RD": "01-15"
     },
     "sources": {
       "cds": "https://uwmadison.box.com/s/ilx9kil11ninf8vwj1z87vumhuvpw4px",
@@ -2940,7 +3115,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -2951,7 +3126,8 @@
       "scoreSendingQuote": "Only your top composite score is considered in the admissions review, regardless of if multiple scores are sent.",
       "notes": [
         "Official 2025-2026 CDS (Excel, 'CDS 2025-26 Excel_UWMadison.xlsx', Fall 2025) is on Box, linked from https://data.wisc.edu/common-data-set-and-rankings. Box viewer is a JS shell and could not be read; direct download blocked. 2024-2025 PDF is also Box-hosted (https://uwmadison.box.com/s/cm3r7gc83w3eqjotfbva111dnin6toer), same problem. All fields null.",
-        "'We do not accept self-reported test scores'; scores must be sent officially from the testing agency. Single best composite. The FAQ says the Regents 'have not yet made a decision regarding this waiver for the fall 2028 application and beyond.' No separate international SAT rule; English proficiency is required for non-native speakers. The 'score-choice' classification is inferred because only the top composite is used."
+        "'We do not accept self-reported test scores'; scores must be sent officially from the testing agency. Single best composite. The FAQ says the Regents 'have not yet made a decision regarding this waiver for the fall 2028 application and beyond.' No separate international SAT rule; English proficiency is required for non-native speakers. The 'score-choice' classification is inferred because only the top composite is used.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Excel CDS. % submitting SAT printed as 0.118. ED cells blank; EA restrictive answer not printed."
       ]
     }
   },
@@ -3355,16 +3531,28 @@
     "category": "national-university",
     "usNewsRank2027": 44,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 81392,
+      "admitted": 40047,
+      "admitRate": 0.492
     },
     "sat": {
-      "total": null,
-      "rw": null,
-      "math": null
+      "total": {
+        "p25": 1300,
+        "p50": 1380,
+        "p75": 1440
+      },
+      "rw": {
+        "p25": 640,
+        "p50": 680,
+        "p75": 720
+      },
+      "math": {
+        "p25": 650,
+        "p50": 700,
+        "p75": 740
+      }
     },
-    "pctSubmittingSAT": null,
+    "pctSubmittingSAT": 25,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -3379,10 +3567,10 @@
     "scoreSending": "not stated",
     "selfReporting": "no",
     "deadlines": {
-      "ED": null,
-      "EA": null,
-      "eaType": null,
-      "RD": null
+      "ED": [],
+      "EA": "11-01",
+      "eaType": "non-restrictive",
+      "RD": "01-15"
     },
     "sources": {
       "cds": "https://irp.osu.edu/sites/default/files/documents/2026/03/CDS-2025-2026-OSU-Columbus-Campus.pdf",
@@ -3402,7 +3590,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -3413,7 +3601,8 @@
       "scoreSendingQuote": "Scores must come directly from the testing agency. (No all-scores rule stated; retesting 'while not required, may work to your advantage.')",
       "notes": [
         "Official 2025-26 Columbus CDS located (fillable PDF) but WebFetch returned the form with all values stripped; direct download blocked by sandbox egress policy. 2024-25 official file (https://irp.osu.edu/media/276) is robots-disallowed. No values recorded; read the PDF in a browser/Acrobat. Third-party (esslo) says the CDS lists SAT/ACT as required for a future cycle; NOT verified, not used.",
-        "Requirement applies to Columbus campus only; regional campuses and ATI are test-optional. Official scores only ('Scores must come directly from the testing agency'; transcripts/images not accepted per regional campus pages). Applicants out of high school 2+ years by enrollment exempt. SAT/ACT can serve as an English-proficiency alternative for non-native speakers (page lists 'SAT: 27 or higher on the Reading Test'; ACT English 21+). Scores must arrive by application deadline."
+        "Requirement applies to Columbus campus only; regional campuses and ATI are test-optional. Official scores only ('Scores must come directly from the testing agency'; transcripts/images not accepted per regional campus pages). Applicants out of high school 2+ years by enrollment exempt. SAT/ACT can serve as an English-proficiency alternative for non-native speakers (page lists 'SAT: 27 or higher on the Reading Test'; ACT English 21+). Scores must arrive by application deadline.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): No C1 totals printed: applied = 39,510 + 41,882, admitted = 19,444 + 20,603. Priority Nov 1."
       ]
     }
   },
@@ -3423,18 +3612,26 @@
     "category": "national-university",
     "usNewsRank2027": 44,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 78122,
+      "admitted": 45800,
+      "admitRate": 0.5863
     },
     "sat": {
       "total": null,
-      "rw": null,
-      "math": null
+      "rw": {
+        "p25": 660,
+        "p50": 690,
+        "p75": 730
+      },
+      "math": {
+        "p25": 660,
+        "p50": 720,
+        "p75": 760
+      }
     },
-    "pctSubmittingSAT": null,
-    "dataYear": null,
-    "entryTerm": null,
+    "pctSubmittingSAT": 49,
+    "dataYear": "2025-26",
+    "entryTerm": "Fall 2025",
     "testPolicy": [
       {
         "fromEntryYear": 2027,
@@ -3447,13 +3644,13 @@
     "scoreSending": "not stated",
     "selfReporting": "no",
     "deadlines": {
-      "ED": null,
-      "EA": null,
-      "eaType": null,
+      "ED": [],
+      "EA": "11-01",
+      "eaType": "non-restrictive",
       "RD": null
     },
     "sources": {
-      "cds": "https://oirap.rutgers.edu/",
+      "cds": "https://irds.rutgers.edu/PDFs/CDS/New%20Brunswick%20CDS_2025-2026.pdf",
       "policy": [
         {
           "url": "https://admissions.rutgers.edu/testoptional",
@@ -3466,7 +3663,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -3477,7 +3674,8 @@
       "scoreSendingQuote": "All SAT and ACT scores must be sent directly from the testing agency to Rutgers. (Refers to official delivery, not a send-every-sitting rule.)",
       "notes": [
         "Could not locate a readable official 2025-26 CDS: oirap.rutgers.edu robots.txt unreachable for the fetcher (all oirap URLs fail) and direct download is blocked. Known official URL pattern from 2023-24: https://oirap.rutgers.edu/CDS/2023/New%20Brunswick%20CDS_2023-2024_final_V1.pdf. No values recorded.",
-        "Rutgers 'maintains test-optional and test-blind policies through 2027' (NB and Camden optional; Newark test-blind for most). 'Unofficial test scores cannot be accepted' (self-reporting system STARS covers courses/grades only). Once sent, scores 'become a permanent part of your application'; testing preference can be changed once within one week of submitting. No separate international SAT rule stated. SAT EBRW 650+ exempts NB students from English placement exam if scores were sent. SAT and ACT not combined."
+        "Rutgers 'maintains test-optional and test-blind policies through 2027' (NB and Camden optional; Newark test-blind for most). 'Unofficial test scores cannot be accepted' (self-reporting system STARS covers courses/grades only). Once sent, scores 'become a permanent part of your application'; testing preference can be changed once within one week of submitting. No separate international SAT rule stated. SAT EBRW 650+ exempts NB students from English placement exam if scores were sent. SAT and ACT not combined.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): No C1 totals printed: applied = 36,942 + 41,163 + 17, admitted = 21,265 + 24,525 + 10. SAT Composite row blank (no published total). C14 closing date blank; priority date 12/1."
       ]
     }
   },
@@ -3487,9 +3685,9 @@
     "category": "national-university",
     "usNewsRank2027": 44,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 110187,
+      "admitted": 42093,
+      "admitRate": 0.382
     },
     "sat": {
       "total": null,
@@ -3512,10 +3710,10 @@
     "scoreSending": "n/a",
     "selfReporting": "n/a",
     "deadlines": {
-      "ED": null,
+      "ED": [],
       "EA": null,
-      "eaType": null,
-      "RD": null
+      "eaType": "not offered",
+      "RD": "11-30"
     },
     "sources": {
       "cds": "https://drive.google.com/file/d/1FIkvY5dANho45ioG7-JHgO3IPH6-ui1W/view?usp=sharing",
@@ -3539,7 +3737,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -3550,7 +3748,8 @@
       "scoreSendingQuote": null,
       "notes": [
         "UC test-blind; sat set to null per task. The official 2025-26 CDS is a Google Drive PDF linked from https://bap.ucsb.edu/institutional-research (file 'common.data.set.2025.26.pdf'); the Drive viewer returned no text and the direct download is robots-disallowed. No values recorded. Third-party mirrors exist but were not used.",
-        "UC system-wide (one source covers all campuses): 'UC does not consider SAT or ACT test scores when making admissions decisions or awarding scholarships.' Fall 2027 applicants 'will not be required to submit SAT or ACT scores' (no change to policy). Scores can still be self-reported in the application (only after first submitting it without scores) and 'may be used as an alternate method of fulfilling minimum requirements' for eligibility or 'for course placement after matriculation' (incl. Entry Level Writing Requirement). English proficiency: old SAT 'Writing and Language' 31+ or ACT ELA 24+ accepted, but 'the digital SAT Reading and Writing section score has not been approved to meet English language proficiency' (UCSD ELWR page likewise says digital SAT R&W cannot fulfill ELWR). Recommended to test by December of senior year if using scores for these purposes."
+        "UC system-wide (one source covers all campuses): 'UC does not consider SAT or ACT test scores when making admissions decisions or awarding scholarships.' Fall 2027 applicants 'will not be required to submit SAT or ACT scores' (no change to policy). Scores can still be self-reported in the application (only after first submitting it without scores) and 'may be used as an alternate method of fulfilling minimum requirements' for eligibility or 'for course placement after matriculation' (incl. Entry Level Writing Requirement). English proficiency: old SAT 'Writing and Language' 31+ or ACT ELA 24+ accepted, but 'the digital SAT Reading and Writing section score has not been approved to meet English language proficiency' (UCSD ELWR page likewise says digital SAT R&W cannot fulfill ELWR). Recommended to test by December of senior year if using scores for these purposes.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): SAT table blank (test-blind)."
       ]
     }
   },
@@ -3560,16 +3759,28 @@
     "category": "national-university",
     "usNewsRank2027": 49,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 67101,
+      "admitted": 30218,
+      "admitRate": 0.4503
     },
     "sat": {
-      "total": null,
-      "rw": null,
-      "math": null
+      "total": {
+        "p25": 1410,
+        "p50": 1470,
+        "p75": 1520
+      },
+      "rw": {
+        "p25": 690,
+        "p50": 730,
+        "p75": 750
+      },
+      "math": {
+        "p25": 700,
+        "p50": 750,
+        "p75": 780
+      }
     },
-    "pctSubmittingSAT": null,
+    "pctSubmittingSAT": 37,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -3592,9 +3803,9 @@
     "selfReporting": "no",
     "deadlines": {
       "ED": null,
-      "EA": null,
-      "eaType": null,
-      "RD": null
+      "EA": "11-01",
+      "eaType": "non-restrictive",
+      "RD": "01-20"
     },
     "sources": {
       "cds": "https://www.irpa.umd.edu/InstitutionalData/CommonDataSet/CDS_2025-2026.xlsx",
@@ -3610,7 +3821,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -3621,7 +3832,8 @@
       "scoreSendingQuote": "so it is to your benefit to submit all of your test scores.",
       "notes": [
         "Official 2025-26 CDS is an .xlsx on irpa.umd.edu (download page https://irpa.umd.edu/InstitutionalData/cds.html); WebFetch returns it as binary and direct download is blocked by sandbox egress, so no values could be read. No PDF version found. No values recorded.",
-        "'Official standardized test scores must be sent to us directly (electronically or mailed) by the test administrator' (Submitting Documents page) — so self-reported scores not accepted (FAQ itself does not mention self-reporting). Test-optional choice is final once application submitted; opted-out scores not considered. International: no separate SAT rule; English proficiency (DET/IELTS/TOEFL) still required for non-native speakers."
+        "'Official standardized test scores must be sent to us directly (electronically or mailed) by the test administrator' (Submitting Documents page) — so self-reported scores not accepted (FAQ itself does not mention self-reporting). Test-optional choice is final once application submitted; opted-out scores not considered. International: no separate SAT rule; English proficiency (DET/IELTS/TOEFL) still required for non-native speakers.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Excel CDS. C21 ED question blank. Priority 11/1 (Early Action)."
       ]
     }
   },
@@ -3782,16 +3994,28 @@
     "category": "liberal-arts-college",
     "usNewsRank2027": 1,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 15520,
+      "admitted": 1336,
+      "admitRate": 0.0861
     },
     "sat": {
-      "total": null,
-      "rw": null,
-      "math": null
+      "total": {
+        "p25": 1490,
+        "p50": 1520,
+        "p75": 1550
+      },
+      "rw": {
+        "p25": 740,
+        "p50": 750,
+        "p75": 770
+      },
+      "math": {
+        "p25": 740,
+        "p50": 770,
+        "p75": 790
+      }
     },
-    "pctSubmittingSAT": null,
+    "pctSubmittingSAT": 43,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -3806,10 +4030,12 @@
     "scoreSending": "score-choice",
     "selfReporting": "yes",
     "deadlines": {
-      "ED": null,
+      "ED": [
+        "11-15"
+      ],
       "EA": null,
-      "eaType": null,
-      "RD": null
+      "eaType": "not offered",
+      "RD": "01-05"
     },
     "sources": {
       "cds": "https://www.williams.edu/institutional-research/files/2026/04/Williams-CDS-2025-2026-V2.pdf",
@@ -3825,7 +4051,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -3836,7 +4062,8 @@
       "scoreSendingQuote": "Yes, Williams allows applicants to use the score choice feature of the SAT.",
       "notes": [
         "Official 2025-26 CDS PDF located (URL above, found via search; Williams IR index page text listed no links). Every fetch of the PDF (www and non-www) failed with a site client error, so no values were read. Nothing filled from third-party sites.",
-        "'Williams is truly test optional.' Self-report via application testing section or emailed screenshot; or official. 'For testing to be considered, we require the full set of scores for the SAT or ACT' (i.e., all sections of a sitting). Can change mind about submitting before deadline. No separate international SAT rule stated."
+        "'Williams is truly test optional.' Self-report via application testing section or emailed screenshot; or official. 'For testing to be considered, we require the full set of scores for the SAT or ACT' (i.e., all sections of a sitting). Can change mind about submitting before deadline. No separate international SAT rule stated.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Printed 'ALL' totals. Values from Bibek's screenshots of the 2025-26 CDS."
       ]
     }
   },
@@ -3846,16 +4073,28 @@
     "category": "liberal-arts-college",
     "usNewsRank2027": 2,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 15819,
+      "admitted": 1222,
+      "admitRate": 0.0772
     },
     "sat": {
-      "total": null,
-      "rw": null,
-      "math": null
+      "total": {
+        "p25": 1470,
+        "p50": 1510,
+        "p75": 1540
+      },
+      "rw": {
+        "p25": 730,
+        "p50": 760,
+        "p75": 770
+      },
+      "math": {
+        "p25": 730,
+        "p50": 770,
+        "p75": 790
+      }
     },
-    "pctSubmittingSAT": null,
+    "pctSubmittingSAT": 40,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -3870,13 +4109,15 @@
     "scoreSending": "not stated",
     "selfReporting": "yes",
     "deadlines": {
-      "ED": null,
+      "ED": [
+        "11-07"
+      ],
       "EA": null,
-      "eaType": null,
-      "RD": null
+      "eaType": "not offered",
+      "RD": "01-05"
     },
     "sources": {
-      "cds": "https://www.amherst.edu/about/facts/common_data_sets/2025",
+      "cds": "https://www.amherst.edu/system/files/C.%20First-Time%20First-Year%20Admission%202025-26_0.pdf",
       "policy": [
         {
           "url": "https://www.amherst.edu/admission/apply/firstyear",
@@ -3889,7 +4130,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -3900,7 +4141,8 @@
       "scoreSendingQuote": null,
       "notes": [
         "Official 2025-26 CDS page URL located (amherst.edu/about/facts/common_data_sets/2025) but it failed with a site client error on every fetch (www and non-www). Index page amherst.edu/about/facts/common_data_sets loaded but showed no file links (mentions an interactive dashboard). No section C file for 2025-26 found. No values read.",
-        "First-year page: 'Amherst College will continue its test-optional policy for all applicants' ('In June 2023, we formalized our four-year test-optional pilot program as our policy'). Self-reported or official accepted; official only if admitted and enrolling. CAUTION: the /firstyear/testing page as fetched says testing is 'a required part of our application process for first-year applicants' and that multi-testers 'are encouraged to submit all test results' — this appears to be stale pre-2020 text (mentions MELAB) and contradicts the first-year page and Amherst's 2027-28 QuestBridge requirements ('test-optional for all applicants - domestic and international'). Treated as optional; flag for manual re-check. No Amherst news of a return to required testing found."
+        "First-year page: 'Amherst College will continue its test-optional policy for all applicants' ('In June 2023, we formalized our four-year test-optional pilot program as our policy'). Self-reported or official accepted; official only if admitted and enrolling. CAUTION: the /firstyear/testing page as fetched says testing is 'a required part of our application process for first-year applicants' and that multi-testers 'are encouraged to submit all test results' — this appears to be stale pre-2020 text (mentions MELAB) and contradicts the first-year page and Amherst's 2027-28 QuestBridge requirements ('test-optional for all applicants - domestic and international'). Treated as optional; flag for manual re-check. No Amherst news of a return to required testing found.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): No C1 totals printed: applied = 7,425 + 8,375 + 19, admitted = 539 + 682 + 1. C21 dates printed one row high; read as closing 11/7, notification 12/15. Values from Bibek's screenshots."
       ]
     }
   },
@@ -4070,18 +4312,30 @@
     "category": "liberal-arts-college",
     "usNewsRank2027": 3,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 12470,
+      "admitted": 890,
+      "admitRate": 0.0714
     },
     "sat": {
-      "total": null,
-      "rw": null,
-      "math": null
+      "total": {
+        "p25": 1490,
+        "p50": 1520,
+        "p75": 1550
+      },
+      "rw": {
+        "p25": 740,
+        "p50": 755,
+        "p75": 770
+      },
+      "math": {
+        "p25": 730,
+        "p50": 770,
+        "p75": 790
+      }
     },
-    "pctSubmittingSAT": null,
+    "pctSubmittingSAT": 37,
     "dataYear": "2025-26",
-    "entryTerm": "Fall 2025",
+    "entryTerm": "Fall 2025 (C1); SAT table heading says Fall 2024 enrollees",
     "testPolicy": [
       {
         "fromEntryYear": 2027,
@@ -4094,10 +4348,13 @@
     "scoreSending": "not stated",
     "selfReporting": "yes",
     "deadlines": {
-      "ED": null,
+      "ED": [
+        "11-08",
+        "01-08"
+      ],
       "EA": null,
-      "eaType": null,
-      "RD": null
+      "eaType": "not offered",
+      "RD": "01-08"
     },
     "sources": {
       "cds": "https://tableau.campus.pomona.edu/views/CDS2025-26/A_GeneralInformation",
@@ -4113,7 +4370,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -4124,7 +4381,8 @@
       "scoreSendingQuote": null,
       "notes": [
         "Pomona publishes 2025-26 (and 2024-25) CDS only as an interactive Tableau workbook (linked from pomona.edu/administration/institutional-research/common-data-set); no PDF. HTML views render empty without JavaScript. CSV export works for sections A and B (e.g. .../B_EnrollmentandPersistence.csv) but the section C view name could not be found (tried several guesses). No 2026-27 listed. No values read; check section C in a browser.",
-        "Permanently test-optional (faculty vote fall 2023). Applicants who opt in self-report scores in the Pomona applicant portal after submitting; official reports only for admitted/enrolling students. If submitting ACT, must include Science section. SAT superscoring is NOT stated on the pomona.edu page fetched; Pomona's QuestBridge partner page (non-.edu) says Pomona superscores both SAT and ACT. If applicant opts out, scores are not considered even if received."
+        "Permanently test-optional (faculty vote fall 2023). Applicants who opt in self-report scores in the Pomona applicant portal after submitting; official reports only for admitted/enrolling students. If submitting ACT, must include Science section. SAT superscoring is NOT stated on the pomona.edu page fetched; Pomona's QuestBridge partner page (non-.edu) says Pomona superscores both SAT and ACT. If applicant opts out, scores are not considered even if received.",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Tableau CDS 2025-26 (Bibek's screenshots). No C1 totals printed: applied = 5,365 + 7,096 + 9, admitted = 418 + 471 + 1. R&W median printed as 755 (kept as printed)."
       ]
     }
   },
@@ -4389,16 +4647,28 @@
     "category": "liberal-arts-college",
     "usNewsRank2027": 12,
     "admissions": {
-      "applied": null,
-      "admitted": null,
-      "admitRate": null
+      "applied": 11118,
+      "admitted": 2327,
+      "admitRate": 0.2093
     },
     "sat": {
-      "total": null,
-      "rw": null,
-      "math": null
+      "total": {
+        "p25": 1460,
+        "p50": 1490,
+        "p75": 1520
+      },
+      "rw": {
+        "p25": 730,
+        "p50": 750,
+        "p75": 770
+      },
+      "math": {
+        "p25": 710,
+        "p50": 740,
+        "p75": 770
+      }
     },
-    "pctSubmittingSAT": null,
+    "pctSubmittingSAT": 32,
     "dataYear": "2025-26",
     "entryTerm": "Fall 2025",
     "testPolicy": [
@@ -4413,13 +4683,16 @@
     "scoreSending": "not stated",
     "selfReporting": "yes",
     "deadlines": {
-      "ED": null,
+      "ED": [
+        "11-15",
+        "01-01"
+      ],
       "EA": null,
-      "eaType": null,
-      "RD": null
+      "eaType": "not offered",
+      "RD": "01-01"
     },
     "sources": {
-      "cds": "https://offices.vassar.edu/institutional-research/data/",
+      "cds": "https://offices.vassar.edu/institutional-research/wp-content/uploads/sites/23/2026/03/Vassar_College_CDS_2025-2026.pdf",
       "policy": [
         {
           "url": "https://www.vassar.edu/admission/apply/requirements/",
@@ -4432,7 +4705,7 @@
       ]
     },
     "status": {
-      "scores": "needs-official-check",
+      "scores": "official-cds-read",
       "policy": "official-site-read"
     },
     "verified": false,
@@ -4443,7 +4716,8 @@
       "scoreSendingQuote": null,
       "notes": [
         "Vassar IR CDS menu (offices.vassar.edu/institutional-research/data/) lists a 2025/26 entry, but WebFetch could not read offices.vassar.edu at all (robots.txt unreachable) and the 2025-26 PDF URL could not be discovered. No values read.",
-        "'Vassar does not require applicants to submit SAT or ACT scores' (permanent). Must declare via test-optional form in portal (ED I Nov 22; RD/ED II Jan 8). Self-reported accepted; enrollees provide official reports in spring; discrepancies can revoke offer. Latest test dates: November (ED I), December (RD/ED II)."
+        "'Vassar does not require applicants to submit SAT or ACT scores' (permanent). Must declare via test-optional form in portal (ED I Nov 22; RD/ED II Jan 8). Self-reported accepted; enrollees provide official reports in spring; discrepancies can revoke offer. Latest test dates: November (ED I), December (RD/ED II).",
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Values are PDF form fields (visible in a PDF viewer)."
       ]
     }
   },

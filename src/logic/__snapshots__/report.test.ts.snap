@@ -19,8 +19,8 @@ exports[`buildReport (real data) > builds results in the chosen order with a ver
   ],
   [
     "princeton",
-    "unverified",
-    null,
+    "labeled",
+    "strongly",
   ],
   [
     "gatech",
@@ -37,8 +37,8 @@ exports[`buildReport (real data) > builds results in the chosen order with a ver
 
 exports[`buildReport (real data) > builds results in the chosen order with a verdict 2`] = `
 {
-  "belowMedian": 2,
-  "counted": 3,
+  "belowMedian": 3,
+  "counted": 4,
   "excluded": [
     {
       "count": 1,
@@ -46,15 +46,11 @@ exports[`buildReport (real data) > builds results in the chosen order with a ver
     },
     {
       "count": 1,
-      "status": "unverified",
-    },
-    {
-      "count": 1,
       "status": "no-total",
     },
   ],
-  "excludedText": "3 schools not counted: 1 does not consider the SAT; 1 has data not yet verified; 1 does not publish a total score range.",
+  "excludedText": "2 schools not counted: 1 does not consider the SAT; 1 does not publish a total score range.",
   "kind": "retake",
-  "sentence": "Retake: below the median at 2 of 3 schools",
+  "sentence": "Retake: below the median at 3 of 4 schools",
 }
 `;

@@ -87,7 +87,7 @@ describe('evaluateSchool: adjustments in order', () => {
   });
 
   it('unverified scores: "Data not yet verified", no label', () => {
-    const r = evaluateSchool(real('princeton'), withScore(700, 700), realDates, TODAY);
+    const r = evaluateSchool(real('ut-austin'), withScore(700, 700), realDates, TODAY);
     expect(r).toMatchObject({ status: 'unverified', statusText: 'Data not yet verified.', retakeLabel: null });
   });
 

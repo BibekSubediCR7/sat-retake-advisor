@@ -2,37 +2,25 @@
 
 Generated 2026-11-25. Scores come only from official Common Data Sets; policies only from official admissions sites. Nothing is marked `verified` yet.
 
-## 1. Scores not yet read from the official CDS (22) — open the link in a browser and fill in C1 + C9
+## 1. Scores not yet read from the official CDS (1)
 
-- **Princeton University** — https://ir.princeton.edu/sites/g/files/toruqf2041/files/documents/CDS_2526_Princeton_v1.4.pdf
-- **California Institute of Technology** — https://iro.caltech.edu/documents/35129/Caltech_CDS_2025-26_August_2026.pdf
-- **University of Pennsylvania** — https://upenn.box.com/s/woo7d85yxpol6j9e2o121aucjc6dc1k5
-- **Vanderbilt University** — https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2026/07/CDS_2025-2026.xlsx
-- **University of Notre Dame** — https://iris.nd.edu/institutional-research/common-data-set-cds/
-- **Georgetown University** — https://georgetown.box.com/s/0r8akn4cbm52zjkll6i7uttlb9k36px2
-- **University of Virginia** — https://qlksnpn-apprd01.eservices.virginia.edu/extensions/CDS_SectionC/CDS_SectionC.html
-- **University of North Carolina at Chapel Hill** — https://oira.unc.edu/wp-content/uploads/sites/297/2026/06/CDS_UNCCH_2025-26_20260615.pdf
-- **Boston College** — https://www.bc.edu/content/dam/bc1/offices/irp/ir/cds/CDS_2025-2026-PDF_FINAL.pdf
-- **New York University** — https://www.nyu.edu/content/dam/nyu/institutionalResearch/documents/cds-2025-2026/CDS%202025-2026%20FINAL%20(no%20G).pdf
-- **Tufts University** — https://provost.tufts.edu/institutionalresearch/wp-content/uploads/sites/5/CDS_2025-2026.pdf
-- **University of Illinois Urbana-Champaign** — https://uofi.box.com/shared/static/orx4vnmzkt2drmgoiksxpfs39pr42uor.xlsx
-- **University of Texas at Austin** — https://utexas.box.com/s/z5p8zzbr6yk4eluam3v3dt2wyaha3cja
-- **University of Wisconsin-Madison** — https://uwmadison.box.com/s/ilx9kil11ninf8vwj1z87vumhuvpw4px
-- **The Ohio State University** — https://irp.osu.edu/sites/default/files/documents/2026/03/CDS-2025-2026-OSU-Columbus-Campus.pdf
-- **Rutgers University-New Brunswick** — https://oirap.rutgers.edu/
-- **University of California, Santa Barbara** — https://drive.google.com/file/d/1FIkvY5dANho45ioG7-JHgO3IPH6-ui1W/view?usp=sharing
-- **University of Maryland, College Park** — https://www.irpa.umd.edu/InstitutionalData/CommonDataSet/CDS_2025-2026.xlsx
-- **Williams College** — https://www.williams.edu/institutional-research/files/2026/04/Williams-CDS-2025-2026-V2.pdf
-- **Amherst College** — https://www.amherst.edu/about/facts/common_data_sets/2025
-- **Pomona College** — https://tableau.campus.pomona.edu/views/CDS2025-26/A_GeneralInformation
-- **Vassar College** — https://offices.vassar.edu/institutional-research/data/
+- **University of Texas at Austin** — https://utexas.box.com/s/z5p8zzbr6yk4eluam3v3dt2wyaha3cja — the 2025-26 CDS leaves the C9 SAT table blank; no official range found elsewhere. Applied/admitted and deadlines are filled in.
+
+The other 21 were read on 2026-11-26 (values and notes in docs/CDS-FILL-IN.md).
 
 ## 2. Values printed oddly by the school (keep as printed, or confirm)
 
 - Columbia: Reading & Writing 75th printed as 777
 - University of Washington: total 75th printed as 1502
 - Carnegie Mellon: SAT table labeled Fall 2024 enrollees inside the 2025-26 CDS
-- UChicago: no printed applicant total (admit rate left blank)
+- UChicago: no printed applicant total; applied/admitted are sums of the printed rows
+- Boston College: Reading & Writing 50th printed as 735
+- UIUC: total 50th printed as 1442
+- Georgetown: total 25th printed as 1405
+- Pomona: Reading & Writing 50th printed as 755; SAT table heading says Fall 2024 inside the 2025-26 CDS
+- Caltech, NYU, Tufts, Ohio State, Rutgers, Amherst, Pomona: applicant/admit totals are sums of printed rows (totals not printed)
+- Caltech, Penn, Rutgers: no SAT Composite printed (shown as "Not published")
+- Vanderbilt: ED dates show #VALUE! in the Excel CDS (ED left unknown)
 - UCLA, Yale, Swarthmore, Washington and Lee: applicant/admit totals are sums of printed columns (totals not printed)
 - Johns Hopkins, Brown: only 2024-25 CDS (Fall 2024) could be read
 

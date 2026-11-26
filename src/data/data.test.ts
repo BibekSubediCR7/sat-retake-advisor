@@ -39,9 +39,18 @@ describe('data/schools.json', () => {
     expect(checkSchools(bad).errors.some((e) => e.where === 'mit.sources.cds')).toBe(true);
   });
 
-  it('allows a null data year only when no values are present (Rutgers)', () => {
-    const rutgers = (schools as Rec[]).find((s) => s.id === 'rutgers');
-    expect(rutgers?.dataYear).toBeNull();
+  it('allows a null data year only when no values are present', () => {
+    const empty = clone(schools) as Rec[];
+    const s = empty[0]!;
+    s.dataYear = null;
+    s.admissions = { applied: null, admitted: null, admitRate: null };
+    s.sat = { total: null, rw: null, math: null };
+    s.pctSubmittingSAT = null;
+    s.sources.cds = null;
+    expect(checkSchools(empty).errors.some((e) => e.where === `${s.id}.dataYear`)).toBe(false);
+    const filled = clone(schools) as Rec[];
+    filled[0]!.dataYear = null;
+    expect(checkSchools(filled).errors.some((e) => e.where === `${filled[0]!.id}.dataYear`)).toBe(true);
   });
 
   it('fails on out-of-order or off-scale percentiles, and unknown odd values', () => {
