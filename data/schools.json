@@ -621,20 +621,20 @@
     "category": "national-university",
     "usNewsRank2027": 9,
     "admissions": {
-      "applied": 45895,
-      "admitted": 2954,
-      "admitRate": 0.0644
+      "applied": 50259,
+      "admitted": 3072,
+      "admitRate": 0.0611
     },
     "sat": {
       "total": {
         "p25": 1530,
-        "p50": 1540,
-        "p75": 1560
+        "p50": 1550,
+        "p75": 1565
       },
       "rw": {
-        "p25": 740,
+        "p25": 750,
         "p50": 760,
-        "p75": 770
+        "p75": 780
       },
       "math": {
         "p25": 780,
@@ -642,9 +642,9 @@
         "p75": 800
       }
     },
-    "pctSubmittingSAT": 50,
-    "dataYear": "2024-25",
-    "entryTerm": "Fall 2024",
+    "pctSubmittingSAT": 57,
+    "dataYear": "2025-26",
+    "entryTerm": "Fall 2025",
     "testPolicy": [
       {
         "fromEntryYear": 2027,
@@ -666,7 +666,7 @@
       "RD": "01-02"
     },
     "sources": {
-      "cds": "https://oira.jhu.edu/wp-content/uploads/CDS_2024-2025_JHU-2.pdf",
+      "cds": "https://oira.jhu.edu/wp-content/uploads/2025-2026-CDS-Johns-Hopkins-University-v2.pdf",
       "policy": [
         {
           "url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/standardized-testing/",
@@ -691,7 +691,8 @@
       "notes": [
         "USING 2024-2025 (Fall 2024) because the 2025-26 official PDF (oira.jhu.edu/wp-content/uploads/2025-2026-CDS-Johns-Hopkins-University-v2.pdf) and the oira CDS pages fail to load. C1 totals printed (men 20391/1419, women 25469/1527, another 12/0, unknown 23/8). C9 = Fall 2024 enrollees, 691 SAT submitters. C8 checkbox marks lost in text extraction (policy not recorded; CDS only links apply.jhu.edu standardized-testing page; C8 wording refers to Fall 2026 admission). C21: dates 11/1, 12/10, 1/3, 2/11 printed but labels detached; ED I=11/1 and ED II=1/3 inferred from order; ED Yes/No mark not recoverable (7028 ED apps, 825 ED admits printed). C22 EA not determinable. C14 closing 1/3.",
         "'Johns Hopkins University requires first-year applicants to submit SAT or ACT scores.' Requirement announced Aug 2024 for fall 2026 entry (JHU Hub), so not a 2025/26 change. No hardship waiver mentioned on page. Page has a section headed 'Score-Choice Policy' but its content describes superscoring, and applicants are told to report all scores; considers 'most competitive testing profile'. English proficiency tests recommended (not required) for non-native speakers. Transfers exempt.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/: ED [\"11-01\", \"01-03\"] -> [\"11-01\", \"01-02\"]; RD \"01-03\" -> \"01-02\"; eaType null -> \"not offered\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/: ED [\"11-01\", \"01-03\"] -> [\"11-01\", \"01-02\"]; RD \"01-03\" -> \"01-02\"; eaType null -> \"not offered\".",
+        "2026-11-26 CDS 2025-26 (v2) read: C1 applied 21,916 + 28,298 + 45 = 50,259 and admitted 1,402 + 1,659 + 11 = 3,072 (both match the printed residency-table totals). C9 Fall 2025: 57% (783) submitted SAT; Composite 1530/1550/1565 (75th printed as 1565, kept as printed), R&W 750/760/780, Math 780/790/800. Deadlines kept from the admissions site."
       ]
     }
   },

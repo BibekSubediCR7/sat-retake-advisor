@@ -15,6 +15,7 @@ export const knownOddValues: ReadonlySet<string> = new Set([
   'uiuc.total.p50',
   'georgetown.total.p25',
   'pomona.rw.p50',
+  'jhu.total.p75',
 ]);
 
 export const testPolicyValue = z.enum([
