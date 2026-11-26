@@ -50,9 +50,14 @@ export default function App() {
       <header className="mx-auto max-w-[1200px] px-4 pb-4 pt-6 sm:pt-8">
         <p className={`${monoLabel} text-ink-muted`}>Free tool · Digital SAT Questions</p>
         <h1 className="mt-1 font-scoreDisplay text-3xl font-black text-ink sm:text-4xl">SAT Retake Advisor</h1>
+        <p className="mt-1 font-scoreSerif text-lg italic text-ink">
+          Reach, target or safety, school by school, from each school&rsquo;s own published data
+        </p>
         <p className="mt-2 max-w-2xl text-base text-ink-soft">
-          Enter your SAT scores and the schools you are applying to. You get a school-by-school answer to &ldquo;Should
-          I retake?&rdquo; using each school&rsquo;s published score ranges, test policy and deadlines.
+          Enter your SAT scores and the US universities on your list. For each school you see where your score falls
+          among its admitted students, whether it&rsquo;s a reach, target or safety by score, and whether a retake is
+          worth it before that school&rsquo;s deadline. Every number comes from the school&rsquo;s latest Common Data Set
+          or its admissions website, with the link beside it.
         </p>
         <UsageLine />
       </header>
