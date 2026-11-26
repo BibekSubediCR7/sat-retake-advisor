@@ -77,6 +77,9 @@ describe('App', () => {
     ]);
     expect(within(cards[2]!).getByText('SAT not considered')).toBeTruthy();
     expect(screen.getAllByText(/not a chance of admission/).length).toBeGreaterThan(0);
+    // Fall 2028 entry reaches the 2027-28 dates, whose deadlines and score release are not published yet.
+    expect(screen.getAllByText('TBD').length).toBeGreaterThan(0);
+    expect(screen.queryByText(/not announced$/)).toBeNull();
   });
 
   it('adds up to 5 past attempts and removes them', async () => {

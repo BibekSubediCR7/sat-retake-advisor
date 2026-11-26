@@ -21,7 +21,7 @@ describe('deadlineDate and formatDate', () => {
 describe('deadlineFor', () => {
   it('uses the chosen round when offered', () => {
     expect(deadlineFor(real('mit'), 'EA', 2028)).toEqual({ round: 'EA', date: '2027-11-01', notes: [] });
-    expect(deadlineFor(real('mit'), 'RD', 2028).date).toBe('2028-01-01');
+    expect(deadlineFor(real('mit'), 'RD', 2028).date).toBe('2028-01-04');
   });
 
   it('uses ED I and mentions ED II', () => {
@@ -34,13 +34,13 @@ describe('deadlineFor', () => {
 
   it('falls back to RD when ED is not offered ([])', () => {
     const d = deadlineFor(real('mit'), 'ED', 2028);
-    expect(d).toMatchObject({ round: 'RD', date: '2028-01-01' });
+    expect(d).toMatchObject({ round: 'RD', date: '2028-01-04' });
     expect(d.notes[0]).toMatch(/does not offer Early Decision/);
   });
 
   it('falls back to RD when EA is marked not offered', () => {
     const d = deadlineFor(real('duke'), 'EA', 2027);
-    expect(d).toMatchObject({ round: 'RD', date: '2027-01-02' });
+    expect(d).toMatchObject({ round: 'RD', date: '2027-01-04' });
     expect(d.notes[0]).toMatch(/does not offer Early Action/);
   });
 

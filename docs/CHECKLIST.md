@@ -22,6 +22,7 @@ The other 21 were read on 2026-11-26 (values and notes in docs/CDS-FILL-IN.md).
 - Caltech, Penn, Rutgers: no SAT Composite printed (shown as "Not published")
 - Vanderbilt: ED dates show #VALUE! in the Excel CDS; ED I 11/1 and ED II 1/1 taken from admissions.vanderbilt.edu/apply
 - Deadlines added from official admissions pages (2026-27 cycle) where the CDS had none: Vanderbilt ED, UChicago ED/EA/RD, Rutgers RD, UT Austin EA; Wisconsin, UIUC, Maryland list no ED
+- 2026-11-26: deadlines of 54 schools checked against their 2026-27 admissions pages (22 changed; each school's meta notes list the page and the change). Not checked because the site blocks automated reading or doesn't list dates: Stanford, UNC, NYU, Wellesley, UC Irvine. UCLA's page says both Nov 30 and Dec 1; Nov 30 kept. CMU's dates come from admission-pantheon.cmu.edu, where cmu.edu/admission/apply redirects.
 - UCLA, Yale, Swarthmore, Washington and Lee: applicant/admit totals are sums of printed columns (totals not printed)
 - Johns Hopkins, Brown: only 2024-25 CDS (Fall 2024) could be read
 

@@ -26,10 +26,12 @@ export function About() {
           <h3 className={`${monoLabel} text-ink`}>How the data is collected and checked</h3>
           <ul className="mt-2 list-disc space-y-1 pl-5">
             <li>
-              SAT ranges and admit rates come from each school&rsquo;s Common Data Set (sections C9 and C1); deadlines
-              from sections C21–C22.
+              SAT ranges and admit rates come from each school&rsquo;s Common Data Set (sections C9 and C1).
             </li>
-            <li>Test policy, superscoring and score sending come from the school&rsquo;s official admissions website.</li>
+            <li>
+              Application deadlines, test policy, superscoring and score sending come from the school&rsquo;s official
+              admissions website (deadlines checked for the 2026–27 cycle).
+            </li>
             <li>SAT dates come from the College Board website.</li>
             <li>
               Every value shows its source link and data year. A value with no official source stays empty and is

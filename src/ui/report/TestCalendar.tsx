@@ -40,14 +40,14 @@ export function TestCalendar({
                 <div>
                   <dt className={`${monoLabel} inline text-ink-muted`}>Register by </dt>
                   <dd className="inline">
-                    {d.registrationDeadline ? formatDate(d.registrationDeadline) : 'not announced'}
+                    {d.registrationDeadline ? formatDate(d.registrationDeadline) : 'TBD'}
                     {d.lateRegistrationDeadline ? ` (late: ${formatDate(d.lateRegistrationDeadline)})` : ''}
                   </dd>
                 </div>
                 <div>
                   <dt className={`${monoLabel} inline text-ink-muted`}>Scores out </dt>
                   <dd className="inline">
-                    {d.scoreRelease ? formatDate(d.scoreRelease) : 'Score release date not announced'}
+                    {d.scoreRelease ? formatDate(d.scoreRelease) : 'TBD'}
                   </dd>
                 </div>
               </dl>
@@ -70,7 +70,8 @@ export function TestCalendar({
         <p className="text-base text-ink-soft">Test dates after {formatDate(notAnnouncedAfter)} not announced yet.</p>
       )}
       <p className="text-sm text-ink-muted">
-        Where the score release date is not announced, a date counts if the test itself is before your deadline.
+        TBD means College Board has not published that date yet. Where the score release date is TBD, a date
+        counts if the test itself is before your deadline.
       </p>
       <SourceLine label="College Board SAT dates" url={sourceUrl} detail={`checked ${formatDate(checked)}`} />
     </div>
