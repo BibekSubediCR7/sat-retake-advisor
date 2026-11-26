@@ -1,7 +1,7 @@
 {
   "checked": "2026-11-25",
   "appliesTo": "All students, U.S. and international (same dates worldwide)",
-  "note": "Score release dates from College Board's official 2026-27 international important-dates flyer. 2027-28 dates are 'anticipated' (no deadlines or score release yet). October 2027 date: one version of the College Board page shows Oct 9, another Oct 2 \u2014 verify before launch.",
+  "note": "Score release dates from College Board's official 2026-27 international important-dates flyer. 2027-28 dates are 'anticipated' (no deadlines or score release yet, shown as TBD). October 2027: College Board's dates page now lists October 9, 2027 (marked 'Updated'), checked 2026-11-26.",
   "dates": [
     {
       "testDate": "2026-12-05",
@@ -9,7 +9,7 @@
       "lateRegistrationDeadline": "2026-11-24",
       "scoreRelease": "2026-12-18",
       "status": "confirmed",
-      "note": "Registration closed Nov 24, 2026 \u2014 usable only by students already registered."
+      "note": "Registration closed Nov 24, 2026 — usable only by students already registered."
     },
     {
       "testDate": "2027-03-06",
@@ -52,7 +52,7 @@
       "lateRegistrationDeadline": null,
       "scoreRelease": null,
       "status": "anticipated",
-      "note": "Conflicting: College Board page versions show Oct 9 and Oct 2, 2027. Verify."
+      "note": "College Board's dates page lists October 9, 2027 (marked 'Updated'); still anticipated. Checked 2026-11-26."
     },
     {
       "testDate": "2027-11-06",

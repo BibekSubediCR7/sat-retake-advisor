@@ -44,4 +44,4 @@ The other 21 were read on 2026-11-26 (values and notes in docs/CDS-FILL-IN.md).
 ## 4. Not collected yet
 
 - Admits-by-program flag (CMU known: CS requires tests)
-- sat-dates.json: added Dec 5, 2026 (registration closed Nov 24, 2026) and spring 2027 score release dates from College Board's official 2026-27 flyer. Still to check: October 2027 date (College Board page versions show Oct 9 vs Oct 2); 2027-28 deadlines and score release dates when published.
+- sat-dates.json: added Dec 5, 2026 (registration closed Nov 24, 2026) and spring 2027 score release dates from College Board's official 2026-27 flyer. October 2027 date confirmed as Oct 9 on College Board's dates page (2026-11-26, still anticipated). Still to add: 2027-28 deadlines and score release dates when published (shown as TBD until then).
