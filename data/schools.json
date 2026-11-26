@@ -2259,9 +2259,9 @@
     "selfReporting": "yes",
     "deadlines": {
       "ED": [],
-      "EA": "11-01",
+      "EA": "11-02",
       "eaType": "non-restrictive",
-      "RD": "01-05"
+      "RD": "01-06"
     },
     "sources": {
       "cds": "https://irp.gatech.edu/files/CDS/CDS_2025-2026_FINAL_23JAN2026.pdf",
@@ -2289,7 +2289,8 @@
       "notes": [
         "C1 sums: applied M 44517 + F 22363 + U 1 = 66881; admitted 4937 + 3983 + 1 = 8921. Residency admitted: in-state 3691, out-of-state 4513, international 716 (sum 8920, one short of the 8921 total, as printed). C9: 78% (3181) SAT. C21: No ED. C22: EA close 11/1, notify 1/31, restrictive read as No (check alignment). C14: 1/5; priority dates 10/15 and 11/1. C8E 23-Jan. Policy column needs visual check.",
         "'All first-year applicants must submit results from at least one SAT and/or ACT in order to be considered for admission.' The page states no international exception; the University System of Georgia requires tests. GT 'highly recommend[s]' self-reporting through the Common App or the admission portal; scores sent by email, fax or mail are not used. Official scores are needed only for enrolling students. Superscore is inferred from 'highest section score'; the page does not explicitly say scores are combined across dates. CLT, AP and IB are optional.",
-        "2026-11-26 ED checked at https://admission.gatech.edu/first-year/deadlines: Plans are Early Action 1, Early Action 2 and Regular Decision: no ED."
+        "2026-11-26 ED checked at https://admission.gatech.edu/first-year/deadlines: Plans are Early Action 1, Early Action 2 and Regular Decision: no ED.",
+        "2026-11-26 deadlines updated from https://admission.gatech.edu/first-year/deadlines ('2026-2027 Important Dates'): EA changed 11/01 -> 11/02 (Early Action 2, for non-Georgia students incl. international); RD changed 01/05 -> 01/06 (open to all). Georgia students' Early Action 1 is Oct 15; the data holds one EA date, so it stores EA2. EA is non-binding."
       ]
     }
   },
