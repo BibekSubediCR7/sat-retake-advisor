@@ -435,7 +435,7 @@
     "deadlines": {
       "ED": [],
       "EA": "11-01",
-      "eaType": "restrictive (per extracted text; verify)",
+      "eaType": "restrictive",
       "RD": "01-05"
     },
     "sources": {
@@ -459,7 +459,8 @@
       "scoreSendingQuote": "Please self-report your highest ACT and/or SAT scores in the testing section of the application",
       "notes": [
         "Mirror confirmed titled 'Stanford University Common Data Set 2025-2026'. C8 checkbox column not recoverable from text; policy taken from C8F narrative. C8A instruction says Fall 2027, C8F says Fall 2026 entry. Score receipt 15-Jan. C21 ED = No. C22 EA Yes, 11/1, notification 12/15, restrictive 'Yes' (text extraction). C14 closing 1/5.",
-        "'ACT or SAT scores are required.' Score Choice is not named explicitly; scoreSending is based on the instruction to self-report highest scores, with official scores required on enrollment 'for all self-reported sittings'. English proficiency tests cannot substitute for SAT/ACT. Reinstatement predates 2025 (scores optional only through Class of 2029)."
+        "'ACT or SAT scores are required.' Score Choice is not named explicitly; scoreSending is based on the instruction to self-report highest scores, with official scores required on enrollment 'for all self-reported sittings'. English proficiency tests cannot substitute for SAT/ACT. Reinstatement predates 2025 (scores optional only through Class of 2029).",
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission.stanford.edu/apply/first-year/index.html (read by Bibek): Restrictive Early Action Nov 1, 2026; Regular Decision Jan 5, 2027; no Early Decision. Dates unchanged; eaType \"restrictive (per extracted text; verify)\" -> \"restrictive\"."
       ]
     }
   },
@@ -2156,7 +2157,8 @@
       "notes": [
         "Official PDF read, but the text extraction separates labels from values. C1 rows mapped by order: applied M 31665 + W 44582 + U 0 = 76247; admitted 5305 + 7446 + 0 = 12751; enrolled 5084. Residency values printed unlabeled (and the table header says 'Fall 2024', likely a template label): 17846/48645/9756 (likely applicants in-state/out-of-state/intl), 6605/4685/1461 (likely admits), 4063/728/300 (likely enrolled, sum 5091 not 5084). C9 shows '41% 1,945' and '28% 1,102' without clear SAT/ACT labels; 1945/5084 = 38%, so the denominator is unclear and pctSubmittingSAT is left null. SAT percentiles were read with their labels. C8: policy grid mark not legible; text says students with weighted GPA below 2.8 must submit SAT/ACT; grid refers to Fall 2027 applicants. C22: EA close Oct. 15, notify Jan. 31; restrictive mark unclear. C21 yes/no not legible. C14 likely Jan. 15 but not confirmed. Check visually.",
         "Effectively test-optional with a GPA condition: 'students with a weighted GPA of 2.8 or above (on a 4.0 scale) are not required to submit a test score.' Students below 2.8 must submit SAT 930+ or ACT 17+. The same rule applies to in-state, out-of-state and international applicants; A-level or similar exam grades are used for systems without a GPA. Self-reported scores are used in review, and enrolling students must send official scores. Score Choice is not addressed.",
-        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): C14 closing Jan 15, priority Oct 15."
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): C14 closing Jan 15, priority Oct 15.",
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admissions.unc.edu/apply/decisions/ (read by Bibek): Early Action (non-binding) Oct 15, 2026; Regular Decision Jan 15, 2027; no Early Decision. Dates unchanged."
       ]
     }
   },
@@ -2561,7 +2563,8 @@
       "notes": [
         "nyu.edu returned client errors for every URL tried: this PDF, the 'FINAL(including G July_2026)' PDF, and the IR Factbook/CDS page. No values recorded. Open the PDF manually (also linked from nyu.edu/employees/.../institutional-research/self-service-reporting-resources/factbook.html).",
         "Test-flexible: applicants choose one testing type on the Common App (SAT, ACT, IB, AP, A-levels, national exams, etc.). 'If you choose to submit standardized testing, you can only submit one form of testing.' 'Applicants are welcome to self-report unofficial test scores for application review through their Applicant Portal.' International students may apply with predicted results; Indian Class XII and Australian ATAR students must submit predictions or final results. The page does not say whether superscoring is by section.",
-        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): No C1 totals printed: applied = 46,307 + 67,818, admitted = 4,231 + 6,109."
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): No C1 totals printed: applied = 46,307 + 67,818, admitted = 4,231 + 6,109.",
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://steinhardt.nyu.edu/degree/bfa-studio-art/how-apply (read by Bibek): ED I Nov 1, 2026; ED II Jan 1, 2027; Regular Decision Jan 5, 2027; no Early Action (NYU program page for Fall 2027; the main admissions page blocks automated reading). Dates unchanged."
       ]
     }
   },
@@ -4688,7 +4691,7 @@
         "01-05"
       ],
       "EA": null,
-      "eaType": null,
+      "eaType": "not offered",
       "RD": "01-08"
     },
     "sources": {
@@ -4720,7 +4723,8 @@
       "scoreSendingQuote": null,
       "notes": [
         "Linked from wellesley.edu OIR public-data page ('Common Data Set 2025/2026'). C1 totals printed: 8506 applied, 1258 admitted (all women; men/unknown 0). C9 SAT 44% (253 students), ACT 18% (103). C8A Yes but the checked policy column did not extract; only a link to wellesley.edu admission FAQ on testing; cycle text truncated -> testPolicyCDS null. C8E score deadline 15-Jan. C21 ED I close 11/1 (notify mid-Dec), ED II close 1/5 (notify mid-Feb); mapping by label order. C22 EA No. C14 closing 1/8.",
-        "Applicants 'may submit self-reported scores with their application, but must provide official scores upon enrollment.' 'SAT-ACT Score Choice Form' in portal only switches consider/do-not-consider before round deadline — not a sitting-selection policy. Superscoring not stated on official pages checked. Wellesley does not require an English proficiency exam. Recommends finishing testing by end of junior year."
+        "Applicants 'may submit self-reported scores with their application, but must provide official scores upon enrollment.' 'SAT-ACT Score Choice Form' in portal only switches consider/do-not-consider before round deadline — not a sitting-selection policy. Superscoring not stated on official pages checked. Wellesley does not require an English proficiency exam. Recommends finishing testing by end of junior year.",
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://www.wellesley.edu/admission-aid/apply/first-year-applicants (read by Bibek): ED I Nov 1, 2026; ED II Jan 5, 2027; Regular Decision Jan 8, 2027; no Early Action. Dates unchanged; eaType null -> \"not offered\"."
       ]
     }
   },
