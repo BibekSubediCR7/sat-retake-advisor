@@ -1274,30 +1274,30 @@
     "category": "national-university",
     "usNewsRank2027": 16,
     "admissions": {
-      "applied": 48904,
-      "admitted": 2638,
-      "admitRate": 0.0539
+      "applied": 42774,
+      "admitted": 2710,
+      "admitRate": 0.0634
     },
     "sat": {
       "total": {
-        "p25": 1510,
-        "p50": 1540,
-        "p75": 1560
+        "p25": 1470,
+        "p50": 1520,
+        "p75": 1550
       },
       "rw": {
-        "p25": 740,
-        "p50": 760,
-        "p75": 780
+        "p25": 730,
+        "p50": 750,
+        "p75": 770
       },
       "math": {
-        "p25": 770,
-        "p50": 780,
-        "p75": 800
+        "p25": 730,
+        "p50": 770,
+        "p75": 790
       }
     },
-    "pctSubmittingSAT": 61,
-    "dataYear": "2024-25",
-    "entryTerm": "Fall 2024",
+    "pctSubmittingSAT": 77,
+    "dataYear": "2025-26",
+    "entryTerm": "Fall 2025",
     "testPolicy": [
       {
         "fromEntryYear": 2027,
@@ -1318,7 +1318,7 @@
       "RD": "01-05"
     },
     "sources": {
-      "cds": "https://oir.brown.edu/sites/default/files/2020-04/CDS_2024_2025.pdf",
+      "cds": "https://oir.brown.edu/institutional-data/common-data-set",
       "policy": [
         {
           "url": "https://admission.brown.edu/first-year/standardized-tests",
@@ -1344,7 +1344,8 @@
         "USING 2024-2025 (Fall 2024): oir.brown.edu/institutional-data/common-data-set renders no file links for fetch and the 2025-26 PDF URL could not be found/opened (guess at .../2020-04/CDS_2025_2026.pdf failed). C1 labels scrambled in extraction; values mapped via printed totals (men 18960/1326, women 29917/1309, another gender 27/3; totals 48904/2638 printed and match residency totals). C9 = Fall 2024 enrollees, 1046 SAT submitters. C8 checkbox column not determinable (left null). C21: 'November 1' and 'Mid-December' printed unlabeled -> ED closing Nov 1 inferred; 6251 ED apps/898 admits. C22: no EA dates printed; Yes/No not readable. C14 closing 01/03.",
         "Brown 'has returned to a policy requiring standardized test scores (either SAT or ACT scores)' since the 2024-25 cycle; the March 2024 announcement allowed exceptions only in rare circumstances (FAQ covers students unable to test by the deadline). No IB/A-level substitute stated for internationals; English proficiency requirements apply. Official scores required on enrollment if self-reported.",
         "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission.brown.edu/first-year: RD \"01-03\" -> \"01-05\".",
-        "2026-11-26 https://admission.brown.edu/first-year lists only Early Decision (deadline November 1, binding) and Regular Decision (January 5); Early Action not offered."
+        "2026-11-26 https://admission.brown.edu/first-year lists only Early Decision (deadline November 1, binding) and Regular Decision (January 5); Early Action not offered.",
+        "2026-11-26 CDS 2025-26 (Fall 2025) read from Brown's Tableau CDS page (Bibek's screenshots): C1 applied 17,972 + 24,771 + 31 = 42,774, admitted 1,375 + 1,335 + 0 = 2,710 (no total row shown). C9: 77% (1,348) submitted SAT; Composite 1470/1520/1550, R&W 730/750/770, Math 730/770/790."
       ]
     }
   },

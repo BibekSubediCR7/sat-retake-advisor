@@ -25,7 +25,7 @@ The other 21 were read on 2026-11-26 (values and notes in docs/CDS-FILL-IN.md).
 - 2026-11-26: deadlines of 54 schools checked against their 2026-27 admissions pages (22 changed; each school's meta notes list the page and the change). Stanford, UNC, NYU and Wellesley were checked by Bibek on their official pages (dates unchanged). UC Irvine not checked (its site lists no dates). UCLA's page says both Nov 30 and Dec 1; Nov 30 kept. CMU's dates come from admission-pantheon.cmu.edu, where cmu.edu/admission/apply redirects.
 - UCLA, Yale, Swarthmore, Washington and Lee: applicant/admit totals are sums of printed columns (totals not printed)
 - Johns Hopkins: total 75th printed as 1565 (2025-26 CDS)
-- Brown: only the 2024-25 CDS (Fall 2024) is in the data; the 2025-26 CDS is a Tableau dashboard (oir.brown.edu/institutional-data/common-data-set), C1 and C9 still to copy
+- Brown: 2025-26 CDS is a Tableau dashboard (oir.brown.edu/institutional-data/common-data-set); C1 and C9 copied from screenshots; applicant/admit totals are sums of printed rows
 
 ## 3. Policy conflicts to check on the official site
 
