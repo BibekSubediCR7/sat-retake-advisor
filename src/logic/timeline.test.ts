@@ -45,8 +45,9 @@ describe('deadlineFor', () => {
   });
 
   it('returns a null date when the deadline is unknown', () => {
-    expect(deadlineFor(real('uchicago'), 'RD', 2028).date).toBeNull();
-    expect(deadlineFor(real('uchicago'), 'ED', 2028)).toEqual({
+    const unknown = makeSchool({ deadlines: { ED: null, EA: null, eaType: null, RD: null } });
+    expect(deadlineFor(unknown, 'RD', 2028).date).toBeNull();
+    expect(deadlineFor(unknown, 'ED', 2028)).toEqual({
       round: 'ED',
       date: null,
       notes: ['Early Decision deadline not yet verified.'],

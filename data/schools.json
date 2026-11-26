@@ -802,10 +802,13 @@
     "scoreSending": "all-scores-recommended",
     "selfReporting": "yes",
     "deadlines": {
-      "ED": null,
-      "EA": null,
+      "ED": [
+        "11-02",
+        "01-04"
+      ],
+      "EA": "11-02",
       "eaType": "non-restrictive",
-      "RD": null
+      "RD": "01-04"
     },
     "sources": {
       "cds": "https://data.uchicago.edu/files/2026/08/CDS_2025-2026_to_publish-1.pdf",
@@ -835,7 +838,8 @@
         "C8A Yes (SAT/ACT used); X on 'SAT or ACT' row but column not recoverable; no C8F narrative; no cycle stated. C21 ED offered = Yes but no closing dates printed (ED I/ED II blank). C22 EA offered = Yes, no date printed; restrictive answer unclear. C14 says it has a closing date but no date printed. C1 RE-CHECK: no grand total of applicants is printed. Applicant row values appear as 'Total' 19929, 24578, 1026 with sex labels not tied to columns; if the order is men/women/unknown (same as the admitted row), applicants = 45,533 (derived, not printed). Admitted printed: males 1169, females 870, unknown 0 -> 2,039 (derived sum). Enrolled: 1042 + 744 + 0 = 1,786. Some later section page headers read '2024-2025' though CDS-A says 2025-2026; C1 is labeled Fall 2025.",
         "No printed applicant total; column labels garbled (sum would be 45,533). Admit rate left blank until checked.",
         "Test-optional with a 'No Harm' policy; 'This policy is open to all applicants', including international and transfer applicants. Official pages could not be fetched directly (site error); quotes come from search-engine snippets of the official FAQ, so re-verify before publishing.",
-        "2026-11-26: No C1 totals printed: applied = 19,929 + 24,578 + 1,026, admitted = 1,169 + 870 + 0. ED/EA/RD dates not stated in the CDS (stay null); EA non-restrictive per Bibek."
+        "2026-11-26: No C1 totals printed: applied = 19,929 + 24,578 + 1,026, admitted = 1,169 + 870 + 0. ED/EA/RD dates not stated in the CDS (stay null); EA non-restrictive per Bibek.",
+        "2026-11-26 deadline from official admissions page https://collegeadmissions.uchicago.edu/apply/application/: 2026-27 cycle: ED I and EA Nov 2, 2026; ED II and RD Jan 4, 2027 (CDS gives no dates; the counselor page says Nov 1 / Jan 6)."
       ]
     }
   },
@@ -1207,7 +1211,10 @@
     "scoreSending": "all-scores-recommended",
     "selfReporting": "yes",
     "deadlines": {
-      "ED": null,
+      "ED": [
+        "11-01",
+        "01-01"
+      ],
       "EA": null,
       "eaType": "not offered",
       "RD": "01-01"
@@ -1238,7 +1245,8 @@
       "notes": [
         "Official CDS is published ONLY as .xlsx (vanderbilt.edu/dsa/common-data-set lists 2025-26 at .../2026/07/CDS_2025-2026.xlsx, newer than the .../2026/05/ URL used before; 2024-25 at .../2025/11/CDS_2024-2025.xlsx). WebFetch returns binary; curl to cdn.vanderbilt.edu blocked by sandbox proxy. Download and parse the xlsx manually.",
         "Policy covers first-year, transfer, international and homeschool applicants; proof of English proficiency still required for internationals. Note: the international section of the page says test-optional 'through fall 2027' while main policy says fall 2027 and 2028 (internal inconsistency). Vanderbilt superscores SAT using both digital and paper results.",
-        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Excel CDS. ED offered but the ED date cells show #VALUE!, so ED dates stay unknown."
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Excel CDS. ED offered but the ED date cells show #VALUE!, so ED dates stay unknown.",
+        "2026-11-26 deadline from official admissions page https://admissions.vanderbilt.edu/apply/: ED I 11/1, ED II 1/1 (2026-27 cycle dates; CDS ED cells showed #VALUE!)."
       ]
     }
   },
@@ -2947,7 +2955,7 @@
     "scoreSending": "score-choice",
     "selfReporting": "yes",
     "deadlines": {
-      "ED": null,
+      "ED": [],
       "EA": "11-01",
       "eaType": "non-restrictive",
       "RD": "01-05"
@@ -2974,7 +2982,8 @@
       "notes": [
         "Official 2025-26 CDS is an .xlsx hosted on Box, linked from https://dair.illinois.edu/access-data/common-data-set/ (old dmi.illinois.edu URL redirects there). Box blocks automated fetching (robots disallowed) and direct download is blocked by this environment's proxy, so no values could be read. All fields left null; no third-party values used.",
         "Total score from a single sitting (highest SAT total); sub-scores are also reported, by best section across dates. The tool should treat this as no total superscore. 'Illinois is test-optional.' Students self-report and send official scores only if they enroll. Applicants who do not submit ACT/SAT may need an English-language test. Test-optional applies to international applicants (Senate AD.23.02).",
-        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Excel CDS. % submitting SAT printed as 0.4259. Composite median printed as 1442 (kept as printed). ED question unanswered; sheet has #REF! errors."
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Excel CDS. % submitting SAT printed as 0.4259. Composite median printed as 1442 (kept as printed). ED question unanswered; sheet has #REF! errors.",
+        "2026-11-26 deadline from official admissions page https://www.admissions.illinois.edu/apply/freshman/dates: Only Early Action (11/1) and Regular (1/5) listed: no ED."
       ]
     }
   },
@@ -3009,7 +3018,7 @@
     "selfReporting": "no",
     "deadlines": {
       "ED": [],
-      "EA": null,
+      "EA": "10-15",
       "eaType": null,
       "RD": "12-01"
     },
@@ -3043,7 +3052,8 @@
       "notes": [
         "Official 2025-26 CDS PDF (UT_PUB_CDS_2025-2026_AY_public2.pdf) is on Box, linked from https://reports.utexas.edu/common-data-set/pdf. Box viewer is a JS shell and static/download links are robots-disallowed; the interactive CDS dashboard is not text-readable. No values could be read; all null. (A third-party site claims UT's CDS omits SAT ranges - unverified, not used.)",
         "Official SAT/ACT (or CLT) scores from the testing agency are required to complete the application; self-reported scores do not substitute. The international page lets applicants self-report in MyStatus after requesting official scores, but official scores must arrive by the deadline. The 'score-choice' classification is inferred because UT uses a single best sitting and does not state an all-scores rule. The page gives no supporting quote, so treat it as 'not stated' if strictness is needed. International applicants must also send at least one official SAT/ACT.",
-        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): C1 totals p14. C9 SAT table and % submitting are blank in the published CDS, and no official range was found elsewhere: scores stay unverified. C14 closing 12/1, priority 10/15. EA answers blank."
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): C1 totals p14. C9 SAT table and % submitting are blank in the published CDS, and no official range was found elsewhere: scores stay unverified. C14 closing 12/1, priority 10/15. EA answers blank.",
+        "2026-11-26 deadline from official admissions page https://admissions.utexas.edu/apply/freshman/: Early Action 10/15 (materials 10/22), not binding; Regular 12/1 matches the CDS."
       ]
     }
   },
@@ -3096,7 +3106,7 @@
     "scoreSending": "score-choice",
     "selfReporting": "no",
     "deadlines": {
-      "ED": null,
+      "ED": [],
       "EA": "11-01",
       "eaType": null,
       "RD": "01-15"
@@ -3127,7 +3137,8 @@
       "notes": [
         "Official 2025-2026 CDS (Excel, 'CDS 2025-26 Excel_UWMadison.xlsx', Fall 2025) is on Box, linked from https://data.wisc.edu/common-data-set-and-rankings. Box viewer is a JS shell and could not be read; direct download blocked. 2024-2025 PDF is also Box-hosted (https://uwmadison.box.com/s/cm3r7gc83w3eqjotfbva111dnin6toer), same problem. All fields null.",
         "'We do not accept self-reported test scores'; scores must be sent officially from the testing agency. Single best composite. The FAQ says the Regents 'have not yet made a decision regarding this waiver for the fall 2028 application and beyond.' No separate international SAT rule; English proficiency is required for non-native speakers. The 'score-choice' classification is inferred because only the top composite is used.",
-        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Excel CDS. % submitting SAT printed as 0.118. ED cells blank; EA restrictive answer not printed."
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Excel CDS. % submitting SAT printed as 0.118. ED cells blank; EA restrictive answer not printed.",
+        "2026-11-26 deadline from official admissions page https://admissions.wisc.edu/deadlines/: Only Early Action (11/1) and Regular (1/15) listed: no ED."
       ]
     }
   },
@@ -3647,7 +3658,7 @@
       "ED": [],
       "EA": "11-01",
       "eaType": "non-restrictive",
-      "RD": null
+      "RD": "12-01"
     },
     "sources": {
       "cds": "https://irds.rutgers.edu/PDFs/CDS/New%20Brunswick%20CDS_2025-2026.pdf",
@@ -3675,7 +3686,8 @@
       "notes": [
         "Could not locate a readable official 2025-26 CDS: oirap.rutgers.edu robots.txt unreachable for the fetcher (all oirap URLs fail) and direct download is blocked. Known official URL pattern from 2023-24: https://oirap.rutgers.edu/CDS/2023/New%20Brunswick%20CDS_2023-2024_final_V1.pdf. No values recorded.",
         "Rutgers 'maintains test-optional and test-blind policies through 2027' (NB and Camden optional; Newark test-blind for most). 'Unofficial test scores cannot be accepted' (self-reporting system STARS covers courses/grades only). Once sent, scores 'become a permanent part of your application'; testing preference can be changed once within one week of submitting. No separate international SAT rule stated. SAT EBRW 650+ exempts NB students from English placement exam if scores were sent. SAT and ACT not combined.",
-        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): No C1 totals printed: applied = 36,942 + 41,163 + 17, admitted = 21,265 + 24,525 + 10. SAT Composite row blank (no published total). C14 closing date blank; priority date 12/1."
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): No C1 totals printed: applied = 36,942 + 41,163 + 17, admitted = 21,265 + 24,525 + 10. SAT Composite row blank (no published total). C14 closing date blank; priority date 12/1.",
+        "2026-11-26 deadline from official admissions page https://admissions.rutgers.edu/apply/dates-deadlines/new-brunswick: Regular decision due 12/1 (CDS printed it only as the priority date); EA 11/1 does not restrict other applications."
       ]
     }
   },
@@ -3802,7 +3814,7 @@
     "scoreSending": "all-scores-recommended",
     "selfReporting": "no",
     "deadlines": {
-      "ED": null,
+      "ED": [],
       "EA": "11-01",
       "eaType": "non-restrictive",
       "RD": "01-20"
@@ -3833,7 +3845,8 @@
       "notes": [
         "Official 2025-26 CDS is an .xlsx on irpa.umd.edu (download page https://irpa.umd.edu/InstitutionalData/cds.html); WebFetch returns it as binary and direct download is blocked by sandbox egress, so no values could be read. No PDF version found. No values recorded.",
         "'Official standardized test scores must be sent to us directly (electronically or mailed) by the test administrator' (Submitting Documents page) — so self-reported scores not accepted (FAQ itself does not mention self-reporting). Test-optional choice is final once application submitted; opted-out scores not considered. International: no separate SAT rule; English proficiency (DET/IELTS/TOEFL) still required for non-native speakers.",
-        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Excel CDS. C21 ED question blank. Priority 11/1 (Early Action)."
+        "2026-11-26 CDS read (docs/CDS-FILL-IN.md): Excel CDS. C21 ED question blank. Priority 11/1 (Early Action).",
+        "2026-11-26 deadline from official admissions page https://admissions.umd.edu/apply/freshman-applicants: Only Early Action (11/1) and Regular (1/20) listed: no ED."
       ]
     }
   },

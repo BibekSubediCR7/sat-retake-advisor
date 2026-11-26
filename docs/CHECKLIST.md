@@ -20,7 +20,8 @@ The other 21 were read on 2026-11-26 (values and notes in docs/CDS-FILL-IN.md).
 - Pomona: Reading & Writing 50th printed as 755; SAT table heading says Fall 2024 inside the 2025-26 CDS
 - Caltech, NYU, Tufts, Ohio State, Rutgers, Amherst, Pomona: applicant/admit totals are sums of printed rows (totals not printed)
 - Caltech, Penn, Rutgers: no SAT Composite printed (shown as "Not published")
-- Vanderbilt: ED dates show #VALUE! in the Excel CDS (ED left unknown)
+- Vanderbilt: ED dates show #VALUE! in the Excel CDS; ED I 11/1 and ED II 1/1 taken from admissions.vanderbilt.edu/apply
+- Deadlines added from official admissions pages (2026-27 cycle) where the CDS had none: Vanderbilt ED, UChicago ED/EA/RD, Rutgers RD, UT Austin EA; Wisconsin, UIUC, Maryland list no ED
 - UCLA, Yale, Swarthmore, Washington and Lee: applicant/admit totals are sums of printed columns (totals not printed)
 - Johns Hopkins, Brown: only 2024-25 CDS (Fall 2024) could be read
 
