@@ -21,24 +21,24 @@ The other 21 were read on 2026-11-26 (values and notes in docs/CDS-FILL-IN.md).
 - Caltech, NYU, Tufts, Ohio State, Rutgers, Amherst, Pomona: applicant/admit totals are sums of printed rows (totals not printed)
 - Caltech, Penn, Rutgers: no SAT Composite printed (shown as "Not published")
 - Vanderbilt: ED dates show #VALUE! in the Excel CDS; ED I 11/1 and ED II 1/1 taken from admissions.vanderbilt.edu/apply
+- Wisconsin Early Action: non-binding (admissions.wisc.edu/deadlines) and non-restrictive (confirmed by Bibek).
+- Notre Dame: its CDS prints only the number of enrolled students who sent SAT scores (726), not the percentage, so % submitting stays empty (a computed percentage would be a derived value).
+- UVA: % submitting SAT not available; stays empty.
 - Deadlines added from official admissions pages (2026-27 cycle) where the CDS had none: Vanderbilt ED, UChicago ED/EA/RD, Rutgers RD, UT Austin EA; Wisconsin, UIUC, Maryland list no ED
-- 2026-11-26: deadlines of 54 schools checked against their 2026-27 admissions pages (22 changed; each school's meta notes list the page and the change). Stanford, UNC, NYU and Wellesley were checked by Bibek on their official pages (dates unchanged). UC Irvine not checked (its site lists no dates). UCLA's page says both Nov 30 and Dec 1; Nov 30 kept. CMU's dates come from admission-pantheon.cmu.edu, where cmu.edu/admission/apply redirects.
+- 2026-11-26: deadlines of 54 schools checked against their 2026-27 admissions pages (22 changed; each school's meta notes list the page and the change). Stanford, UNC, NYU and Wellesley were checked by Bibek on their official pages (dates unchanged). UC Irvine: single UC filing period, no ED or EA (as at every UC campus). UCLA's page says both Nov 30 and Dec 1; Nov 30 kept. CMU's dates come from admission-pantheon.cmu.edu, where cmu.edu/admission/apply redirects.
 - UCLA, Yale, Swarthmore, Washington and Lee: applicant/admit totals are sums of printed columns (totals not printed)
 - Johns Hopkins: total 75th printed as 1565 (2025-26 CDS)
 - Brown: 2025-26 CDS is a Tableau dashboard (oir.brown.edu/institutional-data/common-data-set); C1 and C9 copied from screenshots; applicant/admit totals are sums of printed rows
 
 ## 3. Policy conflicts to check on the official site
 
-- Amherst: one page says test-optional, an older-looking page says required
-- Johns Hopkins: page summary says optional through 2025-26, body says required
-- Vanderbilt: international section vs main policy disagree on end year
+- Resolved 2026-11-26 on the official pages (details in each school's meta notes): Amherst (testing page now says optional; Score Choice allowed), Johns Hopkins (only the stale search snippet says optional), Vanderbilt (FAQ confirms internationals optional for fall 2027 and 2028), Claremont McKenna and Harvey Mudd ('Fall 2028 cycle' = fall 2028 entry), Dartmouth (international options unchanged; dead page replaced).
+
 - UVA: FAQ out of date; policy taken from its CDS
 - Georgetown: all-scores rule appears dropped in 2026 (no official announcement found)
 - UC Berkeley CDS says 'considered if submitted' but UC system is test-blind (UC site used)
 - WashU: early action yes/no unclear in CDS
-- Claremont McKenna and Harvey Mudd: 'return to required for the Fall 2028 application cycle' was converted as fall 2028 entry. Confirm it doesn't mean applying in fall 2028 (fall 2029 entry).
 - Wisconsin: the Regents' suspension runs through the 2027-28 academic year (to spring 2028), so fall 2028 entry is stored as 'not-announced'. Re-check after the vote on making test-optional permanent.
-- Dartmouth: international policy (required-with-alternatives) uses the main testing page as its source; the international page is labeled Class of 2029. Confirm it still applies.
 - Cornell: CDS link is http:// (kept as recorded). Check whether an https:// link exists.
 
 ## 4. Not collected yet
