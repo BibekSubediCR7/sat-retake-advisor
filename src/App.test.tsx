@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import axe from 'axe-core';
-import App from './App';
+import App, { copyrightYears } from './App';
 import { site } from './config/site';
 
 type User = ReturnType<typeof userEvent.setup>;
@@ -35,6 +35,20 @@ async function runAxe(container: Element) {
   });
   return result.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(', ')}`);
 }
+
+describe('footer', () => {
+  it('shows the copyright line with the creator and the disclaimer', () => {
+    render(<App />);
+    const footer = within(document.querySelector('footer')!);
+    expect(footer.getByText(/^© 2026(–\d{4})? Bibek Subedi · Digital SAT Questions$/)).toBeTruthy();
+    expect(footer.getByText(/Not affiliated with or endorsed by College Board/)).toBeTruthy();
+  });
+
+  it('extends the year range in later years', () => {
+    expect(copyrightYears('2026-11-27')).toBe('2026');
+    expect(copyrightYears('2028-01-02')).toBe('2026–2028');
+  });
+});
 
 describe('App', () => {
   it('shows inline errors and focuses the first invalid field', async () => {

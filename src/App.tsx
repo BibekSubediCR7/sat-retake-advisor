@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { countCheck, saveSubmission } from './backend';
-import { SAVING_ENABLED } from './config/site';
+import { SAVING_ENABLED, site } from './config/site';
 import { satDates, schoolById, schoolIds, schools } from './data/appData';
 import { buildReport, type Report as ReportData, type StudentInput } from './logic';
 import { About, DISCLAIMER } from './ui/About';
@@ -10,6 +10,12 @@ import { Report } from './ui/report/Report';
 import { ReportErrorDialog } from './ui/ReportErrorDialog';
 import { UsageLine } from './ui/UsageLine';
 import { todayLocal } from './ui/today';
+
+/** "2026", or "2026–2028" in later years. `today` is "YYYY-MM-DD". */
+export function copyrightYears(today: string, since = 2026): string {
+  const year = Number(today.slice(0, 4));
+  return year > since ? `${since}–${year}` : String(since);
+}
 
 interface Result {
   input: StudentInput;
@@ -97,8 +103,13 @@ export default function App() {
         </div>
       </main>
 
-      <footer className="border-t border-rule bg-paper print:border-0 print:bg-transparent">
-        <p className="mx-auto max-w-[1200px] px-4 py-6 text-base text-ink-soft print:px-0 print:py-2 print:text-sm">{DISCLAIMER}</p>
+      <footer className="border-t-4 border-double border-ink bg-paper print:border-t print:bg-transparent">
+        <div className="mx-auto max-w-[1200px] space-y-2 px-4 py-6 print:px-0 print:py-2">
+          <p className="font-scoreSerif text-base text-ink print:text-sm">
+            &copy; {copyrightYears(today)} {site.creatorName} · {site.groupName}
+          </p>
+          <p className="text-base text-ink-soft print:text-sm">{DISCLAIMER}</p>
+        </div>
       </footer>
 
       <ReportErrorDialog
