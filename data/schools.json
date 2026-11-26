@@ -3986,7 +3986,7 @@
       "ED": [],
       "EA": null,
       "eaType": "not offered",
-      "RD": "11-15"
+      "RD": "12-01"
     },
     "sources": {
       "cds": "https://finance.uw.edu/iads/files/docs/ipeds/common_data_set/cds_2025-2026_seattle.pdf",
@@ -4010,7 +4010,8 @@
       "notes": [
         "Totals printed (applied 33,584 M + 39,263 F + 86 unknown; admitted 13,032 + 17,369 + 45). Residency admitted: in-state 6,980, out-of-state 18,813, international 4,653. C9: SAT 19.12% (1,364), ACT 4.89% (349). Composite 75th printed as 1502 (unusual, not a multiple of 10 -- verify). C8A 'No' conflicts with scores being reported in C9 for submitters; record as printed. C14 closing date 11/15 (yes/no box not visible; date field present). ED/EA No.",
         "'The UW is technically test-optional' — 'we will not be using test scores at all during the holistic review', though 'high test scores (1400 SAT/31 ACT or above) may be considered for a handful of students who may not otherwise be admitted.' Not used for Honors or admission scholarships. Self-reported scores accepted; official scores may be requested if used. Send by Dec 31 of application year. International applicants still must prove English proficiency (TOEFL/IELTS/DET). Practically close to test-blind; retake value very low.",
-        "2026-11-26 ED checked at https://admit.washington.edu/apply/first-year/: UW does not participate in early decision or early action. (Admissions extended the fall deadline to Dec 1; data RD kept at the CDS value 11/15.)"
+        "2026-11-26 ED checked at https://admit.washington.edu/apply/first-year/: UW does not participate in early decision or early action. (Admissions extended the fall deadline to Dec 1; data RD kept at the CDS value 11/15.)",
+        "2026-11-26 RD changed from the CDS value 11/15 to 12/01: https://admit.washington.edu/apply/first-year/ gives Dec 1 as the fall deadline for the current cycle."
       ]
     }
   },
