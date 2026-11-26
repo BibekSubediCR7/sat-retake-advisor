@@ -1313,7 +1313,7 @@
         "11-01"
       ],
       "EA": null,
-      "eaType": null,
+      "eaType": "not offered",
       "RD": "01-05"
     },
     "sources": {
@@ -1342,7 +1342,8 @@
       "notes": [
         "USING 2024-2025 (Fall 2024): oir.brown.edu/institutional-data/common-data-set renders no file links for fetch and the 2025-26 PDF URL could not be found/opened (guess at .../2020-04/CDS_2025_2026.pdf failed). C1 labels scrambled in extraction; values mapped via printed totals (men 18960/1326, women 29917/1309, another gender 27/3; totals 48904/2638 printed and match residency totals). C9 = Fall 2024 enrollees, 1046 SAT submitters. C8 checkbox column not determinable (left null). C21: 'November 1' and 'Mid-December' printed unlabeled -> ED closing Nov 1 inferred; 6251 ED apps/898 admits. C22: no EA dates printed; Yes/No not readable. C14 closing 01/03.",
         "Brown 'has returned to a policy requiring standardized test scores (either SAT or ACT scores)' since the 2024-25 cycle; the March 2024 announcement allowed exceptions only in rare circumstances (FAQ covers students unable to test by the deadline). No IB/A-level substitute stated for internationals; English proficiency requirements apply. Official scores required on enrollment if self-reported.",
-        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission.brown.edu/first-year: RD \"01-03\" -> \"01-05\"."
+        "2026-11-26 deadlines checked against the 2026-27 admissions page https://admission.brown.edu/first-year: RD \"01-03\" -> \"01-05\".",
+        "2026-11-26 https://admission.brown.edu/first-year lists only Early Decision (deadline November 1, binding) and Regular Decision (January 5); Early Action not offered."
       ]
     }
   },
