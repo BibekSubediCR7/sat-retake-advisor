@@ -12,6 +12,7 @@ import { SourceLine } from '../parts/SourceLine';
 import { Stamp } from '../parts/Stamp';
 import { monoLabel, primaryButton, secondaryButton } from '../parts/styles';
 import { Tutors } from '../Tutors';
+import { ResultsSummary } from './ResultsSummary';
 import { SchoolCard } from './SchoolCard';
 import { TestCalendar } from './TestCalendar';
 
@@ -98,6 +99,7 @@ export function Report({ report, input, schools, satDates, onEdit, onReportError
       <Section id="report" numeral="II" title="Score particulars" kicker="Advisory report">
         <div className="space-y-6">
           <Verdict verdict={report.verdict} input={input} />
+          <ResultsSummary ordered={ordered} schools={byId} dates={satDates.dates} />
           <SuperscoreSummary input={input} schools={schools} />
         </div>
       </Section>

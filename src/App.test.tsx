@@ -80,6 +80,18 @@ describe('App', () => {
     expect(within(cards[0]!).getByText(/^Important in admission decisions \(Common Data Set 2025-26, section C7\)$/)).toBeTruthy();
     expect(within(cards[2]!).queryByText(/in admission decisions/)).toBeNull();
     expect(screen.getAllByText(/not a chance of admission/).length).toBeGreaterThan(0);
+    // Summary of results: balance counts and a table row per school, in card order, linking to each card.
+    const summary = within(screen.getByRole('region', { name: 'Summary of results' }));
+    expect(document.getElementById('summary-balance')?.textContent).toMatch(/Reach 2.*Target 0.*Safety 0/);
+    expect(summary.getByText('Not labeled: 1 (SAT not considered)')).toBeTruthy();
+    const rows = within(summary.getByRole('table')).getAllByRole('rowheader');
+    expect(rows.map((r) => r.textContent)).toEqual([
+      'Massachusetts Institute of Technology',
+      'Georgia Institute of Technology',
+      'University of California, Los Angeles',
+    ]);
+    expect(within(rows[0]!).getByRole('link').getAttribute('href')).toBe('#school-mit');
+    expect(summary.getByText(/Next SAT you can use/)).toBeTruthy();
     // Fall 2028 entry reaches the 2027-28 dates, whose deadlines and score release are not published yet.
     expect(screen.getAllByText('TBD').length).toBeGreaterThan(0);
     expect(screen.queryByText(/not announced$/)).toBeNull();
