@@ -18,8 +18,9 @@ export const site = {
   githubUrl: 'https://github.com/BibekSubediCR7' as string | null,
   /** Shown as plain text, never as a mailto link scraped by bots. */
   contactEmail: 'bibek.sub7@gmail.com' as string | null,
-  /** Support link (e.g. Buy Me a Coffee). Both "Support this tool" buttons stay hidden while null. */
-  supportUrl: null as string | null,
+  /** Donation page on Buy Me a Momo. Both "Support this tool" buttons stay hidden while null. */
+  supportUrl: 'https://buymemomo.com/bibeksubedi' as string | null,
+  supportPlatform: 'Buy Me a Momo',
   /** Expert SAT tutors for one-to-one help. The tutoring block stays hidden while empty. */
   tutors: [] as readonly Tutor[],
 } as const;

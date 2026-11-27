@@ -109,6 +109,10 @@ describe('App', () => {
     // Fall 2028 entry reaches the 2027-28 dates, whose deadlines and score release are not published yet.
     expect(screen.getAllByText('TBD').length).toBeGreaterThan(0);
     expect(screen.queryByText(/not announced$/)).toBeNull();
+    // Donation button at the end of the report.
+    expect(screen.getByRole('link', { name: /Support this tool with a donation on Buy Me a Momo/ }).getAttribute('href')).toBe(
+      'https://buymemomo.com/bibeksubedi',
+    );
   });
 
   it('adds up to 5 past attempts and removes them', async () => {
@@ -175,14 +179,14 @@ describe('App', () => {
     expect(dialog.getByRole('status').textContent).toMatch(/Error reports open soon/);
   });
 
-  it('links the set config values and shows "coming soon" for unset ones', () => {
+  it('links the set config values, including the donation page', () => {
     render(<App />);
-    expect(site.supportUrl).toBeNull();
+    expect(site.supportUrl).toBe('https://buymemomo.com/bibeksubedi');
     const about = within(document.getElementById('about')!);
     const hrefs = about.getAllByRole('link').map((a) => a.getAttribute('href'));
-    expect(hrefs).toEqual([site.groupUrl, site.linkedinUrl, site.githubUrl]);
+    expect(hrefs).toEqual([site.groupUrl, site.linkedinUrl, site.githubUrl, site.supportUrl]);
+    expect(about.getByRole('link', { name: /Donate on Buy Me a Momo/ }).getAttribute('rel')).toBe('noopener noreferrer');
     expect(about.queryByText('(link coming soon)')).toBeNull();
-    expect(screen.queryByText(/Support this tool/)).toBeNull(); // hidden until a support link is set
     expect(document.body.textContent).not.toMatch(/patreon/i);
     expect(about.getByText(site.contactEmail!)).toBeTruthy();
     expect(about.queryByText('Need tutoring help?')).toBeNull(); // no tutors yet

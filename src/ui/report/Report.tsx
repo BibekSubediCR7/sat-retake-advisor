@@ -154,6 +154,7 @@ export function Report({ report, input, schools, satDates, today, onEdit, onRepo
         {site.supportUrl && (
           <ExternalLink href={site.supportUrl} className={`${secondaryButton} flex-1`}>
             <HeartHandshake size={18} aria-hidden="true" /> Support this tool
+            <span className="sr-only"> with a donation on {site.supportPlatform}</span>
           </ExternalLink>
         )}
       </div>

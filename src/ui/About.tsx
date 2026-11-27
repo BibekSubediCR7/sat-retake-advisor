@@ -128,9 +128,17 @@ export function About() {
           </ul>
         </div>
         {site.supportUrl && (
-          <ExternalLink href={site.supportUrl} className={secondaryButton}>
-            <HeartHandshake size={18} aria-hidden="true" /> Support this tool
-          </ExternalLink>
+          <div className="space-y-3">
+            <h3 className={`${monoLabel} text-ink`}>Support this tool</h3>
+            <p>
+              The tool is free and has no ads. If it helped you, you can support it with a small donation on{' '}
+              {site.supportPlatform}, which accepts payments from Nepal and abroad. Donations help keep the data
+              checked every year.
+            </p>
+            <ExternalLink href={site.supportUrl} className={secondaryButton}>
+              <HeartHandshake size={18} aria-hidden="true" /> Donate on {site.supportPlatform}
+            </ExternalLink>
+          </div>
         )}
         <p className="border-t border-dashed border-rule pt-4 text-sm text-ink-muted">{DISCLAIMER}</p>
       </div>
