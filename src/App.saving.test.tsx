@@ -156,6 +156,20 @@ describe('App with saving on', () => {
       expect(screen.queryByText(/score checks/)).toBeNull();
     });
 
+    it('reads the live count when the cached one is under 30 students', async () => {
+      vi.useFakeTimers();
+      backend.cachedUsage.mockReturnValue({ checks: 40, students: 21 });
+      backend.readUsage.mockResolvedValue({ checks: 64, students: 33 });
+      render(<App />);
+      expect(screen.queryByText(/score checks/)).toBeNull();
+      await act(async () => {
+        await vi.advanceTimersByTimeAsync(10000);
+      });
+      vi.useRealTimers();
+      expect(backend.readUsage).toHaveBeenCalledTimes(1);
+      expect(screen.getByText('64 score checks · 33 students')).toBeTruthy();
+    });
+
     it('reads the count after the page settles when nothing is cached', async () => {
       vi.useFakeTimers();
       backend.readUsage.mockResolvedValue({ checks: 150, students: 90 });

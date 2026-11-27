@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { cachedUsage, readUsage, type Usage } from '../backend';
 import { SAVING_ENABLED } from '../config/site';
 import { monoLabel } from './parts/styles';
@@ -13,10 +13,13 @@ const fmt = (n: number) => n.toLocaleString('en-US');
 /** "2,418 score checks · 1,530 students", in the header. */
 export function UsageLine() {
   const [usage, setUsage] = useState<Usage | null>(() => (SAVING_ENABLED ? cachedUsage() : null));
+  const read = useRef(false);
 
   useEffect(() => {
-    if (!SAVING_ENABLED || usage) return;
+    // A cached count under the threshold may be stale, so read the live count once per page load.
+    if (!SAVING_ENABLED || read.current || (usage && usage.students >= MIN_STUDENTS_SHOWN)) return;
     const timer = window.setTimeout(() => {
+      read.current = true;
       readUsage()
         .then((u) => u && setUsage(u))
         .catch(() => {});
