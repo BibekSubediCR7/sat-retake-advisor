@@ -137,15 +137,21 @@ describe('App with saving on', () => {
   });
 
   describe('usage counter in the header', () => {
-    it('shows the cached count right away when it is 100 or more', () => {
+    it('shows the cached count right away from 30 students', () => {
       backend.cachedUsage.mockReturnValue({ checks: 2418, students: 1530 });
       render(<App />);
       expect(screen.getByText('2,418 score checks · 1,530 students')).toBeTruthy();
       expect(backend.readUsage).not.toHaveBeenCalled();
     });
 
-    it('stays hidden under 100 checks', () => {
-      backend.cachedUsage.mockReturnValue({ checks: 99, students: 70 });
+    it('shows at exactly 30 students', () => {
+      backend.cachedUsage.mockReturnValue({ checks: 75, students: 30 });
+      render(<App />);
+      expect(screen.getByText('75 score checks · 30 students')).toBeTruthy();
+    });
+
+    it('stays hidden under 30 students', () => {
+      backend.cachedUsage.mockReturnValue({ checks: 52, students: 29 });
       render(<App />);
       expect(screen.queryByText(/score checks/)).toBeNull();
     });

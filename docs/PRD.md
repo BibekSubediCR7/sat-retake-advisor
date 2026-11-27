@@ -185,7 +185,7 @@ Each `testPolicy` value is one of `required`, `optional`, `test-blind`, `require
 
 No names, emails, IP addresses or free-text fields.
 
-**Usage counter** (Firestore document `counters/usage`): `checks`, `students`, `updatedAt`; shown in the header from 100 checks. (The planned daily `stats/summary` was dropped with M5.)
+**Usage counter** (Firestore document `counters/usage`): `checks`, `students`, `updatedAt`; shown in the header from 30 students. (The planned daily `stats/summary` was dropped with M5.)
 
 ## Architecture
 

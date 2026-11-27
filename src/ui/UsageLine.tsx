@@ -3,8 +3,8 @@ import { cachedUsage, readUsage, type Usage } from '../backend';
 import { SAVING_ENABLED } from '../config/site';
 import { monoLabel } from './parts/styles';
 
-/** The counter stays hidden until it reaches this many checks, so it never looks empty. */
-export const MIN_CHECKS_SHOWN = 100;
+/** The counter stays hidden until this many students have used the tool, so it never looks empty. */
+export const MIN_STUDENTS_SHOWN = 30;
 /** Wait for the page to settle before loading Firebase, so the form is never slowed down. */
 const READ_DELAY_MS = 2500;
 
@@ -24,7 +24,7 @@ export function UsageLine() {
     return () => window.clearTimeout(timer);
   }, [usage]);
 
-  if (!usage || usage.checks < MIN_CHECKS_SHOWN) return null;
+  if (!usage || usage.students < MIN_STUDENTS_SHOWN) return null;
   return (
     <p className={`${monoLabel} mt-3 text-stamp-green`}>
       {fmt(usage.checks)} score checks · {fmt(usage.students)} students
